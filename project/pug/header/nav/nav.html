@@ -1,0 +1,87 @@
+
+<head> 
+  <style>
+     @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.menu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(31, 32, 65, 0.5);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu > li {
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.submenu {
+  position: absolute;
+  visibility: hidden;
+  list-style-type: none;
+  opacity: 0;
+  padding-left: 0;
+  margin-top: 18px;
+}
+
+.submenu {
+  z-index: 5;
+  min-width: 100px;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.submenu > li {
+  margin-top: 10px;
+}
+
+.menu li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu svg {
+  fill: rgba(31, 32, 65, 0.5);
+  text-align: center;
+  margin: auto;
+}
+/*# sourceMappingURL=nav.css.map */
+  </style>
+</head>
+<body> 
+  <div class="nav"> 
+    <ul class="menu">
+      <li>О нас</li>
+      <li>Услуги
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 18 18">
+          <path d="M12.44 6.44L9 9.88 5.56 6.44 4.5 7.5 9 12l4.5-4.5z"></path>
+        </svg>
+        <ul class="submenu">
+          <li>Услуга 1</li>
+          <li>Услуга 2</li>
+          <li>Услуга 3</li>
+        </ul>
+      </li>
+      <li>Вакансии</li>
+      <li>Новости</li>
+      <li>Соглашения
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 18 18">
+          <path d="M12.44 6.44L9 9.88 5.56 6.44 4.5 7.5 9 12l4.5-4.5z"></path>
+        </svg>
+        <ul class="submenu">
+          <li>Соглашение 1</li>
+          <li>Соглашение 2</li>
+          <li>Соглашение 3</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
