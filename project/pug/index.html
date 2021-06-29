@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +10,16 @@
     <head> 
       <style>
          .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 70px;
   width: 100%;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
+/*# sourceMappingURL=header.css.map */
       </style>
     </head>
     <body>
@@ -137,7 +141,28 @@
               </ul>
             </div>
           </body>
-          <div class="header__auth"></div>
+          <head> 
+            <style>
+               .log-in_btn {
+  width: 87px;
+  height: 34px;
+  background-color: aquamarine;
+}
+
+.sign-in_btn {
+  width: 196px;
+  height: 34px;
+  background-color: blue;
+}
+/*# sourceMappingURL=authorization.css.map */
+            </style>
+          </head>
+          <body> 
+            <div class="authorization"> 
+              <button class="log-in_btn">Войти</button>
+              <button class="sign-in_btn">Зарегистрироваться</button>
+            </div>
+          </body>
         </div>
       </header>
     </body>
