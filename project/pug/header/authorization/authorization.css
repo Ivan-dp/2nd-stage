@@ -1,12 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .log-in_btn {
   width: 87px;
   height: 34px;
-  background-color: aquamarine;
+  color: #bc9cff;
+  border: 2px solid;
+  border-color: linear-gradient(180deg, #bc9cff, #8ba4f9);
+  border-radius: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.7px;
+  margin-left: 20px;
 }
 
 .sign-in_btn {
   width: 196px;
   height: 34px;
-  background-color: blue;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+  border: none;
+  border-radius: 22px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.7px;
+  margin-left: 20px;
 }
 /*# sourceMappingURL=authorization.css.map */
