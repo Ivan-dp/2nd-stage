@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,OAAO;EACnB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,KAAK;CAClB;;AAED,AAAA,MAAM,CAAC;EACL,aAAa,EAAE,IAAI;CACpB;;AAED,AAAA,YAAY,CAAC;EACX,WAAW,EAAE,GAAG;EAChB,KAAK,EAAE,OAAO;EACd,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "headers_&_footers.scss"
+    ],
+    "names": [],
+    "file": "headers_&_footers.css"
+}

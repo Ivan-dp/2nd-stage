@@ -4,7 +4,11 @@ html(lang="ru")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Document
+    title Headers & footers
+    style 
+      include headers_&_footers.css
   body 
-    include UIKit/headers&footers/header/header.pug
-    
+    include header/header
+    //- include footer/footer
+    include header/header-authorized
+    include footer/footer
