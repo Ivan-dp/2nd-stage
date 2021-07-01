@@ -1,6 +1,4 @@
-
-<style>
-   .logo {
+.logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,5 +21,3 @@
   margin-left: 12.5px;
 }
 /*# sourceMappingURL=logo.css.map */
-</style>
-<div class="logo"><img class="logo-img" src="/pug/img/logo.svg" alt="logo"/><img class="logo-name" src="/pug/img/toxin.svg" alt="toxin"/></div>

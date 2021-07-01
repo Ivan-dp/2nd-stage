@@ -1,0 +1,119 @@
+.widgets {
+  height: 372px;
+  width: 100%;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.widgets__container {
+  width: 1160px;
+  margin: 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.widgets__container__main {
+  width: 260px;
+}
+
+.widgets__container__main p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.widgets__container__navigation li,
+.widgets__container__about li,
+.widgets__container__support li {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+}
+
+.widgets__container__navigation .bold,
+.widgets__container__about .bold,
+.widgets__container__support .bold {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+.widgets__container__subscribe {
+  width: 260px;
+}
+
+.widgets__container__subscribe p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.widgets__container__subscribe .bold {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+.subscribe__input {
+  width: 260px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+}
+
+.subscribe__input::after {
+  content: url(/pug/UIKit/headers&footers/footer/widgets/img/arrow_forward.svg);
+  display: inline-block;
+  position: absolute;
+  color: linear-gradient(180deg, #bc9cff, #8ba4f9);
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=widgets.css.map */

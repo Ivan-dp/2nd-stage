@@ -1,0 +1,87 @@
+@mixin Montserrat($weight, $size, $height) {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+.widgets {
+  height: 372px;
+  width: 100%;
+  // margin-bottom: 1px;
+  background: #ffffff;
+  display: flex;
+}
+
+.widgets__container {
+  width: 1160px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.widgets__container__main {
+  width: 260px;
+  & p {
+    @include Montserrat(normal, 14px, 24px);
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  & li {
+    list-style-type: none;
+  }
+}
+
+.widgets__container__navigation,
+.widgets__container__about,
+.widgets__container__support {
+  & li {
+    @include Montserrat(normal, 14px, 17px);
+    margin-bottom: 20px;
+  }
+  & .bold {
+    @include Montserrat(bold, 12px, 15px);
+    text-transform: uppercase;
+    margin-bottom: 21px;
+  }
+}
+
+.widgets__container__subscribe {
+  width: 260px;
+  & p {
+    @include Montserrat(normal, 14px, 24px);
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  & .bold {
+    @include Montserrat(bold, 12px, 15px);
+    text-transform: uppercase;
+    margin-bottom: 21px;
+  }
+}
+
+.subscribe__input {
+  width: 260px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  @include Montserrat(normal, 14px, 24px);
+  color: rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+  &::after {
+    content: url(/pug/UIKit/headers&footers/footer/widgets/img/arrow_forward.svg);
+    display: inline-block;
+    position: absolute;
+    color: linear-gradient(180deg, #bc9cff, #8ba4f9);
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+  }
+}
