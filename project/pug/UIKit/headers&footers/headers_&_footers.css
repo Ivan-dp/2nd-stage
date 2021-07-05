@@ -14,4 +14,12 @@ header {
   color: #1f2041;
   opacity: 0.75;
 }
+
+footer {
+  margin-bottom: 40px;
+}
+
+.footer-creative {
+  margin-bottom: 40px;
+}
 /*# sourceMappingURL=headers_&_footers.css.map */
