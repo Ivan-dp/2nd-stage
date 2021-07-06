@@ -1,61 +1,6 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cards</title>
-    <style>
-       body {
-  background-color: #e5e5e5;
-}
-/*# sourceMappingURL=cards.css.map */
-    </style>
-  </head>
-  <body> 
-    <style>
-       @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-}
 
-.findroom {
-  width: 380px;
-  height: 374px;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 40px 30px 30px 30px;
-}
-
-.findroom__title {
-  width: 100%;
-  height: 59px;
-}
-
-.findroom__title h1 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  margin: 0;
-  color: #1f2041;
-  display: block;
-}
-/*# sourceMappingURL=findroom.css.map */
-    </style>
-    <div class="findroom"> 
-      <div class="findroom__title">
-        <h1>Найдём номера под ваши пожелания</h1>
-      </div>
-      <style>
-         @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+<style>
+   @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .form {
   width: 100%;
   height: 224px;
@@ -104,11 +49,11 @@
   margin-right: 12px;
 }
 /*# sourceMappingURL=findroom__form.css.map */
-      </style>
-      <div class="form">
-        <div class="form__date">
-          <style>
-             @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+</style>
+<div class="form">
+  <div class="form__date">
+    <style>
+       @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .arrival {
   width: 150px;
   height: 65px;
@@ -170,15 +115,15 @@
   color: rgba(31, 32, 65, 0.75);
 }
 /*# sourceMappingURL=arrival.css.map */
-          </style>
-          <div class="arrival"> 
-            <h3>Прибытие</h3>
-            <div class="arrival__field">
-              <input type="text" name="arrival" value="ДД.ММ.ГГГГ">
-            </div>
-          </div>
-          <style>
-             @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+    </style>
+    <div class="arrival"> 
+      <h3>Прибытие</h3>
+      <div class="arrival__field">
+        <input type="text" name="arrival" value="ДД.ММ.ГГГГ"/>
+      </div>
+    </div>
+    <style>
+       @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .departure {
   width: 150px;
   height: 65px;
@@ -239,16 +184,16 @@
   color: rgba(31, 32, 65, 0.75);
 }
 /*# sourceMappingURL=departure.css.map */
-          </style>
-          <div class="departure">
-            <h3>Выезд</h3>
-            <div class="departure__field">
-              <input type="text" name="departure" value="ДД.ММ.ГГГГ">
-            </div>
-          </div>
-        </div>
-        <style>
-           @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+    </style>
+    <div class="departure">
+      <h3>Выезд</h3>
+      <div class="departure__field">
+        <input type="text" name="departure" value="ДД.ММ.ГГГГ"/>
+      </div>
+    </div>
+  </div>
+  <style>
+     @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .residents {
   width: 100%;
   height: 65px;
@@ -309,15 +254,12 @@
   color: rgba(31, 32, 65, 0.75);
 }
 /*# sourceMappingURL=residents.css.map */
-        </style>
-        <div class="residents"> 
-          <h3>Гости</h3>
-          <div class="residents__field">
-            <input type="text" name="residents" value="Сколько гостей">
-          </div>
-        </div>
-        <button class="form__button">Подобрать номер<img src="/pug/UIKit/cards/findroom/findroom__form/img/arrow_forward-white.svg" alt=""></button>
-      </div>
+  </style>
+  <div class="residents"> 
+    <h3>Гости</h3>
+    <div class="residents__field">
+      <input type="text" name="residents" value="Сколько гостей"/>
     </div>
-  </body>
-</html>
+  </div>
+  <button class="form__button">Подобрать номер<img src="/pug/UIKit/cards/findroom/findroom__form/img/arrow_forward-white.svg" alt=""/></button>
+</div>
