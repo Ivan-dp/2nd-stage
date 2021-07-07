@@ -1,0 +1,24 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Colors and types
+    style 
+      include colors_and_types.css
+  body 
+    mixin colors__item(colorname, colorcode)
+      .colors__item
+        .colors__item__box 
+        .colors__item__info 
+          h2= colorname
+          p= colorcode
+    .colors 
+      +colors__item('Dark Shade 100%', '#1F2041')
+      +colors__item('Dark Shade 75%', '#1F2041')
+      +colors__item('Dark Shade 50%', '#1F2041')
+      +colors__item('Dark Shade 25%', '#1F2041')
+      +colors__item('Dark Shade 5%', '#1F2041')
+      +colors__item('Purple', '#BC9CFF')
+      +colors__item('Green', '#6FCF97')

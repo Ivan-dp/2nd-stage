@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "colors_and_types.scss"
+    ],
+    "names": [],
+    "file": "colors_and_types.css"
+}
