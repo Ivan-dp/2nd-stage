@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@mixin Montserrat($weight, $size, $height) {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+.types__item {
+  display: flex;
+}
+
+.name {
+  margin-right: 30px;
+  width: 40px;
+  h1 {
+    @include Montserrat(normal, 24px, 29px);
+    color: rgba(31, 32, 65, 0.25);
+    text-align: right;
+  }
+  h2 {
+    @include Montserrat(normal, 19px, 23px);
+    color: rgba(31, 32, 65, 0.25);
+    text-align: right;
+  }
+  h3 {
+    @include Montserrat(normal, 12px, 15px);
+    color: rgba(31, 32, 65, 0.25);
+    text-align: right;
+  }
+  p {
+    @include Montserrat(normal, 14px, 24px);
+    color: rgba(31, 32, 65, 0.25);
+    text-align: right;
+  }
+}
+
+.example {
+  width: 370px;
+  margin-bottom: 50px;
+  h1 {
+    @include Montserrat(bold, 24px, 29px);
+    color: #1f2041;
+    text-align: left;
+  }
+  h2 {
+    @include Montserrat(bold, 19px, 23px);
+    color: #1f2041;
+    text-align: left;
+  }
+  h3 {
+    @include Montserrat(bold, 12px, 15px);
+    color: #1f2041;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  p {
+    @include Montserrat(normal, 14px, 24px);
+    color: rgba(31, 32, 65, 0.75);
+    text-align: left;
+  }
+}
