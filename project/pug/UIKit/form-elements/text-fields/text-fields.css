@@ -1,0 +1,37 @@
+.text-fields {
+  width: 320px;
+}
+
+.text-fields__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text-fields .default {
+  padding-bottom: 20px;
+}
+
+.text-fields .hover-focus {
+  padding-bottom: 20px;
+}
+
+.text-fields .dropdown {
+  padding-bottom: 20px;
+}
+
+.text-fields .masked {
+  padding-bottom: 40px;
+}
+
+.text-fields__date {
+  padding-bottom: 40px;
+}
+
+.text-fields .filter-date-dropdown {
+  padding-bottom: 40px;
+}
+/*# sourceMappingURL=text-fields.css.map */
