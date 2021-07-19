@@ -1,4 +1,41 @@
 
+<head>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+  <link rel="stylesheet" href="/resources/demos/style.css"/>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $( function() {
+      var dateFormat = "mm/dd/yy",
+        from = $( ".datepicker" )
+          .datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 1
+          })
+          .on( "change", function() {
+            to.datepicker( "option", "minDate", getDate( this ) );
+          }),
+        to = $( ".datepicker" ).datepicker({
+          defaultDate: "+1w",
+          changeMonth: true,
+          numberOfMonths: 1
+        })
+        .on( "change", function() {
+          from.datepicker( "option", "maxDate", getDate( this ) );
+        });
+      function getDate( element ) {
+        var date;
+        try {
+          date = $.datepicker.parseDate( dateFormat, element.value );
+        } catch( error ) {
+          date = null;
+        }
+        return date;
+      }
+    });
+  </script>
+</head>
 <style>
    @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .filter-date-dropdown {
@@ -66,6 +103,6 @@
 <div class="filter-date-dropdown"> 
   <h3>filter date dropdown</h3>
   <div class="filter-date-dropdown__field">
-    <input type="text" value="19 авг - 23 авг"/>
+    <input class="datepicker" type="text" data-range="true" data-multiple-dates-separator=" - " value="ДД.ММ.ГГГГ"/>
   </div>
 </div>

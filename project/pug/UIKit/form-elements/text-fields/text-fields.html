@@ -293,15 +293,61 @@
     </div>
   </div>
   <div class="text-fields__date">
+    <head>
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+      <link rel="stylesheet" href="/resources/demos/style.css"/>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script>
+        $( function() {
+          var dateFormat = "mm/dd/yy",
+            from = $( ".from" )
+              .datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 1
+              })
+              .on( "change", function() {
+                to.datepicker( "option", "minDate", getDate( this ) );
+              }),
+            to = $( ".to" ).datepicker({
+              defaultDate: "+1w",
+              changeMonth: true,
+              numberOfMonths: 1
+            })
+            .on( "change", function() {
+              from.datepicker( "option", "maxDate", getDate( this ) );
+            });
+          function getDate( element ) {
+            var date;
+            try {
+              date = $.datepicker.parseDate( dateFormat, element.value );
+            } catch( error ) {
+              date = null;
+            }
+            return date;
+          }
+        });
+      </script>
+    </head>
     <style>
        @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .date-dropdown {
-  width: 150px;
+  width: 320px;
   height: 65px;
-  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.date-dropdown h3 {
+.date-dropdown__box {
+  width: 150px;
+}
+
+.date-dropdown__box h3 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -310,7 +356,7 @@
   text-transform: uppercase;
 }
 
-.date-dropdown__field {
+.date-dropdown__box__field {
   width: 100%;
   border: 1px solid rgba(31, 32, 65, 0.25);
   -webkit-box-sizing: border-box;
@@ -328,7 +374,7 @@
           justify-content: space-between;
 }
 
-.date-dropdown__field::after {
+.date-dropdown__box__field::after {
   content: url(/pug/UIKit/cards/findroom/findroom__form/img/expand_more.svg);
   display: inline-block;
   width: 44px;
@@ -340,7 +386,7 @@
   padding-top: 12px;
 }
 
-.date-dropdown__field input {
+.date-dropdown__box__field input {
   width: 106px;
   height: 44px;
   -webkit-box-sizing: border-box;
@@ -358,82 +404,57 @@
 /*# sourceMappingURL=date-dropdown.css.map */
     </style>
     <div class="date-dropdown"> 
-      <h3>date dropdown</h3>
-      <div class="date-dropdown__field">
-        <input type="text" value="ДД.ММ.ГГГГ"/>
+      <div class="date-dropdown__box">
+        <h3>date dropdown</h3>
+        <div class="date-dropdown__box__field">
+          <input class="from" type="text" value="ДД.ММ.ГГГГ" name="from"/>
+        </div>
       </div>
-    </div>
-    <style>
-       @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-.date-dropdown {
-  width: 150px;
-  height: 65px;
-  margin-right: 20px;
-}
-
-.date-dropdown h3 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-}
-
-.date-dropdown__field {
-  width: 100%;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 4px;
-  margin-top: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.date-dropdown__field::after {
-  content: url(/pug/UIKit/cards/findroom/findroom__form/img/expand_more.svg);
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  cursor: pointer;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-align: center;
-  padding-top: 12px;
-}
-
-.date-dropdown__field input {
-  width: 106px;
-  height: 44px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: none;
-  padding-left: 15px;
-  border-radius: 4px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.75);
-}
-/*# sourceMappingURL=date-dropdown.css.map */
-    </style>
-    <div class="date-dropdown"> 
-      <h3>date dropdown</h3>
-      <div class="date-dropdown__field">
-        <input type="text" value="19.08.2019"/>
+      <div class="date-dropdown__box">
+        <h3>date dropdown</h3>
+        <div class="date-dropdown__box__field">
+          <input class="to" type="text" value="ДД.ММ.ГГГГ" name="to"/>
+        </div>
       </div>
     </div>
   </div>
+  <head>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <link rel="stylesheet" href="/resources/demos/style.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $( function() {
+        var dateFormat = "mm/dd/yy",
+          from = $( ".datepicker" )
+            .datepicker({
+              defaultDate: "+1w",
+              changeMonth: true,
+              numberOfMonths: 1
+            })
+            .on( "change", function() {
+              to.datepicker( "option", "minDate", getDate( this ) );
+            }),
+          to = $( ".datepicker" ).datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 1
+          })
+          .on( "change", function() {
+            from.datepicker( "option", "maxDate", getDate( this ) );
+          });
+        function getDate( element ) {
+          var date;
+          try {
+            date = $.datepicker.parseDate( dateFormat, element.value );
+          } catch( error ) {
+            date = null;
+          }
+          return date;
+        }
+      });
+    </script>
+  </head>
   <style>
      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .filter-date-dropdown {
@@ -501,7 +522,7 @@
   <div class="filter-date-dropdown"> 
     <h3>filter date dropdown</h3>
     <div class="filter-date-dropdown__field">
-      <input type="text" value="19 авг - 23 авг"/>
+      <input class="datepicker" type="text" data-range="true" data-multiple-dates-separator=" - " value="ДД.ММ.ГГГГ"/>
     </div>
   </div>
   <style>
