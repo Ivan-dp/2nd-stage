@@ -47,3 +47,38 @@
     }
   }
 }
+
+.-current- {
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%) !important;
+  border-radius: 20px !important;
+}
+
+.-range-from- {
+  border: none !important;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%) !important;
+  opacity: 0.25 !important;
+  border-radius: 20px 0 0 20px !important;
+}
+
+.-in-range- {
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%) !important;
+  opacity: 0.25 !important;
+}
+
+.-range-to- {
+  border: none !important;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%) !important;
+  opacity: 0.25 !important;
+  border-radius: 0 20px 20px 0 !important;
+}
+
+.-focus- {
+  border-radius: 20px;
+}
+
+.-selected- {
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%) !important;
+  // border: none;
+  // border-radius: 20px !important;
+  z-index: 100;
+}
