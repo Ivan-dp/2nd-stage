@@ -236,15 +236,36 @@
   color: rgba(31, 32, 65, 0.75);
 }
 /*# sourceMappingURL=dropdown.css.map */
+    <link rel="stylesheet" href="/pug/UIKit/form-elements/text-fields/dropdown/item-quantity-dropdown.min.css"/>
   </style>
   <div class="dropdown"> 
     <div class="dropdown__title"> 
       <h3 class="dropdown__title__left">dropdown</h3>
     </div>
-    <div class="dropdown__input">
-      <input type="text" name="residents" value="Сколько гостей"/>
+    <div class="iqdropdown">
+      <p class="iqdropdown-selection" data-selection-text="item" data-text-plural="items"></p>
+      <div class="iqdropdown-menu">
+        <div class="iqdropdown-menu-option" data-id="item1" data-defaultcount="0" data-mincount="0" data-maxcount="3">
+          <div>
+            <p class="iqdropdown-item">Взрослые</p>
+          </div>
+        </div>
+        <div class="iqdropdown-menu-option" data-id="item2" data-defaultcount="0" data-mincount="0" data-maxcount="2">
+          <div>
+            <p class="iqdropdown-item">Дети</p>
+          </div>
+        </div>
+        <div class="iqdropdown-menu-option" data-id="item3" data-defaultcount="0" data-mincount="0" data-maxcount="2">
+          <div>
+            <p class="iqdropdown-item">Младенцы</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="/pug/UIKit/form-elements/text-fields/dropdown/item-quantity-dropdown.min.js"></script>
+  <script src="/pug/UIKit/form-elements/text-fields/dropdown/dropdown.js"></script>
   <style>
      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .masked {
@@ -297,8 +318,9 @@
   </head>
   <style>
      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 .filter-date-dropdown {
-  width: 320px;
+  width: 266px;
   height: 65px;
   margin-right: 20px;
 }
@@ -330,20 +352,29 @@
           justify-content: space-between;
 }
 
-.filter-date-dropdown__field::after {
-  content: url(/pug/UIKit/cards/findroom/findroom__form/img/expand_more.svg);
-  display: inline-block;
+.filter-date-dropdown__field #btn_calendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 44px;
   height: 44px;
   cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
-  padding-top: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
 }
 
 .filter-date-dropdown__field input {
-  width: 274px;
+  width: 222px;
   height: 44px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -356,6 +387,106 @@
   font-size: 14px;
   line-height: 18px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+.filter-date-dropdown__field input:active {
+  outline: none;
+}
+
+.filter-date-dropdown__field input:focus {
+  outline: none;
+}
+
+.datepicker {
+  width: 320px;
+  font-family: "Montserrat";
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+}
+
+.datepicker .datepicker--nav {
+  width: 280px;
+  border-bottom: none;
+  margin: 12px auto 22px auto;
+}
+
+.datepicker .datepicker--nav-title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1f2041;
+}
+
+.datepicker .datepicker--content {
+  width: 280px;
+  margin: auto;
+  padding: 0;
+}
+
+.datepicker .datepicker--content .datepicker--days-names {
+  margin: 0;
+}
+
+.datepicker .datepicker--content .datepicker--days-names .datepicker--day-name {
+  width: 40px;
+  height: 40px;
+}
+
+.datepicker .datepicker--content .datepicker--cell.datepicker--cell-day {
+  width: 40px;
+  height: 40px;
+}
+
+.datepicker .datepicker--content .datepicker--cell.-focus- {
+  border-radius: 20px;
+  border: none;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  color: #bc9cff;
+}
+
+.datepicker--day-name {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #bc9cff;
+  text-transform: none;
+}
+
+.datepicker--cell-day {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.datepicker--cell-day.-other-month- {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.datepicker--cell-day.-current- {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6fcf97), to(#66d2ea));
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border-radius: 20px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .datepicker--cell.-range-from-::after {
@@ -386,41 +517,70 @@
   border-radius: 0 20px 20px 0;
 }
 
+.-current-.-range-from-.-selected-,
 .-range-from-.-selected-,
 .-range-to-.-selected- {
   background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 20px;
-  opacity: 1;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: white;
+}
+
+.datepicker--buttons {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  border-top: none;
+}
+
+.datepicker--buttons .datepicker--button {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+}
+
+.datepicker--buttons .datepicker--button[data-action="today"] {
+  padding: 0 15px 5px 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.datepicker--buttons .datepicker--button[data-action="clear"] {
+  padding: 0 0 5px 15px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.datepicker--buttons .datepicker--button:hover {
+  background-color: white;
 }
 /*# sourceMappingURL=filter-date-dropdown.css.map */
   </style>
   <div class="filter-date-dropdown"> 
     <h3>filter date dropdown</h3>
-    <div class="filter-date-dropdown__field">
+    <form class="filter-date-dropdown__field">
       <input id="calendar" type="text" value="ДД.ММ.ГГГГ"/>
-    </div>
+      <button id="btn_calendar" type="button"><img src="/pug/UIKit/cards/findroom/findroom__form/img/expand_more.svg"/></button>
+    </form>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="/pug/UIKit/form-elements/text-fields/filter-date-dropdown/dist/js/datepicker.min.js"></script>
-  <script>
-    $(function() {
-      $('#calendar').datepicker({
-        //- timepicker: true,
-        //- minHours: 9,
-        //- maxHours: 17,
-        //- minutesStep: 10,
-        range: true,
-        multipleDatesSeparator: " - ",
-        clearButton: true,
-        //- autoClose: true,
-        minDate: new Date()
-      });
-      var myDatepicker = $('#calendar').datepicker().data('datepicker');
-      myDatepicker.show();
-    
-    });
-  </script>
+  <script src="/pug/UIKit/form-elements/text-fields/filter-date-dropdown/filter-date-dropdown.js"></script>
   <style>
      .subscription {
   width: 320px;

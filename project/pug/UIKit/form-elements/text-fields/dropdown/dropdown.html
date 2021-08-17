@@ -60,12 +60,33 @@
   color: rgba(31, 32, 65, 0.75);
 }
 /*# sourceMappingURL=dropdown.css.map */
+  <link rel="stylesheet" href="/pug/UIKit/form-elements/text-fields/dropdown/item-quantity-dropdown.min.css"/>
 </style>
 <div class="dropdown"> 
   <div class="dropdown__title"> 
     <h3 class="dropdown__title__left">dropdown</h3>
   </div>
-  <div class="dropdown__input">
-    <input type="text" name="residents" value="Сколько гостей"/>
+  <div class="iqdropdown">
+    <p class="iqdropdown-selection" data-selection-text="item" data-text-plural="items"></p>
+    <div class="iqdropdown-menu">
+      <div class="iqdropdown-menu-option" data-id="item1" data-defaultcount="0" data-mincount="0" data-maxcount="3">
+        <div>
+          <p class="iqdropdown-item">Взрослые</p>
+        </div>
+      </div>
+      <div class="iqdropdown-menu-option" data-id="item2" data-defaultcount="0" data-mincount="0" data-maxcount="2">
+        <div>
+          <p class="iqdropdown-item">Дети</p>
+        </div>
+      </div>
+      <div class="iqdropdown-menu-option" data-id="item3" data-defaultcount="0" data-mincount="0" data-maxcount="2">
+        <div>
+          <p class="iqdropdown-item">Младенцы</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/pug/UIKit/form-elements/text-fields/dropdown/item-quantity-dropdown.min.js"></script>
+<script src="/pug/UIKit/form-elements/text-fields/dropdown/dropdown.js"></script>
