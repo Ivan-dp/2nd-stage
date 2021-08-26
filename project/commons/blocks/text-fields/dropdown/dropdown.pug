@@ -1,0 +1,21 @@
+style 
+  include dropdown.css 
+  link(rel="stylesheet", href="./item-quantity-dropdown.min.css")
+.dropdown 
+  .dropdown__title 
+    h3.dropdown__title__left dropdown
+  .iqdropdown
+    p.iqdropdown-selection(data-selection-text="item" data-text-plural="items")
+    .iqdropdown-menu
+      .iqdropdown-menu-option(data-id='item1' data-defaultcount="0" data-mincount="0" data-maxcount="3")
+        div
+          p.iqdropdown-item Взрослые
+      .iqdropdown-menu-option(data-id='item2' data-defaultcount="0" data-mincount="0" data-maxcount="2")
+        div
+          p.iqdropdown-item Дети
+      .iqdropdown-menu-option(data-id='item3' data-defaultcount="0" data-mincount="0" data-maxcount="2")
+        div
+          p.iqdropdown-item Младенцы
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+script(src="./item-quantity-dropdown.min.js")
+script(src="./dropdown.js")

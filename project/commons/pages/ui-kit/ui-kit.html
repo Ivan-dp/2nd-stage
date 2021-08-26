@@ -1,0 +1,2155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIKit</title>
+  </head>
+  <body> <!DOCTYPE html>
+    <html lang="ru">
+      <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Colors and types</title>
+        <style>
+           .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.colors {
+  margin-top: 145px;
+  margin-left: 150px;
+}
+
+.types {
+  margin-top: 145px;
+  margin-right: 150px;
+}
+/*# sourceMappingURL=colors_and_types.css.map */
+        </style>
+      </head>
+      <body> 
+        <div class="container">
+          <style>
+             @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.colors {
+  width: 285px;
+}
+
+.colors__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.colors__item__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.colors__item__info h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 28px;
+  color: #1f2041;
+}
+
+.colors__item__info p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 28px;
+  color: #1f2041;
+}
+
+.colors__item__ds100 {
+  background: #1f2041;
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+
+.colors__item__ds75 {
+  background: rgba(31, 32, 65, 0.75);
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+
+.colors__item__ds50 {
+  background: rgba(31, 32, 65, 0.5);
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+
+.colors__item__ds25 {
+  background: rgba(31, 32, 65, 0.25);
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+
+.colors__item__ds5 {
+  background: rgba(31, 32, 65, 0.05);
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+
+.colors__item__purple {
+  background: #bc9cff;
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+
+.colors__item__green {
+  background: #6fcf97;
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+/*# sourceMappingURL=colors.css.map */
+          </style>
+          <div class="colors"> 
+            <div class="colors__item"> 
+              <div class="colors__item__ds100"></div>
+                        <div class="colors__item__info"> 
+                          <h2>Dark Shade 100%</h2>
+                          <p>#1F2041</p>
+                        </div>
+            </div>
+            <div class="colors__item">
+              <div class="colors__item__ds75"></div>
+                        <div class="colors__item__info"> 
+                          <h2>Dark Shade 75%</h2>
+                          <p>#1F2041</p>
+                        </div>
+            </div>
+            <div class="colors__item">
+              <div class="colors__item__ds50"></div>
+                        <div class="colors__item__info"> 
+                          <h2>Dark Shade 50%</h2>
+                          <p>#1F2041</p>
+                        </div>
+            </div>
+            <div class="colors__item">
+              <div class="colors__item__ds25"></div>
+                        <div class="colors__item__info"> 
+                          <h2>Dark Shade 25%</h2>
+                          <p>#1F2041</p>
+                        </div>
+            </div>
+            <div class="colors__item">
+              <div class="colors__item__ds5"></div>
+                        <div class="colors__item__info"> 
+                          <h2>Dark Shade 5%</h2>
+                          <p>#1F2041</p>
+                        </div>
+            </div>
+            <div class="colors__item">
+              <div class="colors__item__purple"></div>
+                        <div class="colors__item__info"> 
+                          <h2>Purple</h2>
+                          <p>#BC9CFF</p>
+                        </div>
+            </div>
+            <div class="colors__item">
+              <div class="colors__item__green"></div>
+                        <div class="colors__item__info"> 
+                          <h2>Green</h2>
+                          <p>#6FCF97</p>
+                        </div>
+            </div>
+          </div>
+          <style>
+             @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.types__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.name {
+  margin-right: 30px;
+  width: 40px;
+}
+
+.name h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: rgba(31, 32, 65, 0.25);
+  text-align: right;
+}
+
+.name h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 23px;
+  color: rgba(31, 32, 65, 0.25);
+  text-align: right;
+}
+
+.name h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(31, 32, 65, 0.25);
+  text-align: right;
+}
+
+.name p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+  text-align: right;
+}
+
+.example {
+  width: 370px;
+  margin-bottom: 50px;
+}
+
+.example h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1f2041;
+  text-align: left;
+}
+
+.example h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1f2041;
+  text-align: left;
+}
+
+.example h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1f2041;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.example p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  text-align: left;
+}
+/*# sourceMappingURL=types.css.map */
+          </style>
+          <div class="types">
+            <div class="types__item">
+              <div class="name"> 
+                <h1>H1</h1>
+              </div>
+              <div class="example">
+                <h1>This one is the sub-section or widget title</h1>
+              </div>
+            </div>
+            <div class="types__item">
+              <div class="name"> 
+                <h2>H2</h2>
+              </div>
+              <div class="example">
+                <h2>Next one is the item title inside widgets</h2>
+              </div>
+            </div>
+            <div class="types__item">
+              <div class="name"> 
+                <h3>H3</h3>
+              </div>
+              <div class="example">
+                <h3>This is a label or CTA text</h3>
+              </div>
+            </div>
+            <div class="types__item">
+              <div class="name"> 
+                <p>Body</p>
+              </div>
+              <div class="example">
+                <p>This is the body text which is used for most of the design, like paragraphs, lists, etc.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+    </html><!DOCTYPE html>
+    <html lang="ru">
+      <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cards</title>
+        <style>
+           body {
+  background-color: #e5e5e5;
+}
+/*# sourceMappingURL=cards.css.map */
+        </style>
+      </head>
+      <body> 
+        <style>
+           @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.findroom {
+  width: 380px;
+  height: 374px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px 30px 30px 30px;
+}
+
+.findroom__title {
+  width: 100%;
+  height: 59px;
+}
+
+.findroom__title h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  color: #1f2041;
+  display: block;
+}
+/*# sourceMappingURL=findroom.css.map */
+        </style>
+        <div class="findroom"> 
+          <div class="findroom__title">
+            <h1>Найдём номера под ваши пожелания</h1>
+          </div>
+          <style>
+             @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.form {
+  width: 100%;
+  height: 224px;
+}
+
+.form__date {
+  width: 100%;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 21px;
+  margin-bottom: 20px;
+}
+
+.form h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.form__button {
+  width: 320px;
+  height: 44px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+  border: none;
+  border-radius: 22px;
+  margin-top: 30px;
+  padding: auto;
+}
+
+.form__button a {
+  text-decoration: none;
+  border: none;
+  border-radius: 22px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: url(./img/arrow_forward-white.svg) no-repeat 94% center;
+}
+
+.form__button a p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  position: relative;
+  top: 14px;
+}
+/*# sourceMappingURL=findroom-form.css.map */
+          </style>
+          <div class="form">
+            <div class="form__date">
+              <style>
+                 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.arrival {
+  width: 150px;
+  height: 65px;
+  margin-right: 20px;
+}
+
+.arrival h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.arrival__field {
+  width: 100%;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.arrival__field::after {
+  content: url(../img/expand_more.svg);
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.arrival__field input {
+  width: 106px;
+  height: 44px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  padding-left: 15px;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+}
+/*# sourceMappingURL=arrival.css.map */
+              </style>
+              <div class="arrival"> 
+                <h3>Прибытие</h3>
+                <div class="arrival__field">
+                  <input type="text" name="arrival" value="ДД.ММ.ГГГГ">
+                </div>
+              </div>
+              <style>
+                 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.departure {
+  width: 150px;
+  height: 65px;
+}
+
+.departure h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.departure__field {
+  width: 100%;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.departure__field::after {
+  content: url(../img/expand_more.svg);
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.departure__field input {
+  width: 106px;
+  height: 44px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  padding-left: 15px;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+}
+/*# sourceMappingURL=departure.css.map */
+              </style>
+              <div class="departure">
+                <h3>Выезд</h3>
+                <div class="departure__field">
+                  <input type="text" name="departure" value="ДД.ММ.ГГГГ">
+                </div>
+              </div>
+            </div>
+            <style>
+               @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.residents {
+  width: 100%;
+  height: 65px;
+}
+
+.residents h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.residents__field {
+  width: 100%;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.residents__field::after {
+  content: url(../img/expand_more.svg);
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.residents__field input {
+  width: 276px;
+  height: 44px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  padding-left: 15px;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+}
+/*# sourceMappingURL=residents.css.map */
+            </style>
+            <div class="residents"> 
+              <h3>Гости</h3>
+              <div class="residents__field">
+                <input type="text" name="residents" value="Сколько гостей">
+              </div>
+            </div>
+            <div class="form__button"> <a href="#">
+                <p>Подобрать номер</p></a></div>
+          </div>
+        </div>
+        <style>
+           /* No CSS *//*# sourceMappingURL=registration.css.map */</style>
+        <div class="registration"> 
+          <div class="registration__title"> 
+            <h1>Регистрация аккаунта</h1>
+          </div>
+        </div>
+      </body>
+    </html><!DOCTYPE html>
+    <html lang="ru">
+      <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form elements</title>
+        <style>
+           .form-elements__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-elements__container__column {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+        </style>
+      </head>
+      <body> 
+        <div class="form-elements__container">
+          <div class="form-elements__container__column"> 
+            <style>
+               .text-fields {
+  width: 320px;
+}
+
+.text-fields__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text-fields .default {
+  padding-bottom: 20px;
+}
+
+.text-fields .hover-focus {
+  padding-bottom: 20px;
+}
+
+.text-fields .dropdown {
+  padding-bottom: 20px;
+}
+
+.text-fields .masked {
+  padding-bottom: 40px;
+}
+
+.text-fields__date {
+  padding-bottom: 40px;
+}
+
+.text-fields .filter-date-dropdown {
+  padding-bottom: 40px;
+}
+/*# sourceMappingURL=text-fields.css.map */
+            </style>
+            <div class="text-fields"> 
+              <style>@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.default {
+  width: 320px;
+  height: 65px;
+}
+
+.default__title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.default__title__left {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+
+.default__title__right {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.default__input input {
+  width: 320px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+}
+/*# sourceMappingURL=default.css.map */
+              </style>
+              <div class="default"> 
+                <div class="default__title"> 
+                  <h3 class="default__title__left">text field</h3>
+                  <h3 class="default__title__right">default</h3>
+                </div>
+                <div class="default__input">
+                  <input type="text" value="Email">
+                </div>
+              </div>
+              <style>@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.hover-focus {
+  width: 320px;
+  height: 65px;
+}
+
+.hover-focus__title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.hover-focus__title__left {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+
+.hover-focus__title__right {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.hover-focus__input input {
+  width: 320px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+}
+
+.hover-focus__input input:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  color: rgba(31, 32, 65, 0.75);
+}
+/*# sourceMappingURL=hover-focus.css.map */
+              </style>
+              <div class="hover-focus"> 
+                <div class="hover-focus__title"> 
+                  <h3 class="hover-focus__title__left">text field</h3>
+                  <h3 class="hover-focus__title__right">hover / focus</h3>
+                </div>
+                <div class="hover-focus__input">
+                  <input type="text" value="Email">
+                </div>
+              </div>
+              <style>
+                 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.dropdown {
+  width: 100%;
+  height: 65px;
+}
+
+.dropdown__title__left {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.dropdown__input {
+  width: 100%;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dropdown__input::after {
+  content: url(./img/expand_more.svg);
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.dropdown__input input {
+  width: 276px;
+  height: 42px;
+  border: none;
+  padding-left: 15px;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+}
+/*# sourceMappingURL=dropdown.css.map */
+                <link rel="stylesheet" href="./item-quantity-dropdown.min.css">
+              </style>
+              <div class="dropdown"> 
+                <div class="dropdown__title"> 
+                  <h3 class="dropdown__title__left">dropdown</h3>
+                </div>
+                <div class="iqdropdown">
+                  <p class="iqdropdown-selection" data-selection-text="item" data-text-plural="items"></p>
+                  <div class="iqdropdown-menu">
+                    <div class="iqdropdown-menu-option" data-id="item1" data-defaultcount="0" data-mincount="0" data-maxcount="3">
+                      <div>
+                        <p class="iqdropdown-item">Взрослые</p>
+                      </div>
+                    </div>
+                    <div class="iqdropdown-menu-option" data-id="item2" data-defaultcount="0" data-mincount="0" data-maxcount="2">
+                      <div>
+                        <p class="iqdropdown-item">Дети</p>
+                      </div>
+                    </div>
+                    <div class="iqdropdown-menu-option" data-id="item3" data-defaultcount="0" data-mincount="0" data-maxcount="2">
+                      <div>
+                        <p class="iqdropdown-item">Младенцы</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+              <script src="./item-quantity-dropdown.min.js"></script>
+              <script src="./dropdown.js"></script>
+              <style>
+                 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.masked {
+  width: 320px;
+  height: 65px;
+}
+
+.masked__title {
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.masked__title__left {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+}
+
+.masked__input input {
+  width: 320px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+}
+/*# sourceMappingURL=masked.css.map */
+              </style>
+              <div class="masked"> 
+                <div class="masked__title"> 
+                  <h3 class="masked__title__left">masked text field</h3>
+                </div>
+                <div class="masked__input">
+                  <input type="text" value="ДД.ММ.ГГГГ">
+                </div>
+              </div>
+              <head>
+                <link rel="stylesheet" href="/commons/blocks/text-fields/filter-date-dropdown/dist/css/datepicker.min.css">
+              </head>
+              <style>
+                 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+.filter-date-dropdown {
+  width: 266px;
+  height: 65px;
+  margin-right: 20px;
+}
+
+.filter-date-dropdown h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.filter-date-dropdown__field {
+  width: 100%;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filter-date-dropdown__field #btn_calendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.filter-date-dropdown__field input {
+  width: 222px;
+  height: 44px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  padding-left: 15px;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.filter-date-dropdown__field input:active {
+  outline: none;
+}
+
+.filter-date-dropdown__field input:focus {
+  outline: none;
+}
+
+.datepicker {
+  width: 320px;
+  font-family: "Montserrat";
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+}
+
+.datepicker .datepicker--nav {
+  width: 280px;
+  border-bottom: none;
+  margin: 12px auto 22px auto;
+}
+
+.datepicker .datepicker--nav-title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1f2041;
+}
+
+.datepicker .datepicker--content {
+  width: 280px;
+  margin: auto;
+  padding: 0;
+}
+
+.datepicker .datepicker--content .datepicker--days-names {
+  margin: 0;
+}
+
+.datepicker .datepicker--content .datepicker--days-names .datepicker--day-name {
+  width: 40px;
+  height: 40px;
+}
+
+.datepicker .datepicker--content .datepicker--cell.datepicker--cell-day {
+  width: 40px;
+  height: 40px;
+}
+
+.datepicker .datepicker--content .datepicker--cell.-focus- {
+  border-radius: 20px;
+  border: none;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  color: #bc9cff;
+}
+
+.datepicker--day-name {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #bc9cff;
+  text-transform: none;
+}
+
+.datepicker--cell-day {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.datepicker--cell-day.-other-month- {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.datepicker--cell-day.-current- {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6fcf97), to(#66d2ea));
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border-radius: 20px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.datepicker--cell.-range-from-::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  opacity: 0.25;
+  border-radius: 20px 0 0 20px;
+}
+
+.datepicker--cell.-in-range- {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  opacity: 0.25;
+}
+
+.datepicker--cell.-range-to-::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  opacity: 0.25;
+  border-radius: 0 20px 20px 0;
+}
+
+.-current-.-range-from-.-selected-,
+.-range-from-.-selected-,
+.-range-to-.-selected- {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: white;
+}
+
+.datepicker--buttons {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  border-top: none;
+}
+
+.datepicker--buttons .datepicker--button {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+}
+
+.datepicker--buttons .datepicker--button[data-action="today"] {
+  padding: 0 15px 5px 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.datepicker--buttons .datepicker--button[data-action="clear"] {
+  padding: 0 0 5px 15px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.datepicker--buttons .datepicker--button:hover {
+  background-color: white;
+}
+/*# sourceMappingURL=filter-date-dropdown.css.map */
+              </style>
+              <div class="filter-date-dropdown"> 
+                <h3>filter date dropdown</h3>
+                <form class="filter-date-dropdown__field">
+                  <input id="calendar" type="text" value="ДД.ММ.ГГГГ">
+                  <button id="btn_calendar" type="button"><img src="/commons/blocks/findroom-form/img/expand_more.svg"></button>
+                </form>
+              </div>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+              <script src="/commons/blocks/text-fields/filter-date-dropdown/dist/js/datepicker.min.js"></script>
+              <script src="/commons/blocks/text-fields/filter-date-dropdown/filter-date-dropdown.js"></script>
+              <style>
+                 .subscription {
+  width: 320px;
+  height: 65px;
+}
+
+.subscription__title {
+  width: 100%;
+}
+
+.subscription__title h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.subscription__input {
+  width: 320px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.subscription__input input {
+  width: 276px;
+  height: 100%;
+  background: #ffffff;
+  border: none;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+  outline: none;
+}
+
+.subscription__input::after {
+  content: url("/pug/UIKit/headers&footers/footer/widgets/img/arrow-forward.svg");
+  display: inline-block;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  padding-top: 12px;
+}
+/*# sourceMappingURL=subscription.css.map */
+              </style>
+              <div class="subscription">
+                <div class="subscription__title"> 
+                  <h3>subscription text field</h3>
+                </div>
+                <div class="subscription__input">
+                  <input type="email" name="subscribe" value="Email">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+    </html><!DOCTYPE html>
+    <html lang="ru">
+      <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Headers & footers</title>
+        <style>
+           body {
+  background: #e5e5e5;
+  margin: 0;
+  padding: 0;
+  margin-top: 140px;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+.menu__about {
+  font-weight: 700;
+  color: #1f2041;
+  opacity: 0.75;
+}
+
+footer {
+  margin-bottom: 40px;
+}
+
+.footer-creative {
+  margin-bottom: 40px;
+}
+/*# sourceMappingURL=headers_&_footers.css.map */
+        </style>
+      </head>
+      <body> 
+        <style>
+           @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+header {
+  width: 100%;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  width: 1160px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+}
+
+.author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.v-line {
+  border-left: 1px solid rgba(31, 32, 65, 0.1);
+  height: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.user {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+/*# sourceMappingURL=header.css.map */
+        </style>
+        <header> 
+          <div class="header"> 
+            <style>
+               .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 106px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-name {
+  width: 53px;
+  height: 13px;
+  margin-left: 12.5px;
+}
+/*# sourceMappingURL=logo.css.map */
+            </style>
+            <div class="logo"><img class="logo-img" src="/commons/blocks/logo/img/logo.svg" alt="logo"><img class="logo-name" src="/commons/blocks/logo/img/toxin.svg" alt="toxin"></div>
+            <div class="right"> 
+              <style>
+                 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.menu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(31, 32, 65, 0.5);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu > li {
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.submenu {
+  position: absolute;
+  visibility: hidden;
+  list-style-type: none;
+  opacity: 0;
+  padding-left: 0;
+  margin-top: 18px;
+  z-index: 5;
+  min-width: 100px;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.submenu li {
+  margin-top: 10px;
+}
+
+.menu li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  background-color: #fff;
+}
+
+.menu svg {
+  fill: rgba(31, 32, 65, 0.5);
+  text-align: center;
+  margin: auto;
+}
+/*# sourceMappingURL=nav.css.map */
+              </style>
+              <div class="nav"> 
+                <ul class="menu">
+                  <li class="menu__about">О нас</li>
+                  <li>Услуги
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 18 18">
+                      <path d="M12.44 6.44L9 9.88 5.56 6.44 4.5 7.5 9 12l4.5-4.5z"></path>
+                    </svg>
+                    <ul class="submenu">
+                      <li>Услуга 1</li>
+                      <li>Услуга 2</li>
+                      <li>Услуга 3</li>
+                    </ul>
+                  </li>
+                  <li>Вакансии</li>
+                  <li>Новости</li>
+                  <li>Соглашения
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 18 18">
+                      <path d="M12.44 6.44L9 9.88 5.56 6.44 4.5 7.5 9 12l4.5-4.5z"></path>
+                    </svg>
+                    <ul class="submenu">
+                      <li>Соглашение 1</li>
+                      <li>Соглашение 2</li>
+                      <li>Соглашение 3</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <style>
+                 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.log-in_btn {
+  width: 87px;
+  height: 34px;
+  color: #bc9cff;
+  border: 2px solid;
+  border-color: linear-gradient(180deg, #bc9cff, #8ba4f9);
+  border-radius: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.7px;
+  margin-left: 20px;
+}
+
+.sign-in_btn {
+  width: 196px;
+  height: 34px;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+  border: none;
+  border-radius: 22px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.7px;
+  margin-left: 20px;
+}
+/*# sourceMappingURL=authorization.css.map */
+              </style>
+              <div class="authorization"> 
+                <button class="log-in_btn">Войти</button>
+                <button class="sign-in_btn">Зарегистрироваться</button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <style>
+           @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+header {
+  width: 100%;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  width: 1160px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+}
+
+.author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.v-line {
+  border-left: 1px solid rgba(31, 32, 65, 0.1);
+  height: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.user {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+/*# sourceMappingURL=header.css.map */
+        </style>
+        <header> 
+          <div class="header">
+            <style>
+               .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 106px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-name {
+  width: 53px;
+  height: 13px;
+  margin-left: 12.5px;
+}
+/*# sourceMappingURL=logo.css.map */
+            </style>
+            <div class="logo"><img class="logo-img" src="/commons/blocks/logo/img/logo.svg" alt="logo"><img class="logo-name" src="/commons/blocks/logo/img/toxin.svg" alt="toxin"></div>
+            <div class="right"> 
+              <style>
+                 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.menu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(31, 32, 65, 0.5);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu > li {
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.submenu {
+  position: absolute;
+  visibility: hidden;
+  list-style-type: none;
+  opacity: 0;
+  padding-left: 0;
+  margin-top: 18px;
+  z-index: 5;
+  min-width: 100px;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.submenu li {
+  margin-top: 10px;
+}
+
+.menu li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  background-color: #fff;
+}
+
+.menu svg {
+  fill: rgba(31, 32, 65, 0.5);
+  text-align: center;
+  margin: auto;
+}
+/*# sourceMappingURL=nav.css.map */
+              </style>
+              <div class="nav"> 
+                <ul class="menu">
+                  <li class="menu__about">О нас</li>
+                  <li>Услуги
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 18 18">
+                      <path d="M12.44 6.44L9 9.88 5.56 6.44 4.5 7.5 9 12l4.5-4.5z"></path>
+                    </svg>
+                    <ul class="submenu">
+                      <li>Услуга 1</li>
+                      <li>Услуга 2</li>
+                      <li>Услуга 3</li>
+                    </ul>
+                  </li>
+                  <li>Вакансии</li>
+                  <li>Новости</li>
+                  <li>Соглашения
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 18 18">
+                      <path d="M12.44 6.44L9 9.88 5.56 6.44 4.5 7.5 9 12l4.5-4.5z"></path>
+                    </svg>
+                    <ul class="submenu">
+                      <li>Соглашение 1</li>
+                      <li>Соглашение 2</li>
+                      <li>Соглашение 3</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="author"><span class="v-line"> </span>
+                <p class="user">Юлий Цезарь</p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <style>
+           footer {
+  width: 100%;
+  height: 443px;
+}
+
+.footer {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=footer.css.map */
+        </style>
+        <footer> 
+          <div class="footer">
+            <style>
+               .widgets {
+  height: 372px;
+  width: 100%;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.widgets__container {
+  width: 1160px;
+  margin: 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.widgets__container__main {
+  width: 260px;
+}
+
+.widgets__container__main p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.widgets__container__navigation li,
+.widgets__container__about li,
+.widgets__container__support li {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+}
+
+.widgets__container__navigation .bold,
+.widgets__container__about .bold,
+.widgets__container__support .bold {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+.widgets__container__subscribe {
+  width: 260px;
+}
+
+.widgets__container__subscribe p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.widgets__container__subscribe .bold {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+.subscribe__input {
+  width: 260px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.subscribe__input input {
+  width: 216px;
+  height: 100%;
+  background: #ffffff;
+  border: none;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+  padding-left: 15px;
+  outline: none;
+}
+
+.subscribe__input::after {
+  content: url("./img/arrow-forward.svg");
+  display: inline-block;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  padding-top: 12px;
+}
+/*# sourceMappingURL=widgets.css.map */
+            </style>
+            <div class="widgets"> 
+              <div class="widgets__container">
+                <div class="widgets__container__main"> 
+                  <style>
+                     .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 106px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-name {
+  width: 53px;
+  height: 13px;
+  margin-left: 12.5px;
+}
+/*# sourceMappingURL=logo.css.map */
+                  </style>
+                  <div class="logo"><img class="logo-img" src="/commons/blocks/logo/img/logo.svg" alt="logo"><img class="logo-name" src="/commons/blocks/logo/img/toxin.svg" alt="toxin"></div>
+                  <p class="widgets__main__description">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+                </div>
+                <div class="widgets__container__navigation"> 
+                  <ul> 
+                    <li class="bold">Навигация</li>
+                    <li>О нас</li>
+                    <li>Новости</li>
+                    <li>Служба поддержки</li>
+                    <li>Услуги</li>
+                  </ul>
+                </div>
+                <div class="widgets__container__about"> 
+                  <ul> 
+                    <li class="bold">О нас</li>
+                    <li>О сервисе</li>
+                    <li>Наша команда</li>
+                    <li>Вакансии</li>
+                    <li>Инвесторы</li>
+                  </ul>
+                </div>
+                <div class="widgets__container__support"> 
+                  <ul> 
+                    <li class="bold">Служба поддержки</li>
+                    <li>Соглашения</li>
+                    <li>Сообщества</li>
+                    <li>Связь с нами</li>
+                  </ul>
+                </div>
+                <div class="widgets__container__subscribe">
+                  <p class="bold">Подписка</p>
+                  <p>Получайте специальные предложения и новости сервиса</p>
+                  <div class="subscribe__input">
+                    <input type="email" name="subscribe" value="Email">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <style>
+               .copyright-bar {
+  height: 70px;
+  width: 100%;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.copyright-bar__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1160px;
+}
+
+.copyright-bar__container__copyright {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.copyright-bar__container__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.copyright-bar__container__social a {
+  margin-left: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.copyright-bar__container__social a img {
+  color: linear-gradient(180deg, #bc9cff, #8ba4f9);
+}
+/*# sourceMappingURL=copyright-bar.css.map */
+            </style>
+            <div class="copyright-bar">
+              <div class="copyright-bar__container">
+                <p class="copyright-bar__container__copyright">Copyright © 2018 Toxin отель. Все права защищены.</p>
+                <div class="copyright-bar__container__social"><a href="https://twitter.com/"><img src="/commons/blocks/copyright-bar/img/twitter.svg" alt="twitter"></a><a href="https://www.facebook.com/"><img src="/commons/blocks/copyright-bar/img/facebook.svg" alt="facebook"></a><a href="https://www.instagram.com/"><img src="/commons/blocks/copyright-bar/img/instagram.svg" alt="instagram"></a></div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <style>
+           .footer-creative {
+  width: 768px;
+  height: 367px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: auto;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-creative__copyright {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.footer-creative__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-creative__social a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=footer-creative.css.map */
+        </style>
+        <div class="footer-creative">
+          <style>
+             .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 106px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-name {
+  width: 53px;
+  height: 13px;
+  margin-left: 12.5px;
+}
+/*# sourceMappingURL=logo.css.map */
+          </style>
+          <div class="logo"><img class="logo-img" src="/commons/blocks/logo/img/logo.svg" alt="logo"><img class="logo-name" src="/commons/blocks/logo/img/toxin.svg" alt="toxin"></div>
+          <p class="footer-creative__copyright">Copyright © 2018 Toxin отель. Все права защищены.</p>
+          <div class="footer-creative__social"> <a href="https://twitter.com/"><img src="/commons/blocks/copyright-bar/img/twitter.svg" alt="twitter"></a><a href="https://www.facebook.com/"><img src="/commons/blocks/copyright-bar/img/facebook.svg" alt="facebook"></a><a href="https://www.instagram.com/"><img src="/commons/blocks/copyright-bar/img/instagram.svg" alt="instagram"></a></div>
+        </div>
+      </body>
+    </html>
+  </body>
+</html>

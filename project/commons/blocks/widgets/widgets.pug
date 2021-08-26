@@ -1,0 +1,32 @@
+style 
+  include widgets.css 
+.widgets 
+      .widgets__container
+        .widgets__container__main 
+          include ../logo/logo.pug
+          p.widgets__main__description Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+        .widgets__container__navigation 
+          ul 
+            li.bold Навигация
+            li О нас
+            li Новости
+            li Служба поддержки
+            li Услуги
+        .widgets__container__about 
+          ul 
+            li.bold О нас
+            li О сервисе
+            li Наша команда
+            li Вакансии
+            li Инвесторы
+        .widgets__container__support 
+          ul 
+            li.bold Служба поддержки
+            li Соглашения
+            li Сообщества
+            li Связь с нами
+        .widgets__container__subscribe
+          p.bold Подписка
+          p Получайте специальные предложения и новости сервиса
+          .subscribe__input
+            input(type="email" name="subscribe" value="Email") 

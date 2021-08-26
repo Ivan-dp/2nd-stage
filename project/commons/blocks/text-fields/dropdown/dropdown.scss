@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@mixin Montserrat($weight, $size, $height) {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+.dropdown {
+  width: 100%;
+  height: 65px;
+  &__title {
+    &__left {
+      @include Montserrat(bold, 12px, 15px);
+      text-transform: uppercase;
+      padding-bottom: 5px;
+    }
+  }
+  &__input {
+    width: 100%;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    // margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &::after {
+      content: url(./img/expand_more.svg);
+      display: inline-block;
+      width: 44px;
+      height: 44px;
+      cursor: pointer;
+      box-sizing: border-box;
+      text-align: center;
+      padding-top: 12px;
+    }
+    input {
+      width: 276px;
+      height: 42px;
+      // box-sizing: border-box;
+      border: none;
+      padding-left: 15px;
+      border-radius: 4px;
+      @include Montserrat(normal, 14px, 18px);
+      color: rgba(31, 32, 65, 0.75);
+    }
+  }
+}

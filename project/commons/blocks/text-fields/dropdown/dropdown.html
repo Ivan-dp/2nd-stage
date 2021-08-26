@@ -1,0 +1,92 @@
+
+<style>
+   @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.dropdown {
+  width: 100%;
+  height: 65px;
+}
+
+.dropdown__title__left {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.dropdown__input {
+  width: 100%;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dropdown__input::after {
+  content: url(./img/expand_more.svg);
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.dropdown__input input {
+  width: 276px;
+  height: 42px;
+  border: none;
+  padding-left: 15px;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+}
+/*# sourceMappingURL=dropdown.css.map */
+  <link rel="stylesheet" href="./item-quantity-dropdown.min.css"/>
+</style>
+<div class="dropdown"> 
+  <div class="dropdown__title"> 
+    <h3 class="dropdown__title__left">dropdown</h3>
+  </div>
+  <div class="iqdropdown">
+    <p class="iqdropdown-selection" data-selection-text="item" data-text-plural="items"></p>
+    <div class="iqdropdown-menu">
+      <div class="iqdropdown-menu-option" data-id="item1" data-defaultcount="0" data-mincount="0" data-maxcount="3">
+        <div>
+          <p class="iqdropdown-item">Взрослые</p>
+        </div>
+      </div>
+      <div class="iqdropdown-menu-option" data-id="item2" data-defaultcount="0" data-mincount="0" data-maxcount="2">
+        <div>
+          <p class="iqdropdown-item">Дети</p>
+        </div>
+      </div>
+      <div class="iqdropdown-menu-option" data-id="item3" data-defaultcount="0" data-mincount="0" data-maxcount="2">
+        <div>
+          <p class="iqdropdown-item">Младенцы</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./item-quantity-dropdown.min.js"></script>
+<script src="./dropdown.js"></script>
