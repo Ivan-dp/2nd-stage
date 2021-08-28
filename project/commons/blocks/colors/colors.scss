@@ -3,16 +3,6 @@
   padding: 0;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
-@mixin Montserrat($weight, $size, $height) {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: $weight;
-  font-size: $size;
-  line-height: $height;
-}
-
 @mixin whrc($color) {
   background: $color;
   width: 70px;
