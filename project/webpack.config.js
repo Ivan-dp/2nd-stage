@@ -49,10 +49,20 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "img/[contenthash].[ext]",
+              publicPath: '/dist'
             },
           },
         ],
+      },
+      //fonts
+      {
+        test: /\.(woff(2)?|ttf|otf|eot)$/,
+        loader: 'file-loader',
+        options: {
+          name: 'fonts/[name].[ext]',
+          publicPath: '/dist'
+        }
       }
     ]
   }
-}
+};

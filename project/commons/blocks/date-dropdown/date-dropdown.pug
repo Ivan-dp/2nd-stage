@@ -1,12 +1,21 @@
-head
-style 
-  include date-dropdown.css
-.date-dropdown 
-  .date-dropdown__box
+.date-dropdown
+  .date-dropdown_box
     h3 date dropdown
-    .date-dropdown__box__field
-      input.from(type='text' value="ДД.ММ.ГГГГ" name="from")
-  .date-dropdown__box
+    form.date-dropdown_box_field
+      input.from(type='text', value='ДД.ММ.ГГГГ')
+      button#btn_from(type="button")
+        img(src='/commons/blocks/findroom-form/img/expand_more.svg')
+  .date-dropdown_box
     h3 date dropdown
-    .date-dropdown__box__field
-      input.to(type="text" value="ДД.ММ.ГГГГ" name="to")
+    form.date-dropdown_box_field
+      input.to(type='text', value='ДД.ММ.ГГГГ')
+      button#btn_to(type="button")
+        img(src='/commons/blocks/findroom-form/img/expand_more.svg')
+  //- .date-dropdown__box
+  //-   h3 date dropdown
+  //-   .date-dropdown__box__field
+  //-     input.from(type='text' value="ДД.ММ.ГГГГ" name="from")
+  //- .date-dropdown__box
+  //-   h3 date dropdown
+  //-   .date-dropdown__box__field
+  //-     input.to(type="text" value="ДД.ММ.ГГГГ" name="to")

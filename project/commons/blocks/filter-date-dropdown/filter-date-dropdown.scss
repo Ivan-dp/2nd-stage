@@ -1,22 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-
-@mixin Montserrat($weight, $size, $height) {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: $weight;
-  font-size: $size;
-  line-height: $height;
-}
-
-@mixin outlineNone() {
-  &:active {
-    outline: none;
-  }
-  &:focus {
-    outline: none;
-  }
-}
 
 .filter-date-dropdown {
   width: 266px;
@@ -36,7 +18,6 @@
     align-items: center;
     justify-content: space-between;
     #btn_calendar {
-      // content: url(/pug/UIKit/cards/findroom/findroom__form/img/expand_more.svg);
       display: flex;
       width: 44px;
       height: 44px;
@@ -58,7 +39,7 @@
       border-radius: 4px;
       @include Montserrat(normal, 14px, 18px);
       color: rgba(31, 32, 65, 0.75);
-      @include outlineNone();
+      @include LineNone();
     }
   }
 }
@@ -75,7 +56,6 @@
     width: 280px;
     border-bottom: none;
     margin: 12px auto 22px auto;
-    // margin-bottom: 26px;
     &-title {
       @include Montserrat(bold, 19px, 23px);
       color: #1f2041;
@@ -83,7 +63,6 @@
   }
   &--content {
     width: 280px;
-    // height: 240px;
     margin: auto;
     padding: 0;
     .datepicker--days-names {
@@ -154,20 +133,13 @@
 }
 .-current-.-range-from-.-selected-,
 .-range-from-.-selected-,
-.-range-to-.-selected- {
+.-range-to-.-selected-,
+.datepicker--cell.-selected- {
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 20px;
-  // opacity: 1;
   @include Montserrat(bold, 12px, 15px);
   color: white;
 }
-
-// .-range-from-.-selected-::after {
-
-// }
-// .-focus- {
-//   border-radius: 20px;
-// }
 
 .datepicker--buttons {
   flex-direction: row-reverse;
@@ -177,17 +149,14 @@
     @include Montserrat(bold, 12px, 15px);
     text-transform: uppercase;
     color: #bc9cff;
-    // flex: none;
     justify-content: none;
     &[data-action="today"] {
       padding: 0 15px 5px 0;
       justify-content: flex-end;
-      // display: flex;
     }
     &[data-action="clear"] {
       padding: 0 0 5px 15px;
       justify-content: flex-start;
-      // display: flex;
     }
     &:hover {
       background-color: white;

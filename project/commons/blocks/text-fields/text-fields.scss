@@ -1,25 +1,21 @@
 .text-fields {
   width: 320px;
-  &__date {
-    display: flex;
-    justify-content: space-between;
-  }
   .default {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   .hover-focus {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   .dropdown {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   .masked {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
-  &__date {
-    padding-bottom: 40px;
+  .date-dropdown {
+    margin-bottom: 40px;
   }
   .filter-date-dropdown {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
