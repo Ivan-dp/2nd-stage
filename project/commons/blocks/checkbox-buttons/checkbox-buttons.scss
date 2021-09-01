@@ -1,0 +1,29 @@
+.checkbox-buttons {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  h3 {
+    color: #1f2041;
+    @include Montserrat(bold, 12px, 15px);
+    text-transform: uppercase;
+  }
+  .container {
+    display: flex;
+    position: relative;
+    input {
+      width: 20px;
+      height: 20px;
+      background: #ffffff;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      box-sizing: border-box;
+      border-radius: 4px;
+      &[checked="checked"] {
+        border: 1px solid #bc9cff;
+      }
+    }
+    p {
+      @include Montserrat(normal, 14px, 18px);
+      color: rgba(31, 32, 65, 0.5);
+    }
+  }
+}

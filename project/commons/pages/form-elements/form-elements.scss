@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
 @mixin Montserrat($weight, $size, $height) {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin Material($weight, $size, $height) {
+  font-family: "Material Icons";
   font-weight: $weight;
   font-size: $size;
   line-height: $height;
@@ -27,6 +36,7 @@
 @import "../../blocks/filter-date-dropdown/dist/css/datepicker.min.css";
 @import "../../blocks/filter-date-dropdown/filter-date-dropdown.scss";
 @import "../../blocks/subscription/subscription.scss";
+@import "../../blocks/checkboxes/checkboxes.scss";
 
 .form-elements__container {
   display: flex;
