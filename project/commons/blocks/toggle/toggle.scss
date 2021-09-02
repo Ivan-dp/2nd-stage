@@ -50,7 +50,11 @@
       height: 12px;
       border: none;
       border-radius: 50%;
-      background-color: rgba(31, 32, 65, 0.25);
+      background: linear-gradient(
+        180deg,
+        rgba(31, 32, 65, 0.25) 0%,
+        rgba(31, 32, 65, 0.25) 100%
+      );
       transform: translateX(0);
       transition: 0.5s cubic-bezier(0.4, 0, 0, 0.9);
     }
