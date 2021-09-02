@@ -1,0 +1,58 @@
+.toggle {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  h3 {
+    color: #1f2041;
+    @include Montserrat(bold, 12px, 15px);
+    text-transform: uppercase;
+    margin-bottom: 17px;
+  }
+  &__container {
+    display: flex;
+    user-select: none;
+    margin-bottom: 10px;
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      &:checked ~ .toggle__checkmark {
+        border: 1px solid #bc9cff;
+        &::after {
+          background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+          transform: translateX(20px);
+          transition: 0.5s cubic-bezier(0.4, 0, 0, 0.9);
+        }
+      }
+    }
+    p {
+      @include Montserrat(normal, 14px, 18px);
+      color: rgba(31, 32, 65, 0.5);
+    }
+  }
+  &__checkmark {
+    width: 40px;
+    height: 20px;
+    display: block;
+    background: #ffffff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-right: 10px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      width: 12px;
+      height: 12px;
+      border: none;
+      border-radius: 50%;
+      background-color: rgba(31, 32, 65, 0.25);
+      transform: translateX(0);
+      transition: 0.5s cubic-bezier(0.4, 0, 0, 0.9);
+    }
+  }
+}
