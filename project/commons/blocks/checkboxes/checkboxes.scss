@@ -2,9 +2,11 @@
 @import "../radio-buttons/radio-buttons.scss";
 @import "../toggle/toggle.scss";
 @import "../like-button/like-button.scss";
+@import "../rate-button/rate-button.scss";
 
 .radio-buttons,
 .toggle,
-.like-button {
+.like-button,
+.rate-button {
   margin-top: 40px;
 }
