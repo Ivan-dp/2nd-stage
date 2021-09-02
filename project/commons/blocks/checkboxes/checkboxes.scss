@@ -1,11 +1,10 @@
 @import "../checkbox-buttons/checkbox-buttons.scss";
 @import "../radio-buttons/radio-buttons.scss";
 @import "../toggle/toggle.scss";
+@import "../like-button/like-button.scss";
 
-.radio-buttons {
-  margin-top: 40px;
-}
-
-.toggle {
+.radio-buttons,
+.toggle,
+.like-button {
   margin-top: 40px;
 }
