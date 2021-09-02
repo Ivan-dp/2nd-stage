@@ -2,28 +2,56 @@
   flex-direction: column;
   display: flex;
   justify-content: space-between;
+  width: 222px;
   h3 {
     color: #1f2041;
     @include Montserrat(bold, 12px, 15px);
     text-transform: uppercase;
+    margin-bottom: 17px;
   }
-  .container {
+  &__container {
     display: flex;
-    position: relative;
+    user-select: none;
+    margin-bottom: 10px;
     input {
-      width: 20px;
-      height: 20px;
-      background: #ffffff;
-      border: 1px solid rgba(31, 32, 65, 0.25);
-      box-sizing: border-box;
-      border-radius: 4px;
-      &[checked="checked"] {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      &:checked ~ .checkbox-buttons__checkmark {
         border: 1px solid #bc9cff;
+        &::after {
+          display: block;
+        }
       }
     }
+
     p {
       @include Montserrat(normal, 14px, 18px);
       color: rgba(31, 32, 65, 0.5);
+      width: 192px;
+    }
+  }
+  &__checkmark {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: #ffffff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 6px;
+      top: 4px;
+      width: 6px;
+      height: 8px;
+      border: solid #bc9cff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
     }
   }
 }
