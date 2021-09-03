@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "item-quantity-dropdown": "^2.1.0",
+    "nouislider": "^15.4.0",
     "plural-ru": "^2.0.2"
   }
 }
