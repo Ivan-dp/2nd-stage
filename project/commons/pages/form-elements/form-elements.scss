@@ -30,6 +30,7 @@
 @import "../../blocks/checkboxes/checkboxes.scss";
 @import "../../blocks/ranges-and-buttons/ranges-and-buttons.scss";
 @import "../../blocks/dropdown-rooms/dropdown-rooms.scss";
+@import "../../blocks/checkbox-list/checkbox-list.scss";
 
 .form-elements__container {
   display: flex;
@@ -42,8 +43,7 @@
   height: auto;
   width: 30%;
 }
-// .form-elements__container__column_bottom {
-//   margin: 20px;
-//   height: 647px;
-//   width: 30%;
-// }
+
+.dropdown-rooms {
+  margin-bottom: 160px;
+}
