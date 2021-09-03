@@ -1,0 +1,25 @@
+mixin iqdropdown-rooms(title)
+  .dropdown-1
+    .dropdown-1__title 
+      h3.dropdown-1__title__left dropdown
+      h3.dropdown-1__title__right= title
+    .iqdropdown&attributes(attributes)
+      p.iqdropdown-selection(data-selection-text="item" data-text-plural="items")
+      .iqdropdown-menu
+        .iqdropdown-menu-option(data-id='item1' data-defaultcount="0" data-mincount="0" data-maxcount="5")
+          div
+            p.iqdropdown-item Спальни
+        .iqdropdown-menu-option(data-id='item2' data-defaultcount="0" data-mincount="0" data-maxcount="5")
+          div
+            p.iqdropdown-item Кровати
+        .iqdropdown-menu-option(data-id='item3' data-defaultcount="0" data-mincount="0" data-maxcount="5")
+          div
+            p.iqdropdown-item Ванные комнаты
+        .button-block
+          button.clear-button
+            p очистить
+          button.apply-button
+            p применить
+.dropdown-rooms
+  +iqdropdown-rooms('default')
+  +iqdropdown-rooms('expanded')(class="menu-open")

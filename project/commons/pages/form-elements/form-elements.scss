@@ -29,12 +29,21 @@
 @import "../../blocks/text-fields/text-fields.scss";
 @import "../../blocks/checkboxes/checkboxes.scss";
 @import "../../blocks/ranges-and-buttons/ranges-and-buttons.scss";
+@import "../../blocks/dropdown-rooms/dropdown-rooms.scss";
 
 .form-elements__container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .form-elements__container__column {
   margin: 20px;
+  height: auto;
+  width: 30%;
 }
+// .form-elements__container__column_bottom {
+//   margin: 20px;
+//   height: 647px;
+//   width: 30%;
+// }
