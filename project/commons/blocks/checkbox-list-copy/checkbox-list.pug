@@ -1,0 +1,25 @@
+mixin checkbox-button(title)
+  label.checkbox-buttons__container 
+    input(type='checkbox')  
+    span.checkbox-buttons__checkmark
+    p=title 
+
+.checkbox-list 
+  label.checkbox-list__container expandable checkbox list
+    input(type='checkbox')     
+    .checkbox-list__checkmark
+.checkbox-list 
+  label.checkbox-list__container 
+    p expandable checkbox list
+    input(type='checkbox')     
+    .checkbox-list__checkmark
+    .checkbox-list__checkboxes
+      +checkbox-button('Завтрак')
+      +checkbox-button('Письменный стол')
+      +checkbox-button('Стул для кормления')
+      +checkbox-button('Кроватка')
+      +checkbox-button('Телевизор')
+      +checkbox-button('Шампунь')
+      +checkbox-button('Телевизор')
+      +checkbox-button('Шампунь')
+    
