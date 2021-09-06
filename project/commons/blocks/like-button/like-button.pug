@@ -1,8 +1,11 @@
-.like-button
-  h3 like button 
-  label.like-button__container
-    input(type='checkbox')     
-    span.like-button__checkmark
+mixin like-button__container()
   label.like-button__container 
     input(type='checkbox')
     span.like-button__checkmark
+
+.like-button
+  h3 like button 
+  .container
+    +like-button__container()
+  .container  
+    +like-button__container()
