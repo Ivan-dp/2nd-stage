@@ -12,21 +12,21 @@ $(document).ready(() => {
    });
 });
 
+// Присваиваем класс menu-open для элемента iqdropdown в блоках .form-elements__container__column-o
+function menuOpen() {
+  var parent1 = document.querySelector('.form-elements__container');
+  var parent = parent1.querySelectorAll('.form-elements__container__column-o');
+  
+  // console.log(parent, parent[0], parent[1]);
+  
+  var element1 = parent[0].querySelector('.dropdown');
+  var element2 = parent[1].querySelector('.dropdown');
+  
+  var el1 = element1.querySelector('.iqdropdown');
+  var el2 = element2.querySelector('.iqdropdown');
+  
+  el1.classList.add("menu-open");
+  el2.classList.add("menu-open");
+}
 
-// var parent = document.querySelector('.iqdropdown-menu');
-
-// var btnBlock = document.createElement('div');
-// parent.appendChild(btnBlock);
-// btnBlock.className = 'button-block';
-
-
-// var clearBtn = document.createElement('button');
-// clearBtn.innerHTML = '<p>Очистить</p>';
-// btnBlock.appendChild(clearBtn);
-// clearBtn.className = 'clear-button';
-
-
-// var applyBtn = document.createElement('button');
-// applyBtn.innerHTML = '<p>Применить</p>';
-// btnBlock.appendChild(applyBtn);
-// applyBtn.className = 'apply-button';
+menuOpen();

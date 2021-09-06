@@ -30,7 +30,9 @@
 @import "../../blocks/checkboxes/checkboxes.scss";
 @import "../../blocks/ranges-and-buttons/ranges-and-buttons.scss";
 @import "../../blocks/dropdown-rooms/dropdown-rooms.scss";
-@import "../../blocks/checkbox-list-copy/checkbox-list.scss";
+@import "../../blocks/checkbox-list/checkbox-list.scss";
+@import "../../blocks/rich-checkbox-buttons/rich-checkbox-buttons.scss";
+@import "../../blocks/bullet-list/bullet-list.scss";
 
 .form-elements__container {
   display: flex;
@@ -38,7 +40,8 @@
   flex-wrap: wrap;
 }
 
-.form-elements__container__column {
+.form-elements__container__column,
+.form-elements__container__column-o {
   margin: 20px;
   height: auto;
   width: 30%;
@@ -46,4 +49,8 @@
 
 .dropdown-rooms {
   margin-bottom: 160px;
+}
+
+.rich-checkbox-buttons {
+  margin-top: 15px;
 }
