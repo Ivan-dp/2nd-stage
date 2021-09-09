@@ -5,19 +5,36 @@ require('../../../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown
 
 $(document).ready(() => {
   $('.iqdropdown').iqDropdown({ 
-    // selectionText: 'Сколько гостей',
-    // textPlural: 'гость',
-    textPluralDeclination:['гость','гостя','гостей'],
-    items: {},
-   });
+    maxItems: 15,
+    minItems: 1,
+    selectionText: 'Сколько гостей',
+    // items: {},
+    // textPlural: 'гостей',
+    onChange: (id, count, totalItems) => {
+      // console.log(id, ' ', count, ' ', totalItems);
+      // console.log(this);
+      var tp;
+      if ((totalItems >= 5) || (totalItems === 0)) {
+        tp = 'гостей';
+      } else if ((totalItems > 1) && (totalItems < 5)) {
+        tp = 'гостя';
+      } else if (totalItems == 1) {
+        tp = 'гость';
+      }
+      document.querySelector('.iqdropdown-selection').innerHTML = totalItems + ' ' + tp;
+    }
+  });
+  // console.log(this);
 });
+// console.log(this);
 
-// Присваиваем класс menu-open для элемента iqdropdown в блоках .form-elements__container__column-o
+// var obj = $('.iqDropdown').iqDropdown;
+// console.log(obj.['textPlural']);
+
+
 function menuOpen() {
   var parent1 = document.querySelector('.form-elements__container');
   var parent = parent1.querySelectorAll('.form-elements__container__column-o');
-  
-  // console.log(parent, parent[0], parent[1]);
   
   var element1 = parent[0].querySelector('.dropdown');
   var element2 = parent[1].querySelector('.dropdown');
