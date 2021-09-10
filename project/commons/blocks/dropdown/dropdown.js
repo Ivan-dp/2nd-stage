@@ -6,15 +6,14 @@ require('../../../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown
 $(document).ready(() => {
   $('.iqdropdown').iqDropdown({ 
     maxItems: 15,
-    minItems: 1,
-    selectionText: 'Сколько гостей',
-    // items: {},
-    // textPlural: 'гостей',
+    minItems: 0,
+    items: {},
     onChange: (id, count, totalItems) => {
-      // console.log(id, ' ', count, ' ', totalItems);
-      // console.log(this);
+      // console.log(totalItems, count, id);
       var tp;
-      if ((totalItems >= 5) || (totalItems === 0)) {
+      if (totalItems === 0) {
+        return;
+      } else if (totalItems >= 5) {
         tp = 'гостей';
       } else if ((totalItems > 1) && (totalItems < 5)) {
         tp = 'гостя';
@@ -22,15 +21,35 @@ $(document).ready(() => {
         tp = 'гость';
       }
       document.querySelector('.iqdropdown-selection').innerHTML = totalItems + ' ' + tp;
+    },
+    setSelectionText: (itemCount, totalItems) => {
+      // console.log(itemCount, totalItems);
     }
   });
-  // console.log(this);
+  // $('.dropdown-1 .iqdropdown').iqDropdown({ 
+  //   maxItems: 15,
+  //   minItems: 0,
+  //   items: {},
+  //   onChange: (id, count, totalItems) => {
+  //     // console.log(totalItems, count, id);
+  //     var tp;
+  //     if (totalItems === 0) {
+  //       return;
+  //     } else if (totalItems >= 5) {
+  //       tp = 'гостей';
+  //     } else if ((totalItems > 1) && (totalItems < 5)) {
+  //       tp = 'гостя';
+  //     } else if (totalItems == 1) {
+  //       tp = 'гость';
+  //     }
+  //     document.querySelector('.iqdropdown-selection').innerHTML = totalItems + ' ' + tp;
+  //   },
+  //   setSelectionText: (itemCount, totalItems) => {
+  //     // console.log(itemCount, totalItems);
+  //   }
+  // });
 });
-// console.log(this);
-
-// var obj = $('.iqDropdown').iqDropdown;
-// console.log(obj.['textPlural']);
-
+      
 
 function menuOpen() {
   var parent1 = document.querySelector('.form-elements__container');

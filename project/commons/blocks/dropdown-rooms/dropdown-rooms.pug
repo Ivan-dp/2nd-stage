@@ -3,16 +3,16 @@ mixin iqdropdown-rooms(title)
     .dropdown-1__title 
       h3.dropdown-1__title__left dropdown
       h3.dropdown-1__title__right= title
-    .iqdropdown&attributes(attributes)
-      p.iqdropdown-selection(data-selection-text="item" data-text-plural="items")
+    .iqdropdown#rooms&attributes(attributes)
+      p.iqdropdown-selection Выберите удобства
       .iqdropdown-menu
-        .iqdropdown-menu-option(data-id='item1' data-defaultcount="0" data-mincount="0" data-maxcount="5")
+        .iqdropdown-menu-option(data-id='rooms1')
           div
             p.iqdropdown-item Спальни
-        .iqdropdown-menu-option(data-id='item2' data-defaultcount="0" data-mincount="0" data-maxcount="5")
+        .iqdropdown-menu-option(data-id='rooms2')
           div
             p.iqdropdown-item Кровати
-        .iqdropdown-menu-option(data-id='item3' data-defaultcount="0" data-mincount="0" data-maxcount="5")
+        .iqdropdown-menu-option(data-id='rooms3')
           div
             p.iqdropdown-item Ванные комнаты
         .button-block
