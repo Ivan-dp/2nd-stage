@@ -17,6 +17,10 @@ var rooms = document.querySelectorAll('#rooms');
   var r1 = document.querySelector('#rooms_1');
   var r2 = document.querySelector('#rooms_2');
 
+  console.log(r1, r2);
+  console.log(r1.id, r2.id);
+
+
 $(document).ready(() => {
   $(r1).iqDropdown({ 
       maxItems: 15,
@@ -24,17 +28,36 @@ $(document).ready(() => {
       items: {},
       onChange: (id, count, totalItems) => {
         console.log(totalItems, count, id);
-        var tp;
-        if (totalItems === 0) {
-          return;
-        } else if (totalItems >= 5) {
-          tp = 'гостей';
-        } else if ((totalItems > 1) && (totalItems < 5)) {
-          tp = 'гостя';
-        } else if (totalItems == 1) {
-          tp = 'гость';
+        if (id === 'rooms1') {
+          var st;
+          if (count == 1) {
+            st = 'Спальня';
+          } else if (count > 1 && count < 5) {
+            st = 'Спальни';
+          } else if (count >= 5) {
+            st = 'Спален';
+          }
+        } else if (id === 'rooms2') {
+          var sm;
+          if (count == 1) {
+            sm = 'Кровать';
+          } else if (count > 1 && count < 5) {
+            sm = 'Кровати';
+          } else if (count >= 5) {
+            sm = 'Коватей';
+          }
+        } else if (id === 'rooms3') {
+          var sp;
+          if (count == 1) {
+            sp = 'Ванная комната';
+          } else if (count > 1 && count < 5) {
+            sp = 'Ванные комнаты';
+          } else if (count >= 5) {
+            sp = 'Ванных комнат';
+          }
         }
-        r1.querySelector('.iqdropdown-selection').innerHTML = totalItems + ' ' + tp;
+        r1.querySelector('.iqdropdown-selection').innerHTML = count + ' ' + st + ', ' + count + ' ' + sm + ', ' + count + ' ' + sp;
+        console.log(count.id);
       },
       setSelectionText: (itemCount, totalItems) => {
       }

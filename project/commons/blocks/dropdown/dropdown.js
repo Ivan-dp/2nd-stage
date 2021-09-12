@@ -18,6 +18,8 @@ require('../../../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown
   var g2 = document.querySelector('#guest_2');
   var g3 = document.querySelector('#guest_3');
 
+  console.log(g1.id, g2.id, g3.id);
+
 $(document).ready(() => {
     $(g1).iqDropdown({ 
       maxItems: 15,
