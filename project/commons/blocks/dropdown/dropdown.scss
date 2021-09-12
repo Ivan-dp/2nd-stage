@@ -119,6 +119,10 @@
 
 .iqdropdown .iqdropdown-selection {
   @include Montserrat(normal, 14px, 18px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 20px;
 }
 
 .button-block {
