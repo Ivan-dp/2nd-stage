@@ -25,8 +25,8 @@
       border: 1px solid rgba(31, 32, 65, 0.25);
       box-sizing: border-box;
       border-radius: 4px;
-      @include Montserrat(normal, 14px, 18px);
-      color: rgba(31, 32, 65, 0.25);
+      @include Montserrat(normal, 14px, 24px);
+      color: rgba(31, 32, 65, 0.75);
       padding-left: 15px;
       &:hover {
         border: 1px solid rgba(31, 32, 65, 0.5);

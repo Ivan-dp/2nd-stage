@@ -19,9 +19,17 @@ require('../../../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown
   var g3 = document.querySelector('#guest_3');
   
   console.log(g1.id, g2.id, g3.id);
+  console.log(g1, g2, g3);
 
-  
-  
+// var a = g3.querySelectorAll('.iqdropdown-menu-option');
+// a[0].setAttribute("data-defaultcount", 2);
+// a[1].setAttribute("data-defaultcount", 1);
+// var buttonBlock3 = g3.querySelector('.button-block');
+// var clear3 = buttonBlock3.querySelector('.clear-button');
+// $(clear3).css('visibility', 'visible');
+
+
+
 $(document).ready(() => {
     $(g1).iqDropdown({ 
       maxItems: 15,
@@ -145,3 +153,4 @@ function menuOpen() {
 }
 
 menuOpen();
+

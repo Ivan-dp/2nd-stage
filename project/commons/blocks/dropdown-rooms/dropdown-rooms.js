@@ -30,6 +30,22 @@ var m0 = m[0];
 var m1 = m[1];
 var m2 = m[2];
 
+var rMenu1 = r1.querySelector('.iqdropdown-menu');
+var rMenu2 = r2.querySelector('.iqdropdown-menu');
+$(rMenu1).css('z-index', '100');
+$(rMenu2).css('z-index', '99');
+
+
+// var b = r1.querySelectorAll('.iqdropdown-menu-option');
+// var c = r2.querySelectorAll('.iqdropdown-menu-option');
+// b[0].setAttribute("data-defaultcount", 2);
+// b[1].setAttribute("data-defaultcount", 2);
+// c[0].setAttribute("data-defaultcount", 2);
+// c[1].setAttribute("data-defaultcount", 2);
+// var buttonBlock2 = r2.querySelector('.button-block');
+// var clear2 = buttonBlock2.querySelector('.clear-button');
+// $(clear2).css('visibility', 'visible');
+
 
 
 // Задаём массивы слов со склонениями для функции выбора слов с правильным склонением
@@ -91,7 +107,10 @@ $(document).ready(() => {
   $(r1).iqDropdown({ 
       maxItems: 15,
       minItems: 0,
-      items: {},
+      items: {
+        item1: 2,
+        item2: 2,
+      },
       onChange: (id, count, totalItems) => {
         console.log(totalItems, count, id);
         var nn0 = n0.querySelector('span.counter');

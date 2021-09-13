@@ -45,14 +45,14 @@
 .form-elements__container__column,
 .form-elements__container__column-o,
 .form-elements__container__column-1 {
-  margin: 20px;
+  padding: 20px;
   height: auto;
   width: 30%;
   // background: coral;
 }
 
 .form-elements__container__column-1 {
-  flex-grow: 1;
+  width: 65%;
 }
 
 .dropdown-rooms {
