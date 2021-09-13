@@ -30,6 +30,8 @@ var m0 = m[0];
 var m1 = m[1];
 var m2 = m[2];
 
+
+
 // Задаём массивы слов со склонениями для функции выбора слов с правильным склонением
 
 var arr1 = ['Спальня', 'Спальни', 'Спален'];
@@ -105,11 +107,20 @@ $(document).ready(() => {
         var text1 = loop(counter1, arr1);
         var text2 = loop(counter2, arr2);
         var text3 = loop(counter3, arr3);
+
+        var buttonBlock1 = r1.querySelector('.button-block');
+
+        var clear1 = buttonBlock1.querySelector('.clear-button');
         
         newText = varLength(text1, text2, text3);
         console.log(newText);
         console.log(text1.length, text2.length, text3.length);
         r1.querySelector('.iqdropdown-selection').innerHTML = newText;
+        if (totalItems > 0) {
+          $(clear1).css('visibility', 'visible');
+        } else if (totalItems === 0) {
+          $(clear1).css('visibility', 'hidden');
+        }
       },
       setSelectionText: (itemCount, totalItems) => {
       }
@@ -134,13 +145,25 @@ $(document).ready(() => {
         var text2 = loop(counter2, arr2);
         var text3 = loop(counter3, arr3);
         
+        var buttonBlock2 = r2.querySelector('.button-block');
+
+        var clear2 = buttonBlock2.querySelector('.clear-button'); 
+        
         newText = varLength(text1, text2, text3);
         console.log(newText);
         console.log(text1.length, text2.length, text3.length);
         r2.querySelector('.iqdropdown-selection').innerHTML = newText;
+        if (totalItems > 0) {
+          $(clear2).css('visibility', 'visible');
+        } else if (totalItems === 0) {
+          $(clear2).css('visibility', 'hidden');
+        }
       },
       setSelectionText: (itemCount, totalItems) => {
       }
     });
   
 });
+
+
+// r2.addEventListener('')

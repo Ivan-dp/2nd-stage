@@ -17,9 +17,9 @@ require('../../../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown
   var g1 = document.querySelector('#guest_1');
   var g2 = document.querySelector('#guest_2');
   var g3 = document.querySelector('#guest_3');
-
+  
   console.log(g1.id, g2.id, g3.id);
-
+  
 $(document).ready(() => {
     $(g1).iqDropdown({ 
       maxItems: 15,
@@ -29,15 +29,22 @@ $(document).ready(() => {
         console.log(totalItems, count, id);
         var tp;
         if (totalItems === 0) {
-          return;
+          tp = 'Сколько гостей';
         } else if (totalItems >= 5) {
-          tp = 'гостей';
+          tp = totalItems + ' гостей';
         } else if ((totalItems > 1) && (totalItems < 5)) {
-          tp = 'гостя';
+          tp = totalItems + ' гостя';
         } else if (totalItems == 1) {
-          tp = 'гость';
+          tp = totalItems + ' гость';
         }
-        g1.querySelector('.iqdropdown-selection').innerHTML = totalItems + ' ' + tp;
+        g1.querySelector('.iqdropdown-selection').innerHTML = tp;
+        var buttonBlock1 = g1.querySelector('.button-block');
+        var clear1 = buttonBlock1.querySelector('.clear-button');
+        if (totalItems > 0) {
+          $(clear1).css('visibility', 'visible');
+        } else if (totalItems === 0) {
+          $(clear1).css('visibility', 'hidden');
+        }
       },
       setSelectionText: (itemCount, totalItems) => {
       }
@@ -50,15 +57,22 @@ $(document).ready(() => {
         console.log(totalItems, count, id);
         var tp;
         if (totalItems === 0) {
-          return;
+          tp = 'Сколько гостей';
         } else if (totalItems >= 5) {
-          tp = 'гостей';
+          tp = totalItems + ' гостей';
         } else if ((totalItems > 1) && (totalItems < 5)) {
-          tp = 'гостя';
+          tp = totalItems + ' гостя';
         } else if (totalItems == 1) {
-          tp = 'гость';
+          tp = totalItems + ' гость';
         }
-        g2.querySelector('.iqdropdown-selection').innerHTML = totalItems + ' ' + tp;
+        g2.querySelector('.iqdropdown-selection').innerHTML = tp;
+        var buttonBlock2 = g2.querySelector('.button-block');
+        var clear2 = buttonBlock2.querySelector('.clear-button');
+        if (totalItems > 0) {
+          $(clear2).css('visibility', 'visible');
+        } else if (totalItems === 0) {
+          $(clear2).css('visibility', 'hidden');
+        }
       },
       setSelectionText: (itemCount, totalItems) => {
       }
@@ -71,15 +85,22 @@ $(document).ready(() => {
         console.log(totalItems, count, id);
         var tp;
         if (totalItems === 0) {
-          return;
+          tp = 'Сколько гостей';
         } else if (totalItems >= 5) {
-          tp = 'гостей';
+          tp = totalItems + ' гостей';
         } else if ((totalItems > 1) && (totalItems < 5)) {
-          tp = 'гостя';
+          tp = totalItems + ' гостя';
         } else if (totalItems == 1) {
-          tp = 'гость';
+          tp = totalItems + ' гость';
         }
-        g3.querySelector('.iqdropdown-selection').innerHTML = totalItems + ' ' + tp;
+        g3.querySelector('.iqdropdown-selection').innerHTML = tp;
+        var buttonBlock3 = g3.querySelector('.button-block');
+        var clear3 = buttonBlock3.querySelector('.clear-button'); 
+        if (totalItems > 0) {
+          $(clear3).css('visibility', 'visible');
+        } else if (totalItems === 0) {
+          $(clear3).css('visibility', 'hidden');
+        }
       },
       setSelectionText: (itemCount, totalItems) => {
       }
