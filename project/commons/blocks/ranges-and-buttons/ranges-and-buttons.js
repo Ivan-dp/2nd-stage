@@ -3,14 +3,39 @@ import 'nouislider/dist/nouislider.css';
 
 var slider = document.getElementById('slider');
 
+// var tooltip = slider.noUiSlider.get(true);
+// console.log(tooltip);
+
+
 noUiSlider.create(slider, {
     start: [5000, 10000],
     connect: true,
     range: {
         'min': 0,
         'max': 15000
-    }
+    },
+    step: 500
 });
+
+
+// var slider1 = slider.querySelectorAll('.noUi-tooltip');
+
+var valueSlider = document.querySelector('.range-slider h3.value');
+console.log(valueSlider);
+
+slider.noUiSlider.on('update', function (values) {
+    for (let i = 0; i < values.length; i++) {
+        values[i] = Math.floor(values[i]) + ' ₽';
+    }
+    valueSlider.innerHTML = values.join(' - ');
+});
+
+// slider.noUiSlider.on("update", function(values, handle) {
+//   valueSlider.innerHTML = values[handle];
+// });
+
+// valueSlider.innerHTML = tooltip[0] + ' - ' + tooltip[1];
+
 
 // const el=document.querySelector('.range-slider');
 // const config = {

@@ -1,3 +1,7 @@
+// * {
+//   outline: 1px solid red;
+// }
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
@@ -26,6 +30,10 @@
   }
 }
 
+body {
+  width: 100%;
+}
+
 @import "../../blocks/text-fields/text-fields.scss";
 @import "../../blocks/checkboxes/checkboxes.scss";
 @import "../../blocks/ranges-and-buttons/ranges-and-buttons.scss";
@@ -36,27 +44,41 @@
 @import "../../blocks/advantages/advantages.scss";
 @import "../../blocks/feedback/feedback.scss";
 
+.logo-grey {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
 .form-elements__container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 1158px;
+  margin: auto;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.text-fields {
+  margin-bottom: 100px;
 }
 
 .form-elements__container__column,
 .form-elements__container__column-o,
 .form-elements__container__column-1 {
-  padding: 20px;
+  // padding: 20px;
   height: auto;
-  width: 30%;
+  width: 320px;
   // background: coral;
 }
 
 .form-elements__container__column-1 {
-  width: 65%;
+  width: 739px;
 }
 
 .dropdown-rooms {
-  margin-bottom: 160px;
+  margin-bottom: 200px;
 }
 
 .rich-checkbox-buttons,
