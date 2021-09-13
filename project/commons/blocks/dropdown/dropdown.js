@@ -19,6 +19,8 @@ require('../../../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown
   var g3 = document.querySelector('#guest_3');
   
   console.log(g1.id, g2.id, g3.id);
+
+  
   
 $(document).ready(() => {
     $(g1).iqDropdown({ 
@@ -45,6 +47,13 @@ $(document).ready(() => {
         } else if (totalItems === 0) {
           $(clear1).css('visibility', 'hidden');
         }
+        var buttonDecrement1 = g1.querySelectorAll('.button-decrement');
+        function zero() {
+          $(buttonDecrement1).click();
+          tp = 'Сколько гостей';
+          g1.querySelector('.iqdropdown-selection').innerHTML = tp;
+        }
+        clear1.addEventListener("click", zero);
       },
       setSelectionText: (itemCount, totalItems) => {
       }
@@ -73,6 +82,13 @@ $(document).ready(() => {
         } else if (totalItems === 0) {
           $(clear2).css('visibility', 'hidden');
         }
+        var buttonDecrement2 = g2.querySelectorAll('.button-decrement');
+        function zero() {
+          $(buttonDecrement2).click();
+          tp = 'Сколько гостей';
+          g2.querySelector('.iqdropdown-selection').innerHTML = tp;
+        }
+        clear2.addEventListener("click", zero);
       },
       setSelectionText: (itemCount, totalItems) => {
       }
@@ -101,6 +117,13 @@ $(document).ready(() => {
         } else if (totalItems === 0) {
           $(clear3).css('visibility', 'hidden');
         }
+        var buttonDecrement3 = g3.querySelectorAll('.button-decrement');
+        function zero() {
+          $(buttonDecrement3).click();
+          tp = 'Сколько гостей';
+          g3.querySelector('.iqdropdown-selection').innerHTML = tp;
+        }
+        clear3.addEventListener("click", zero);
       },
       setSelectionText: (itemCount, totalItems) => {
       }

@@ -121,6 +121,13 @@ $(document).ready(() => {
         } else if (totalItems === 0) {
           $(clear1).css('visibility', 'hidden');
         }
+        var buttonDecrement1 = r1.querySelectorAll('.button-decrement');
+        function zero() {
+          $(buttonDecrement1).click();
+          newText = 'Выберите удобства';
+          r1.querySelector('.iqdropdown-selection').innerHTML = newText;
+        }
+        clear1.addEventListener("click", zero);
       },
       setSelectionText: (itemCount, totalItems) => {
       }
@@ -158,6 +165,13 @@ $(document).ready(() => {
         } else if (totalItems === 0) {
           $(clear2).css('visibility', 'hidden');
         }
+        var buttonDecrement2 = r2.querySelectorAll('.button-decrement');
+        function zero() {
+          $(buttonDecrement2).click();
+          newText = 'Выберите удобства';
+          r2.querySelector('.iqdropdown-selection').innerHTML = newText;
+        }
+        clear2.addEventListener("click", zero);
       },
       setSelectionText: (itemCount, totalItems) => {
       }
