@@ -6,7 +6,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    form_elements: './commons/pages/form-elements/form-elements.js'
+    form_elements: './commons/pages/form-elements/form-elements.js',
+    cards: './commons/pages/cards/cards.js'
   },
   output: {
     filename: 'js/[name].bundle.js',
@@ -17,6 +18,11 @@ module.exports = {
       filename: 'html/form-elements.html',
       template: './commons/pages/form-elements/form-elements.pug',
       chunks: ['form_elements']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'html/cards.html',
+      template: './commons/pages/cards/cards.pug',
+      chunks: ['cards']
     }),
     new CleanWebpackPlugin()    
   ],

@@ -1,3 +1,7 @@
+@import "/commons/blocks/arrival/arrival.scss";
+@import "/commons/blocks/departure/departure.scss";
+@import "/commons/blocks/residents/residents.scss";
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 @mixin Montserrat($weight, $size, $height) {
@@ -42,7 +46,8 @@
       text-align: center;
       width: 100%;
       height: 100%;
-      background: url(./img/arrow_forward-white.svg) no-repeat 94% center;
+      background: url(/commons/blocks/findroom-form/img/arrow_forward-white.svg)
+        no-repeat 94% center;
       p {
         color: white;
         @include Montserrat(bold, 12px, 15px);

@@ -8,8 +8,8 @@
   line-height: $height;
 }
 
-.residents {
-  width: 100%;
+.departure {
+  width: 150px;
   height: 65px;
   h3 {
     @include Montserrat(bold, 12px, 15px);
@@ -25,7 +25,7 @@
     align-items: center;
     justify-content: space-between;
     &::after {
-      content: url(../img/expand_more.svg);
+      content: url(/commons/blocks/findroom-form/img/expand_more.svg);
       display: inline-block;
       width: 44px;
       height: 44px;
@@ -35,7 +35,7 @@
       padding-top: 12px;
     }
     input {
-      width: 276px;
+      width: 106px;
       height: 44px;
       box-sizing: border-box;
       border: none;

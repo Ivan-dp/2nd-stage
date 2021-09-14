@@ -1,12 +1,8 @@
-//- extends findroom.pug
-style 
-  include findroom-form.css
 .form
   .form__date
-    include arrival/arrival
-    include departure/departure
-  include residents/residents
+    include ../arrival/arrival
+    include ../departure/departure
+  include ../residents/residents
   .form__button 
     a(href="#")
       p Подобрать номер
-    //- img(src="/pug/UIKit/cards/findroom/findroom__form/img/arrow_forward-white.svg", alt="")

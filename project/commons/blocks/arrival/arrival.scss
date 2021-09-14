@@ -8,9 +8,10 @@
   line-height: $height;
 }
 
-.departure {
+.arrival {
   width: 150px;
   height: 65px;
+  margin-right: 20px;
   h3 {
     @include Montserrat(bold, 12px, 15px);
     text-transform: uppercase;
@@ -25,7 +26,7 @@
     align-items: center;
     justify-content: space-between;
     &::after {
-      content: url(../img/expand_more.svg);
+      content: url(/commons/blocks/findroom-form/img/expand_more.svg);
       display: inline-block;
       width: 44px;
       height: 44px;
