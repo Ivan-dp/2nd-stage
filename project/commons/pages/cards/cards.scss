@@ -1,5 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+@mixin Montserrat($weight, $size, $height) {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin Material($weight, $size, $height) {
+  font-family: "Material Icons";
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin LineNone() {
+  &:active {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
 @import "../../blocks/findroom/findroom.scss";
 @import "../../blocks/registration/registration.scss";
+@import "../../blocks/filter-date-dropdown/filter-date-dropdown.scss";
 
 body {
   background-color: #e5e5e5;
