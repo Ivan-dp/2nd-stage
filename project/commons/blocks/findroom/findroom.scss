@@ -1,15 +1,5 @@
 @import "/commons/blocks/findroom-form/findroom-form.scss";
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
-@mixin Montserrat($weight, $size, $height) {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: $weight;
-  font-size: $size;
-  line-height: $height;
-}
-
 * {
   margin: 0;
   padding: 0;

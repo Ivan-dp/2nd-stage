@@ -1,9 +1,7 @@
-import '../filter-date-dropdown/dist/js/datepicker.min';
+import "../filter-date-dropdown/dist/js/datepicker.min";
 
 var myDatepicker = $(function() {
-  $('#calendar').datepicker({
-    range: true,
-    multipleDatesSeparator: " - ",
+  $('#calendar_born').datepicker({
     clearButton: true,
     todayButton: true,
     language: 'ru',
@@ -14,10 +12,4 @@ var myDatepicker = $(function() {
       days: 'MM yyyy'
     }
   }); 
-});
-
-
-var el = document.getElementById("btn_calendar");
-$(el).on('click', function() {
-  $('#calendar').datepicker().data('datepicker').show();
 });

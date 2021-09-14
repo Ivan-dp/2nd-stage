@@ -1,3 +1,5 @@
+@import "/commons/blocks/default__input/default__input.scss";
+
 * {
   padding: 0;
   margin: 0;
@@ -20,19 +22,6 @@
       @include Montserrat(normal, 12px, 15px);
       text-transform: uppercase;
       color: rgba(31, 32, 65, 0.5);
-    }
-  }
-  &__input {
-    input {
-      @include LineNone();
-      width: 320px;
-      height: 44px;
-      border: 1px solid rgba(31, 32, 65, 0.25);
-      box-sizing: border-box;
-      border-radius: 4px;
-      @include Montserrat(normal, 14px, 18px);
-      color: rgba(31, 32, 65, 0.25);
-      padding-left: 15px;
     }
   }
 }

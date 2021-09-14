@@ -28,8 +28,19 @@
 
 @import "../../blocks/findroom/findroom.scss";
 @import "../../blocks/registration/registration.scss";
-@import "../../blocks/filter-date-dropdown/filter-date-dropdown.scss";
 
 body {
   background-color: #e5e5e5;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.findroom,
+.registration {
+  margin: 40px;
 }

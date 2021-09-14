@@ -1,61 +1,11 @@
+@import "/commons/blocks/radio-buttons__block/radio-buttons__block.scss";
+
 .radio-buttons {
   width: 220px;
-  // margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
   h3 {
     @include Montserrat(bold, 12px, 15px);
     text-transform: uppercase;
     color: #1f2041;
-    position: absolute;
-    // width: 100%;
-  }
-  &__container {
-    display: flex;
-    margin-top: 31px;
-    align-items: center;
-    cursor: pointer;
-    input {
-      opacity: 0;
-      width: 0;
-      height: 0;
-      &:checked ~ .radio-buttons__checkmark {
-        border: 1px solid #bc9cff;
-        &::after {
-          display: block;
-        }
-      }
-      &:checked ~ p {
-        color: rgba(31, 32, 65, 0.75);
-      }
-    }
-    p {
-      @include Montserrat(normal, 14px, 24px);
-      color: rgba(31, 32, 65, 0.5);
-      margin-left: 10px;
-    }
-  }
-  &__checkmark {
-    width: 20px;
-    height: 20px;
-    display: block;
-    background: #ffffff;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    border-radius: 50%;
-    // margin-right: 10px;
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      display: none;
-      left: 3px;
-      top: 3px;
-      width: 12px;
-      height: 12px;
-      border: none;
-      border-radius: 50%;
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    }
+    margin-bottom: 16px;
   }
 }
