@@ -28,19 +28,27 @@
 
 @import "../../blocks/findroom/findroom.scss";
 @import "../../blocks/registration/registration.scss";
+@import "../../blocks/room-reservation/room-reservation.scss";
 
 body {
   background-color: #e5e5e5;
+}
+
+.container {
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  // flex: ;
   margin: auto;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  box-sizing: border-box;
+  width: 1160px;
+  height: 1140px;
 }
 
 .findroom,
-.registration {
-  margin: 40px;
+.registration,
+.room-reservation {
+  margin: 20px;
 }
