@@ -1,3 +1,5 @@
+@import "/commons/blocks/date-dropdown/date-dropdown.scss";
+
 .room-reservation {
   width: 380px;
   height: 512px;
@@ -48,5 +50,9 @@
       @include Montserrat(bold, 14px, 18px);
       margin-right: 6px;
     }
+  }
+  &__form {
+    display: flex;
+    justify-content: space-between;
   }
 }

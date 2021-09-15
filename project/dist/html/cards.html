@@ -9,27 +9,27 @@
   <script defer src="../js/cards.bundle.js"></script></head>
   <body> 
     <div class="container"> 
-<div class="findroom"> 
-  <div class="findroom__title">
-    <h1>Найдём номера под ваши пожелания</h1>
-  </div>
-<div class="form">
-<div class="date-dropdown">
-  <div class="date-dropdown_box">
-    <h3>date dropdown</h3>
-    <form class="date-dropdown_box_field">
-      <input class="from" type="text" value="ДД.ММ.ГГГГ">
-      <button id="btn_from" type="button"><img src="/commons/blocks/findroom-form/img/expand_more.svg"></button>
-    </form>
-  </div>
-  <div class="date-dropdown_box">
-    <h3>date dropdown</h3>
-    <form class="date-dropdown_box_field">
-      <input class="to" type="text" value="ДД.ММ.ГГГГ">
-      <button id="btn_to" type="button"><img src="/commons/blocks/findroom-form/img/expand_more.svg"></button>
-    </form>
-  </div>
-</div>
+      <div class="findroom"> 
+        <div class="findroom__title">
+          <h1>Найдём номера под ваши пожелания</h1>
+        </div>
+        <div class="form">
+          <div class="date-dropdown">
+                      <div class="date-dropdown_box">
+                        <h3>date dropdown</h3>
+                        <form class="date-dropdown_box_field">
+                          <input class="from" value="ДД.ММ.ГГГГ" type="text">
+                          <button type="button" id="btn_from"><img src="/commons/blocks/findroom-form/img/expand_more.svg"></button>
+                        </form>
+                      </div>
+                      <div class="date-dropdown_box">
+                        <h3>date dropdown</h3>
+                        <form class="date-dropdown_box_field">
+                          <input class="to" value="ДД.ММ.ГГГГ" type="text">
+                          <button type="button" id="btn_to"><img src="/commons/blocks/findroom-form/img/expand_more.svg"></button>
+                        </form>
+                      </div>
+          </div>
 <div class="dropdown">
   <div class="dropdown__title"> 
     <h3 class="dropdown__title__left">dropdown</h3>
@@ -63,12 +63,12 @@
     </div>
   </div>
 </div>
-</div>
+        </div>
 <div class="findroom-button">
   <button class="button" type="button"></button>
   <button class="arrow" type="button">arrow_forward</button>
 </div>
-</div>
+      </div>
       <div class="registration"> 
         <div class="registration__title"> 
           <h1>Регистрация аккаунта</h1>
@@ -125,70 +125,35 @@
           </div>
         </div>
       </div>
-<div class="room-reservation"> 
-  <div class="room-reservation__title"> 
-    <div class="room-reservation__number"> 
-      <h3>№</h3>
-      <h1>888</h1>
-      <h3 class="pink">люкс</h3>
-    </div>
-    <div class="room-reservation__price"> 
-      <p class="bold">9 990₽</p>
-      <p>в сутки</p>
-    </div>
-  </div>
-<div class="form">
-<div class="date-dropdown">
-  <div class="date-dropdown_box">
-    <h3>date dropdown</h3>
-    <form class="date-dropdown_box_field">
-      <input class="from" type="text" value="ДД.ММ.ГГГГ">
-      <button id="btn_from" type="button"><img src="/commons/blocks/findroom-form/img/expand_more.svg"></button>
-    </form>
-  </div>
-  <div class="date-dropdown_box">
-    <h3>date dropdown</h3>
-    <form class="date-dropdown_box_field">
-      <input class="to" type="text" value="ДД.ММ.ГГГГ">
-      <button id="btn_to" type="button"><img src="/commons/blocks/findroom-form/img/expand_more.svg"></button>
-    </form>
-  </div>
-</div>
-<div class="dropdown">
-  <div class="dropdown__title"> 
-    <h3 class="dropdown__title__left">dropdown</h3>
-  </div>
-  <div class="iqdropdown" id="guest">
-    <p class="iqdropdown-selection">Сколько гостей</p>
-    <div class="iqdropdown-menu">
-      <div class="iqdropdown-menu-option" data-id="item1">
-        <div>
-          <p class="iqdropdown-item">Взрослые</p>
+      <div class="room-reservation"> 
+        <div class="room-reservation__title"> 
+          <div class="room-reservation__number"> 
+            <h3>№</h3>
+            <h1>888</h1>
+            <h3 class="pink">люкс</h3>
+          </div>
+          <div class="room-reservation__price"> 
+            <p class="bold">9 990₽</p>
+            <p>в сутки</p>
+          </div>
+        </div>
+        <div class="room-reservation__form"> 
+                <div class="date-dropdown_box">
+                  <h3>Прибытие</h3>
+                  <form class="date-dropdown_box_field">
+                    <input class="from" value="ДД.ММ.ГГГГ" type="text">
+                    <button type="button" id="btn_1"><img src="/commons/blocks/findroom-form/img/expand_more.svg"></button>
+                  </form>
+                </div>
+                <div class="date-dropdown_box">
+                  <h3>Выезд</h3>
+                  <form class="date-dropdown_box_field">
+                    <input class="to" value="ДД.ММ.ГГГГ" type="text">
+                    <button type="button" id="btn_2"><img src="/commons/blocks/findroom-form/img/expand_more.svg"></button>
+                  </form>
+                </div>
         </div>
       </div>
-      <div class="iqdropdown-menu-option" data-id="item2">
-        <div>
-          <p class="iqdropdown-item">Дети</p>
-        </div>
-      </div>
-      <div class="iqdropdown-menu-option" data-id="item3">
-        <div>
-          <p class="iqdropdown-item">Младенцы</p>
-        </div>
-      </div>
-      <div class="button-block">
-        <button class="clear-button">
-          <p>очистить</p>
-        </button>
-        <button class="apply-button">
-          <p>применить</p>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
     </div>
   </body>
 </html>
