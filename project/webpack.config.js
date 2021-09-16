@@ -49,16 +49,20 @@ module.exports = {
       },
       //img
       {
-        test: /\.(png|jpg|jpeg|svg|gif)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "img/[contenthash].[ext]",
-              publicPath: '/dist'
-            },
-          },
-        ],
+        test: /\.(png|jpe?g|svg|gif)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: "img/[contenthash].[ext]"
+        }
+        // use: [
+        //   {
+        //     loader: "file-loader",
+        //     options: {
+        //       name: "img/[contenthash].[ext]",
+        //       publicPath: '/dist'
+        //     },
+        //   },
+        // ],
       },
       //fonts
       {

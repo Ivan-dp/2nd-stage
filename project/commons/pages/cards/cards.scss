@@ -57,6 +57,7 @@
 @import "../../blocks/room-reservation/room-reservation.scss";
 @import "../../blocks/log-in/log-in.scss";
 @import "../../blocks/datepicker/datepicker.scss";
+@import "../../blocks/room-card/room-card.scss";
 
 body {
   background-color: #e5e5e5;
@@ -79,6 +80,7 @@ body {
 .registration,
 .room-reservation,
 .log-in,
-.datepicker-here {
+.datepicker-here,
+.room-card {
   margin: 20px;
 }
