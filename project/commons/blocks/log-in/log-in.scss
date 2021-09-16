@@ -1,10 +1,8 @@
-@import "/commons/blocks/radio-buttons__block/radio-buttons__block.scss";
-@import "/commons/blocks/toggle__block/toggle__block.scss";
-@import "/commons/blocks/pay-button/pay-button.scss";
+@import "/commons/blocks/log-in-button/log-in-button.scss";
 
-.registration {
+.log-in {
   width: 380px;
-  height: 646px;
+  height: 358px;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
@@ -13,7 +11,8 @@
   padding: 40px 30px 30px 30px;
   &__title {
     width: 100%;
-    height: 59px;
+    // height: 59px;
+    margin-bottom: 20px;
     h1 {
       @include Montserrat(bold, 24px, 29px);
       margin: 0;
@@ -21,34 +20,8 @@
       display: block;
     }
   }
-  &__name {
-    @include input();
-    margin-bottom: 10px;
-  }
-  &__surname {
-    @include input();
-    margin-bottom: 10px;
-  }
-  &__born {
-    margin-top: 20px;
-    h3 {
-      @include Montserrat(bold, 12px, 15px);
-      text-transform: uppercase;
-      color: #1f2041;
-      margin-bottom: 5px;
-    }
-  }
-  &__datepicker {
-    @include input();
-  }
-  &__login {
-    margin-top: 20px;
-    h3 {
-      @include Montserrat(bold, 12px, 15px);
-      text-transform: uppercase;
-      color: #1f2041;
-      margin-bottom: 5px;
-    }
+  &__form {
+    margin-bottom: 20px;
   }
   &__email {
     @include input();
@@ -56,19 +29,16 @@
   }
   &__password {
     @include input();
-    margin-bottom: 10px;
   }
-  &__offers {
-    margin-bottom: 20px;
-  }
-  &__sign-in {
+  &__registration {
+    width: 320px;
     @include Montserrat(normal, 14px, 18px);
     color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
-    .sign-in_btn {
+    &_btn {
       width: 99px;
       height: 44px;
       border-radius: 22px;
@@ -88,7 +58,7 @@
         border-radius: 20px;
         border: none;
         background-color: white;
-        content: "Войти";
+        content: "Создать";
         @include Montserrat(bold, 12px, 15px);
         text-transform: uppercase;
         color: #bc9cff;
