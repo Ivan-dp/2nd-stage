@@ -1,4 +1,5 @@
 @import "/commons/blocks/date-dropdown/date-dropdown.scss";
+@import "/commons/blocks/reservation-button/reservation-button.scss";
 
 .room-reservation {
   width: 380px;
@@ -10,9 +11,11 @@
   border-radius: 4px;
   padding: 40px 30px 30px 30px;
   &__title {
+    width: 320px;
     height: 30px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
   }
   &__number {
     display: flex;
@@ -52,7 +55,63 @@
     }
   }
   &__form {
+    width: 320px;
+    margin-bottom: 20px;
+  }
+  &__datepicker {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__detail {
+    width: 320px;
+    height: 105px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &__detail__row {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(31, 32, 65, 0.75);
+    @include Montserrat(normal, 14px, 18px);
+    .service {
+      width: 240px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .info {
+      width: 20px;
+      height: 20px;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      color: rgba(31, 32, 65, 0.25);
+      @include Montserrat(bold, 12px, 14px);
+      cursor: pointer;
+    }
+  }
+  &__total {
+    width: 320px;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: baseline;
+
+    &-dotted {
+      height: 1px;
+      width: 180px;
+      border-bottom: 1px dotted rgba(31, 32, 65, 0.25);
+    }
+    p {
+      color: #1f2041;
+      @include Montserrat(bold, 19px, 23px);
+    }
   }
 }

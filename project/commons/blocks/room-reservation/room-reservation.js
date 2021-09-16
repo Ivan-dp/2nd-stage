@@ -1,8 +1,12 @@
 import '../filter-date-dropdown/dist/js/datepicker.min';
 import '../dropdown/dropdown_1';
 
-var $one = $('.room-reservation .from'),
-$two = $('.room-reservation .to');
+var roomRes = document.querySelector('.room-reservation');
+// var $one = roomRes.querySelector('.from');
+// var $two = roomRes.querySelector('.to');
+
+var $one = $('.room-reservation .from1'),
+$two = $('.room-reservation .to1');
 
 var newDatepicker = $(function() {
   $one.datepicker({
@@ -39,16 +43,16 @@ var newDatepicker = $(function() {
   })
 });
 
-var parent = document.querySelector('.room-reservation');
+// var parent = document.querySelector('.room-reservation');
 
-var start = parent.querySelector('.from');
-var end = parent.querySelector('.to');
+// var start = parent.querySelector('.from');
+// var end = parent.querySelector('.to');
 
-var el = parent.querySelector("#btn_from");
+var el = roomRes.querySelector("#btn_from");
 $(el).on('click', function() {
   $('.from').datepicker().data('datepicker').show();
 });
-var el1 = parent.querySelector("#btn_to");
+var el1 = roomRes.querySelector("#btn_to");
 $(el1).on('click', function() {
   $('.to').datepicker().data('datepicker').show();
 });
