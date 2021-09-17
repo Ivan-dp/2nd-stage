@@ -1,9 +1,7 @@
-import '../filter-date-dropdown/dist/js/datepicker.min';
+import './dist/js/datepicker.min';
 import '../dropdown/dropdown_1';
 
 var roomRes = document.querySelector('.room-reservation');
-// var $one = roomRes.querySelector('.from');
-// var $two = roomRes.querySelector('.to');
 
 var $one = $('.room-reservation .from1'),
 $two = $('.room-reservation .to1');
@@ -42,11 +40,6 @@ var newDatepicker = $(function() {
     }
   })
 });
-
-// var parent = document.querySelector('.room-reservation');
-
-// var start = parent.querySelector('.from');
-// var end = parent.querySelector('.to');
 
 var el = roomRes.querySelector("#btn_from");
 $(el).on('click', function() {

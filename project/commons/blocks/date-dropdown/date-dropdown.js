@@ -1,4 +1,4 @@
-import '../filter-date-dropdown/dist/js/datepicker.min';
+import './dist/js/datepicker.min';
 
 var $start = $('.from'),
 $end = $('.to');

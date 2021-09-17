@@ -6,7 +6,6 @@
         containerBuilt = false,
         baseTemplate = '' +
             '<div class="datepicker">' +
-            '<i class="datepicker--pointer"></i>' +
             '<nav class="datepicker--nav"></nav>' +
             '<div class="datepicker--content"></div>' +
             '</div>',
@@ -136,7 +135,7 @@
         this.maxRange = '';
         this._prevOnSelectValue = '';
 
-        this.init()
+        this.init();
     };
 
     datepicker = Datepicker;
@@ -157,7 +156,7 @@
                 if (!this.opts.inline) {
                     // Set extra classes for proper transitions
                     this._setPositionClasses(this.opts.position);
-                    this._bindEvents()
+                    this._bindEvents();
                 }
                 if (this.opts.keyboardNav && !this.opts.onlyTimepicker) {
                     this._bindKeyboardEvents();
@@ -167,7 +166,7 @@
             }
 
             if (this.opts.classes) {
-                this.$datepicker.addClass(this.opts.classes)
+                this.$datepicker.addClass(this.opts.classes);
             }
 
             if (this.opts.timepicker) {
@@ -224,24 +223,24 @@
                 this.loc = $.fn.datepicker.language[lang];
                 if (!this.loc) {
                     console.warn('Can\'t find language "' + lang + '" in Datepicker.language, will use "ru" instead');
-                    this.loc = $.extend(true, {}, $.fn.datepicker.language.ru)
+                    this.loc = $.extend(true, {}, $.fn.datepicker.language.ru);
                 }
 
-                this.loc = $.extend(true, {}, $.fn.datepicker.language.ru, $.fn.datepicker.language[lang])
+                this.loc = $.extend(true, {}, $.fn.datepicker.language.ru, $.fn.datepicker.language[lang]);
             } else {
-                this.loc = $.extend(true, {}, $.fn.datepicker.language.ru, lang)
+                this.loc = $.extend(true, {}, $.fn.datepicker.language.ru, lang);
             }
 
             if (this.opts.dateFormat) {
-                this.loc.dateFormat = this.opts.dateFormat
+                this.loc.dateFormat = this.opts.dateFormat;
             }
 
             if (this.opts.timeFormat) {
-                this.loc.timeFormat = this.opts.timeFormat
+                this.loc.timeFormat = this.opts.timeFormat;
             }
 
             if (this.opts.firstDay !== '') {
-                this.loc.firstDay = this.opts.firstDay
+                this.loc.firstDay = this.opts.firstDay;
             }
 
             if (this.opts.timepicker) {
@@ -274,10 +273,10 @@
                 if (!this.opts.inline) {
                     $appendTarget = $datepickersContainer;
                 } else {
-                    $appendTarget = $inline.insertAfter(this.$el)
+                    $appendTarget = $inline.insertAfter(this.$el);
                 }
             } else {
-                $appendTarget = $inline.appendTo(this.$el)
+                $appendTarget = $inline.appendTo(this.$el);
             }
 
             this.$datepicker = $(baseTemplate).appendTo($appendTarget);
@@ -306,7 +305,7 @@
                 );
 
                 formattedDates = selectedDates.map(function (date) {
-                    return _this.formatDate(_this.loc.dateFormat, date)
+                    return _this.formatDate(_this.loc.dateFormat, date);
                 }).join(this.opts.multipleDatesSeparator);
 
             // Create new dates array, to separate it from original selectedDates
@@ -320,7 +319,7 @@
                         parsedDate.hours,
                         parsedDate.minutes
                     );
-                })
+                });
             }
 
             this._prevOnSelectValue = formattedDates;
@@ -434,7 +433,7 @@
         _replacer: function (str, reg, data) {
             return str.replace(reg, function (match, p1,p2,p3) {
                 return p1 + data + p3;
-            })
+            });
         },
 
         _getWordBoundaryRegExp: function (sign) {
@@ -454,7 +453,7 @@
 
             if (Array.isArray(date)) {
                 date.forEach(function (d) {
-                    _this.selectDate(d)
+                    _this.selectDate(d);
                 });
                 return;
             }
@@ -476,7 +475,7 @@
             // greater then `max` value
             if (this.timepicker) {
                 date.setHours(this.timepicker.hours);
-                date.setMinutes(this.timepicker.minutes)
+                date.setMinutes(this.timepicker.minutes);
             }
 
             if (_this.view == 'days') {
@@ -495,7 +494,7 @@
                 _this.silent = true;
                 _this.date = newDate;
                 _this.silent = false;
-                _this.nav._render()
+                _this.nav._render();
             }
 
             if (opts.multipleDates && !opts.range) { // Set priority to range functionality
@@ -520,7 +519,7 @@
                         _this.maxRange = _this.minRange;
                         _this.minRange = date;
                     }
-                    _this.selectedDates = [_this.minRange, _this.maxRange]
+                    _this.selectedDates = [_this.minRange, _this.maxRange];
 
                 } else {
                     _this.selectedDates = [date];
@@ -544,7 +543,7 @@
                 }
             }
 
-            _this.views[this.currentView]._render()
+            _this.views[this.currentView]._render();
         },
 
         removeDate: function (date) {
@@ -572,20 +571,21 @@
                         _this._triggerOnChange();
                     }
 
-                    return true
+                    return true;
                 }
-            })
+            });
         },
 
         today: function () {
             this.silent = true;
             this.view = this.opts.minView;
             this.silent = false;
-            this.date = new Date();
+            // this.date = new Date();
 
-            if (this.opts.todayButton instanceof Date) {
-                this.selectDate(this.opts.todayButton)
-            }
+            // if (this.opts.todayButton instanceof Date) {
+            //     this.selectDate(this.opts.todayButton);
+            // }
+            this.hide();
         },
 
         clear: function () {
@@ -595,7 +595,7 @@
             this.views[this.currentView]._render();
             this._setInputValue();
             if (this.opts.onSelect) {
-                this._triggerOnChange()
+                this._triggerOnChange();
             }
         },
 
@@ -611,7 +611,7 @@
             if (len == 2) {
                 this.opts[param] = value;
             } else if (len == 1 && typeof param == 'object') {
-                this.opts = $.extend(true, this.opts, param)
+                this.opts = $.extend(true, this.opts, param);
             }
 
             this._createShortCuts();
@@ -624,12 +624,12 @@
             if (this.elIsInput && !this.opts.inline) {
                 this._setPositionClasses(this.opts.position);
                 if (this.visible) {
-                    this.setPosition(this.opts.position)
+                    this.setPosition(this.opts.position);
                 }
             }
 
             if (this.opts.classes) {
-                this.$datepicker.addClass(this.opts.classes)
+                this.$datepicker.addClass(this.opts.classes);
             }
 
             if (this.opts.onlyTimepicker) {
@@ -682,13 +682,13 @@
                 format = _this.loc.dateFormat,
                 altFormat = opts.altFieldDateFormat,
                 value = _this.selectedDates.map(function (date) {
-                    return _this.formatDate(format, date)
+                    return _this.formatDate(format, date);
                 }),
                 altValues;
 
             if (opts.altField && _this.$altField.length) {
                 altValues = this.selectedDates.map(function (date) {
-                    return _this.formatDate(altFormat, date)
+                    return _this.formatDate(altFormat, date);
                 });
                 altValues = altValues.join(this.opts.multipleDatesSeparator);
                 this.$altField.val(altValues);
@@ -696,7 +696,7 @@
 
             value = value.join(this.opts.multipleDatesSeparator);
 
-            this.$el.val(value)
+            this.$el.val(value);
         },
 
         /**
@@ -718,7 +718,7 @@
                     month: dMinTime >= this.minTime && dMaxTime <= this.maxTime,
                     year: d.year >= min.year && d.year <= max.year
                 };
-            return type ? types[type] : types.day
+            return type ? types[type] : types.day;
         },
 
         _getDimensions: function ($el) {
@@ -729,7 +729,7 @@
                 height: $el.outerHeight(),
                 left: offset.left,
                 top: offset.top
-            }
+            };
         },
 
         _getDateFromCell: function (cell) {
@@ -805,7 +805,7 @@
                 .css({
                     left: left,
                     top: top
-                })
+                });
         },
 
         show: function () {
@@ -816,7 +816,7 @@
             this.visible = true;
 
             if (onShow) {
-                this._bindVisionEvents(onShow)
+                this._bindVisionEvents(onShow);
             }
         },
 
@@ -837,7 +837,7 @@
             this.$el.blur();
 
             if (onHide) {
-                this._bindVisionEvents(onHide)
+                this._bindVisionEvents(onHide);
             }
         },
 
@@ -852,7 +852,7 @@
         _bindVisionEvents: function (event) {
             this.$datepicker.off('transitionend.dp');
             event(this, false);
-            this.$datepicker.one('transitionend.dp', event.bind(this, this, true))
+            this.$datepicker.one('transitionend.dp', event.bind(this, this, true));
         },
 
         _changeView: function (date, dir) {
@@ -935,13 +935,13 @@
 
             focusedParsed = datepicker.getParsedDate(newDate);
             if (monthChanged && o.onChangeMonth) {
-                o.onChangeMonth(focusedParsed.month, focusedParsed.year)
+                o.onChangeMonth(focusedParsed.month, focusedParsed.year);
             }
             if (yearChanged && o.onChangeYear) {
-                o.onChangeYear(focusedParsed.year)
+                o.onChangeYear(focusedParsed.year);
             }
             if (decadeChanged && o.onChangeDecade) {
-                o.onChangeDecade(this.curDecade)
+                o.onChangeDecade(this.curDecade);
             }
         },
 
@@ -951,7 +951,7 @@
             });
 
             if (!exists) {
-                this.keys.push(key)
+                this.keys.push(key);
             }
         },
 
@@ -971,7 +971,9 @@
                 currentHotKey = hotKeys[hotKey];
                 if (pressedKeys.length != currentHotKey.length) continue;
 
-                if (currentHotKey.every(function (key, i) { return key == pressedKeys[i]})) {
+                if (currentHotKey.every(function (key, i) { 
+                    return key == pressedKeys[i];
+                })) {
                     _this._trigger('hotKey', hotKey);
                     found = true;
                 }
@@ -981,7 +983,7 @@
         },
 
         _trigger: function (event, args) {
-            this.$el.trigger(event, args)
+            this.$el.trigger(event, args);
         },
 
         _focusNextCell: function (keyCode, type) {
@@ -1179,7 +1181,7 @@
                 if (this.focused) {
                     if (this._getCell(this.focused).hasClass('-disabled-')) return;
                     if (this.view != this.opts.minView) {
-                        this.down()
+                        this.down();
                     } else {
                         var alreadySelected = this._isSelected(this.focused, this.cellType);
 
@@ -1191,7 +1193,7 @@
                             this.selectDate(this.focused);
                             return;
                         }
-                        this._handleAlreadySelectedDates(alreadySelected, this.focused)
+                        this._handleAlreadySelectedDates(alreadySelected, this.focused);
                     }
                 }
             }
@@ -1219,7 +1221,7 @@
             this.silent = true;
 
             if (this.focused) {
-                this.focused = ''
+                this.focused = '';
             }
 
             $cell.addClass('-focus-');
@@ -1284,7 +1286,7 @@
                 var $cell = this._getCell(this.focused);
 
                 if ($cell.length) {
-                    $cell.removeClass('-focus-')
+                    $cell.removeClass('-focus-');
                 }
             }
             this._focused = val;
@@ -1324,7 +1326,7 @@
         },
 
         get date () {
-            return this.currentDate
+            return this.currentDate;
         },
 
         set view (val) {
@@ -1339,7 +1341,7 @@
 
             if (this.inited) {
                 if (!this.views[val]) {
-                    this.views[val] = new  $.fn.datepicker.Body(this, val, this.opts)
+                    this.views[val] = new  $.fn.datepicker.Body(this, val, this.opts);
                 } else {
                     this.views[val]._render();
                 }
@@ -1349,12 +1351,12 @@
                 this.nav._render();
 
                 if (this.opts.onChangeView) {
-                    this.opts.onChangeView(val)
+                    this.opts.onChangeView(val);
                 }
                 if (this.elIsInput && this.visible) this.setPosition();
             }
 
-            return val
+            return val;
         },
 
         get view() {
@@ -1362,21 +1364,21 @@
         },
 
         get cellType() {
-            return this.view.substring(0, this.view.length - 1)
+            return this.view.substring(0, this.view.length - 1);
         },
 
         get minTime() {
             var min = datepicker.getParsedDate(this.minDate);
-            return new Date(min.year, min.month, min.date).getTime()
+            return new Date(min.year, min.month, min.date).getTime();
         },
 
         get maxTime() {
             var max = datepicker.getParsedDate(this.maxDate);
-            return new Date(max.year, max.month, max.date).getTime()
+            return new Date(max.year, max.month, max.date).getTime();
         },
 
         get curDecade() {
-            return datepicker.getDecade(this.date)
+            return datepicker.getDecade(this.date);
         }
     };
 
@@ -1399,7 +1401,7 @@
             fullHours:  date.getHours() < 10 ? '0' + date.getHours() :  date.getHours() ,
             minutes: date.getMinutes(),
             fullMinutes:  date.getMinutes() < 10 ? '0' + date.getMinutes() :  date.getMinutes()
-        }
+        };
     };
 
     datepicker.getDecade = function (date) {
@@ -1411,7 +1413,7 @@
     datepicker.template = function (str, data) {
         return str.replace(/#\{([\w]+)\}/g, function (source, match) {
             if (data[match] || data[match] === 0) {
-                return data[match]
+                return data[match];
             }
         });
     };
@@ -1452,7 +1454,7 @@
     datepicker.resetTime = function (date) {
         if (typeof date != 'object') return;
         date = datepicker.getParsedDate(date);
-        return new Date(date.year, date.month, date.date)
+        return new Date(date.year, date.month, date.date);
     };
 
     $.fn.datepicker = function ( options ) {
@@ -1478,7 +1480,7 @@
             daysMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
             months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
             monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
-            today: 'Сегодня',
+            today: 'Применить',
             clear: 'Очистить',
             dateFormat: 'dd.mm.yyyy',
             timeFormat: 'hh:ii',
@@ -1488,7 +1490,7 @@
 
     $(function () {
         $(autoInitSelector).datepicker();
-    })
+    });
 
 })();
 
@@ -1605,19 +1607,19 @@
                         (dp.bigger(minRange, date) && dp.less(parent.focused, date)) ||
                         (dp.less(maxRange, date) && dp.bigger(parent.focused, date)))
                     {
-                        classes += ' -in-range-'
+                        classes += ' -in-range-';
                     }
 
                     if (dp.less(maxRange, date) && dp.isSame(parent.focused, date)) {
-                        classes += ' -range-from-'
+                        classes += ' -range-from-';
                     }
                     if (dp.bigger(minRange, date) && dp.isSame(parent.focused, date)) {
-                        classes += ' -range-to-'
+                        classes += ' -range-to-';
                     }
 
                 } else if (parent.selectedDates.length == 2) {
                     if (dp.bigger(minRange, date) && dp.less(maxRange, date)) {
-                        classes += ' -in-range-'
+                        classes += ' -in-range-';
                     }
                 }
             }
@@ -1631,7 +1633,7 @@
             return {
                 html: html,
                 classes: classes
-            }
+            };
         },
 
         /**
@@ -1658,7 +1660,7 @@
                 y = date.getFullYear();
                 m = date.getMonth();
 
-                html += this._getDayHtml(new Date(y, m, i))
+                html += this._getDayHtml(new Date(y, m, i));
             }
 
             return html;
@@ -1686,7 +1688,7 @@
 
             while(i < 12) {
                 html += this._getMonthHtml(new Date(d.year, i));
-                i++
+                i++;
             }
 
             return html;
@@ -1695,7 +1697,7 @@
         _getMonthHtml: function (date) {
             var content = this._getCellContents(date, 'month');
 
-            return '<div class="' + content.classes + '" data-month="' + date.getMonth() + '">' + content.html + '</div>'
+            return '<div class="' + content.classes + '" data-month="' + date.getMonth() + '">' + content.html + '</div>';
         },
 
         _getYearsHtml: function (date) {
@@ -1715,7 +1717,7 @@
         _getYearHtml: function (date) {
             var content = this._getCellContents(date, 'year');
 
-            return '<div class="' + content.classes + '" data-year="' + date.getFullYear() + '">' + content.html + '</div>'
+            return '<div class="' + content.classes + '" data-year="' + date.getFullYear() + '">' + content.html + '</div>';
         },
 
         _renderTypes: {
@@ -1724,17 +1726,17 @@
                     days = this._getDaysHtml(this.d.currentDate);
 
                 this.$cells.html(days);
-                this.$names.html(dayNames)
+                this.$names.html(dayNames);
             },
             months: function () {
                 var html = this._getMonthsHtml(this.d.currentDate);
 
-                this.$cells.html(html)
+                this.$cells.html(html);
             },
             years: function () {
                 var html = this._getYearsHtml(this.d.currentDate);
 
-                this.$cells.html(html)
+                this.$cells.html(html);
             }
         },
 
@@ -1753,7 +1755,7 @@
                 $cell = $(this);
                 date = _this.d._getDateFromCell($(this));
                 classes = _this._getCellContents(date, _this.d.cellType);
-                $cell.attr('class',classes.classes)
+                $cell.attr('class',classes.classes);
             });
         },
 
@@ -1844,10 +1846,10 @@
 
         _addButtonsIfNeed: function () {
             if (this.opts.todayButton) {
-                this._addButton('today')
+                this._addButton('today');
             }
             if (this.opts.clearButton) {
-                this._addButton('clear')
+                this._addButton('clear');
             }
         },
 
@@ -1862,7 +1864,7 @@
         },
 
         _getTitle: function (date) {
-            return this.d.formatDate(this.opts.navTitles[this.d.view], date)
+            return this.d.formatDate(this.opts.navTitles[this.d.view], date);
         },
 
         _addButton: function (type) {
@@ -1896,38 +1898,38 @@
             switch (this.d.view) {
                 case 'days':
                     if (!this.d._isInRange(new Date(y, m-1, 1), 'month')) {
-                        this._disableNav('prev')
+                        this._disableNav('prev');
                     }
                     if (!this.d._isInRange(new Date(y, m+1, 1), 'month')) {
-                        this._disableNav('next')
+                        this._disableNav('next');
                     }
                     break;
                 case 'months':
                     if (!this.d._isInRange(new Date(y-1, m, d), 'year')) {
-                        this._disableNav('prev')
+                        this._disableNav('prev');
                     }
                     if (!this.d._isInRange(new Date(y+1, m, d), 'year')) {
-                        this._disableNav('next')
+                        this._disableNav('next');
                     }
                     break;
                 case 'years':
                     var decade = dp.getDecade(this.d.date);
                     if (!this.d._isInRange(new Date(decade[0] - 1, 0, 1), 'year')) {
-                        this._disableNav('prev')
+                        this._disableNav('prev');
                     }
                     if (!this.d._isInRange(new Date(decade[1] + 1, 0, 1), 'year')) {
-                        this._disableNav('next')
+                        this._disableNav('next');
                     }
                     break;
             }
         },
 
         _disableNav: function (nav) {
-            $('[data-action="' + nav + '"]', this.d.$nav).addClass('-disabled-')
+            $('[data-action="' + nav + '"]', this.d.$nav).addClass('-disabled-');
         },
 
         _activateNav: function (nav) {
-            $('[data-action="' + nav + '"]', this.d.$nav).removeClass('-disabled-')
+            $('[data-action="' + nav + '"]', this.d.$nav).removeClass('-disabled-');
         },
 
         _onClickNavButton: function (e) {
@@ -1941,12 +1943,12 @@
             if ($(e.target).hasClass('-disabled-')) return;
 
             if (this.d.view == 'days') {
-                return this.d.view = 'months'
+                return this.d.view = 'months';
             }
 
             this.d.view = 'years';
         }
-    }
+    };
 
 })();
 
@@ -2113,7 +2115,7 @@
             this.$minutes.attr({
                 min: this.minMinutes,
                 max: this.maxMinutes
-            }).val(this.minutes)
+            }).val(this.minutes);
         },
 
         /**
@@ -2179,7 +2181,7 @@
             return {
                 hours: hours,
                 dayPeriod: dayPeriod
-            }
+            };
         },
 
         set hours (val) {
@@ -2209,7 +2211,7 @@
             this.d._trigger('timeChange', [this.hours, this.minutes]);
 
             this._handleDate(this.d.lastSelectedDate);
-            this.update()
+            this.update();
         },
 
         _onSelectDate: function (e, data) {

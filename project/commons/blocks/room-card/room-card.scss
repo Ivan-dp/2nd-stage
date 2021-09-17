@@ -10,8 +10,15 @@
   flex-direction: column;
   align-items: center;
   &__photo {
-    overflow: hidden;
     background-image: url(/commons/blocks/room-card/img/room_1.png);
+  }
+  &__photo-1 {
+    background-image: url(/commons/blocks/room-card/img/room_2.png);
+  }
+  &__photo,
+  &__photo-1 {
+    overflow: hidden;
+
     background-size: 120%;
     background-position: 20% 70%;
     background-repeat: no-repeat;
@@ -20,6 +27,70 @@
     text-align: center;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    &::before {
+      content: "chevron_left";
+      @include Material(normal, 24px, 24px);
+      color: #ffffff;
+      // position: absolute;
+      width: 42px;
+      height: 151px;
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0) 99.99%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    &::after {
+      content: "chevron_left";
+      float: right;
+      @include Material(normal, 24px, 24px);
+      color: #ffffff;
+      width: 42px;
+      height: 151px;
+      // position: absolute;
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0) 99.99%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // right: - 20px;
+      cursor: pointer;
+    }
+  }
+  &__slider {
+    width: 41.25px;
+    height: 7.5px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    margin-right: -27px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-top: auto;
+    span {
+      display: block;
+      width: 7.5px;
+      height: 7.5px;
+      border: 1px solid #ffffff;
+      border-radius: 50%;
+      box-sizing: border-box;
+      filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+    }
+    .filled {
+      background: #ffffff;
+    }
   }
   &__title {
     width: 230px;

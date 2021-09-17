@@ -2,6 +2,11 @@ include ../../mixins/rate-button/rate-button
 
 .room-card
   .room-card__photo 
+    .room-card__slider 
+      span.filled 
+      span 
+      span 
+      span 
   .room-card__title 
     .room-card__number 
       h3 №
@@ -14,4 +19,25 @@ include ../../mixins/rate-button/rate-button
     +rate-button
     .room-card__feedback
       p.bold 145
+      p Отзывов
+
+.room-card
+  .room-card__photo-1 
+    .room-card__slider 
+      span.filled 
+      span 
+      span 
+      span 
+  .room-card__title 
+    .room-card__number 
+      h3 №
+      h1 840
+      //- h3.pink люкс
+    .room-card__price 
+      p.bold 9 990₽
+      p в сутки
+  .room-card__rating 
+    +rate-button
+    .room-card__feedback
+      p.bold 65
       p Отзывов
