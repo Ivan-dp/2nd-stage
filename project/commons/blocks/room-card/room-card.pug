@@ -37,7 +37,17 @@ include ../../mixins/rate-button/rate-button
       p.bold 9 990₽
       p в сутки
   .room-card__rating 
-    +rate-button
+    .rating-area 
+      input#star-51(type="radio" name="rating1" value="5")
+      label(for="star-51" title="Оценка 5") 
+      input#star-41(type="radio" name="rating1" value="4")
+      label(for="star-41" title="Оценка 4") 
+      input#star-31(type="radio" name="rating1" value="3")
+      label(for="star-31" title="Оценка 3") 
+      input#star-21(type="radio" name="rating1" value="2")
+      label(for="star-21" title="Оценка 2") 
+      input#star-11(type="radio" name="rating1" value="1")
+      label(for="star-11" title="Оценка 1")
     .room-card__feedback
       p.bold 65
       p Отзывов
