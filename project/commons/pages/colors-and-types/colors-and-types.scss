@@ -9,17 +9,16 @@
 @import "../../blocks/colors/colors";
 @import "../../blocks/types/types";
 
+.logo-grey {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
-}
-
-.colors {
-  margin-top: 145px;
-  margin-left: 150px;
-}
-
-.types {
-  margin-top: 145px;
-  margin-right: 150px;
+  width: 1160px;
+  height: 610px;
+  margin: 145px auto auto auto;
 }

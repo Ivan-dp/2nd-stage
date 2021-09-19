@@ -84,7 +84,7 @@ ul {
     outline: none;
   }
   &::after {
-    content: url("./img/arrow-forward.svg");
+    content: url("/commons/blocks/widgets/img/arrow-forward.svg");
     display: inline-block;
     position: absolute;
     width: 44px;

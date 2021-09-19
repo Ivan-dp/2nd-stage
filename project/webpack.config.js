@@ -7,7 +7,9 @@ module.exports = {
   mode: 'development',
   entry: {
     form_elements: './commons/pages/form-elements/form-elements.js',
-    cards: './commons/pages/cards/cards.js'
+    cards: './commons/pages/cards/cards.js',
+    colors_and_types: './commons/pages/colors-and-types/colors-and-types.js',
+    headers_and_footers: './commons/pages/headers-and-footers/headers-and-footers.js'
   },
   output: {
     filename: 'js/[name].bundle.js',
@@ -23,6 +25,16 @@ module.exports = {
       filename: 'html/cards.html',
       template: './commons/pages/cards/cards.pug',
       chunks: ['cards']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'html/colors-and-types.html',
+      template: './commons/pages/colors-and-types/colors-and-types.pug',
+      chunks: ['colors_and_types']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'html/headers-and-footers.html',
+      template: './commons/pages/headers-and-footers/headers-and-footers.pug',
+      chunks: ['headers_and_footers']
     }),
     new CleanWebpackPlugin()    
   ],

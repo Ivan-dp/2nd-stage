@@ -5,8 +5,10 @@ html(lang="ru")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Headers & footers
-    link(rel="stylesheet", href="./headers-and-footers.css")
+    script(src="/commons/pages/headers-and-footers/headers-and-footers.js")
   body 
+    a.logo-grey(href="/dist/html/headers-and-footers.html")
+      img(src="/commons/pages/form-elements/img/logo_grey.svg", alt="logo")
     include ../../blocks/header/header
     include ../../blocks/header/_authorized/_authorized
     include ../../blocks/footer/footer

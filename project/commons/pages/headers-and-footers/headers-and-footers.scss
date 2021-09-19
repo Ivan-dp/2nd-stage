@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 @import "../../blocks/header/header.scss";
-@import "../../blocks/logo/logo.scss";
-@import "../../blocks/nav/nav.scss";
-@import "../../blocks/authorization/authorization.scss";
 @import "../../blocks/footer/footer";
 @import "../../blocks/footer/_creative/creative";
 
@@ -11,6 +9,12 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 140px;
+}
+
+.logo-grey {
+  position: absolute;
+  left: 30px;
+  top: 30px;
 }
 
 header {
