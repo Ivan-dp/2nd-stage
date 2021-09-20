@@ -17,9 +17,6 @@ require('../../../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown
   var g1 = document.querySelector('#guest_1');
   var g2 = document.querySelector('#guest_2');
   var g3 = document.querySelector('#guest_3');
-  
-  console.log(g1.id, g2.id, g3.id);
-  console.log(g1, g2, g3);
 
 // var a = g3.querySelectorAll('.iqdropdown-menu-option');
 // a[0].setAttribute("data-defaultcount", 2);

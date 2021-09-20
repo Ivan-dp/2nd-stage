@@ -9,7 +9,8 @@ module.exports = {
     form_elements: './commons/pages/form-elements/form-elements.js',
     cards: './commons/pages/cards/cards.js',
     colors_and_types: './commons/pages/colors-and-types/colors-and-types.js',
-    headers_and_footers: './commons/pages/headers-and-footers/headers-and-footers.js'
+    headers_and_footers: './commons/pages/headers-and-footers/headers-and-footers.js',
+    landing_page: './commons/pages/landing-page/landing-page.js'
   },
   output: {
     filename: 'js/[name].bundle.js',
@@ -35,6 +36,11 @@ module.exports = {
       filename: 'html/headers-and-footers.html',
       template: './commons/pages/headers-and-footers/headers-and-footers.pug',
       chunks: ['headers_and_footers']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'html/landing-page.html',
+      template: './commons/pages/landing-page/landing-page.pug',
+      chunks: ['landing_page']
     }),
     new CleanWebpackPlugin()    
   ],
