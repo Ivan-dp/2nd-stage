@@ -1,42 +1,36 @@
 import './dist/js/datepicker.min';
 
-var $start = $('.from'),
-$end = $('.to');
+var $start = $('#from'),
+$end = $('#to');
 
-var doubleDatepicker = $(function() {
-  $start.datepicker({
+var $doubleDatepicker = $('.doubleDatepicker');
+
+$doubleDatepicker.datepicker({
     clearButton: true,
     todayButton: true,
     language: 'ru',
     minDate: new Date(),
     prevHtml: '<span class="material-icons">arrow_back</span>',
     nextHtml: '<span class="material-icons">arrow_forward</span>',
+    multipleDatesSeparator: "-",
     navTitles: {
       days: 'MM yyyy'
     },
+    range: true,
     onSelect: function (fd, date) {
-      $end.data('datepicker')
-      .update('minDate', date);
-
-      $end.focus();
+        $end.data('datepicker')
+                .update('selectedDates', $start.data('datepicker').selectedDates);
+        var start = fd.split('-')[0];
+        var end = fd.split('-')[1];
+        if (end) {
+          $start.val(start);
+          $end.val(end);
+        } else {
+          $end.val('');
+        }
+        console.log($start.data('datepicker'));
     }
-  }),
-  $end.datepicker({
-    clearButton: true,
-    todayButton: true,
-    language: 'ru',
-    minDate: new Date(),
-    prevHtml: '<span class="material-icons">arrow_back</span>',
-    nextHtml: '<span class="material-icons">arrow_forward</span>',
-    navTitles: {
-      days: 'MM yyyy'
-    },
-    onSelect: function (fd, date) {
-      $start.data('datepicker')
-      .update('maxDate', date);
-    }
-  })
-});
+  });
 
 
 var el = document.getElementById("btn_from");
