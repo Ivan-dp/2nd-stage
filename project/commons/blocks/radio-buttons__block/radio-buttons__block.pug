@@ -1,9 +1,5 @@
+include ../../mixins/radio-button/radio-button
+
 .radio-buttons__block  
-  label.radio-buttons__container
-    input(type='radio' name="radio")     
-    span.radio-buttons__checkmark
-    p Мужчина
-  label.radio-buttons__container 
-    input(type='radio' name="radio")
-    span.radio-buttons__checkmark
-    p Женщина
+  +radio-button("Мужчина")
+  +radio-button("Женщина")

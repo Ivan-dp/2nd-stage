@@ -1,12 +1,6 @@
+include ../../mixins/rich-checkbox-button/rich-checkbox-button
+
 .rich-checkbox-buttons
   h3 rich checkbox buttons 
-  label.rich-checkbox-buttons__container
-    input(type='checkbox')     
-    span.rich-checkbox-buttons__checkmark
-    p Широкий коридор
-    p.desc Ширина коридоров в номере не менее 91 см.
-  label.rich-checkbox-buttons__container 
-    input(type='checkbox')
-    span.rich-checkbox-buttons__checkmark
-    p Помощник для инвалидов
-    p.desc На 1 этаже вас встретит специалист  и проводит до номера.
+  +rich-checkbox-button("Широкий коридор","Ширина коридоров в номере не менее 91 см.")
+  +rich-checkbox-button("Помощник для инвалидов","На 1 этаже вас встретит специалист и проводит до номера.")

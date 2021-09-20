@@ -3,7 +3,6 @@
   flex-direction: row-reverse;
   justify-content: space-between;
   width: 120px;
-  // margin-top: 31px;
   &:not(:checked) > input {
     display: none;
   }

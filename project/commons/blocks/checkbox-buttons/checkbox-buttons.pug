@@ -1,15 +1,7 @@
+include ../../mixins/checkbox-button/checkbox-button
+
 .checkbox-buttons
   h3 checkbox buttons 
-  label.checkbox-buttons__container
-    input(type='checkbox')     
-    span.checkbox-buttons__checkmark
-    p Можно курить
-  label.checkbox-buttons__container 
-    input(type='checkbox')
-    span.checkbox-buttons__checkmark
-    p Можно с питомцами
-  label.checkbox-buttons__container 
-    input(type='checkbox')  
-    span.checkbox-buttons__checkmark
-    p Можно пригласить гостей (до 10 человек)
-  
+  +checkbox-button("Можно курить")
+  +checkbox-button("Можно с питомцами")
+  +checkbox-button("Можно пригласить гостей (до 10 человек)")  

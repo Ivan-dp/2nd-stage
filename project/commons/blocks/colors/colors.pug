@@ -1,26 +1,10 @@
-mixin colors__item(colorname, colorcode)
-  .colors__item__info 
-    h2= colorname
-    p= colorcode
+include ../../mixins/color-item/color-item
+
 .colors 
-  .colors__item 
-    .colors__item__ds100
-    +colors__item('Dark Shade 100%', '#1F2041')
-  .colors__item
-    .colors__item__ds75
-    +colors__item('Dark Shade 75%', '#1F2041')
-  .colors__item
-    .colors__item__ds50
-    +colors__item('Dark Shade 50%', '#1F2041')
-  .colors__item
-    .colors__item__ds25
-    +colors__item('Dark Shade 25%', '#1F2041')
-  .colors__item
-    .colors__item__ds5
-    +colors__item('Dark Shade 5%', '#1F2041')
-  .colors__item
-    .colors__item__purple
-    +colors__item('Purple', '#BC9CFF')
-  .colors__item
-    .colors__item__green
-    +colors__item('Green', '#6FCF97')
+  +color-item('Dark Shade 100%', '#1F2041', "colors__item__ds100")
+  +color-item('Dark Shade 75%', '#1F2041', "colors__item__ds75")
+  +color-item('Dark Shade 50%', '#1F2041', "colors__item__ds50")
+  +color-item('Dark Shade 25%', '#1F2041', "colors__item__ds25")
+  +color-item('Dark Shade 5%', '#1F2041', "colors__item__ds5")
+  +color-item('Purple', '#BC9CFF', "colors__item__purple")
+  +color-item('Green', '#6FCF97', "colors__item__green")

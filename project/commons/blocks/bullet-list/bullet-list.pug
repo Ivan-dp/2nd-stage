@@ -1,12 +1,5 @@
+include ../../mixins/bullet-list-items/bullet-list-items
+
 .bullet-list 
   h3 bullet list 
-  ul.bullet-list__items
-    li 
-      span.item
-      p.title Нельзя с питомцами
-    li 
-      span.item
-      p.title Без вечеринок и мероприятий
-    li 
-      span.item
-      p.title Время прибытия — после 13:00, а выезд до 12:00
+  +bullet-list-items("bullet-list__items", "Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00")

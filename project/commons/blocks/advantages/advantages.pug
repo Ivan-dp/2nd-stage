@@ -1,13 +1,5 @@
+include ../../mixins/advantage-item/advantage-item
+
 .advantages 
-  .advantages__item 
-    .advantages__icon
-      span insert_emoticon
-    .advantages__description 
-      p.name Комфорт
-      p.desc Шумопоглощающие стены
-  .advantages__item 
-    .advantages__icon
-      span location_city
-    .advantages__description 
-      p.name Удобство
-      p.desc Окно в каждой из спален
+  +advantage-item("insert_emoticon", "Комфорт", "Шумопоглощающие стены")
+  +advantage-item("location_city", "Удобство", "Окно в каждой из спален")

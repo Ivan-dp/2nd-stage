@@ -1,3 +1,5 @@
+@import "/commons/mixins/rating-area/rating-area.scss";
+
 .rate-button {
   display: flex;
 
@@ -11,45 +13,6 @@
     // width: 100%;
   }
   .rating-area {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    width: 120px;
     margin-top: 31px;
-    &:not(:checked) > input {
-      display: none;
-    }
-    &:not(:checked) > label {
-      width: 24px;
-      height: 24px;
-      cursor: pointer;
-      &::before {
-        content: "star_border";
-        @include Material(normal, 24px, 20px);
-        color: #bc9cff;
-      }
-    }
-  }
-
-  .rating-area > input:checked ~ label::before {
-    content: "star";
-    @include Material(normal, 24px, 20px);
-    // background-color: #bc9cff;
-  }
-  .rating-area:not(:checked) > label:hover,
-  .rating-area:not(:checked) > label:hover ~ label {
-    content: "star";
-    @include Material(normal, 24px, 20px);
-  }
-  .rating-area > input:checked + label:hover,
-  .rating-area > input:checked + label:hover ~ label,
-  .rating-area > input:checked ~ label:hover,
-  .rating-area > input:checked ~ label:hover ~ label,
-  .rating-area > label:hover ~ input:checked ~ label {
-    content: "star";
-    @include Material(normal, 24px, 20px);
-  }
-  .rate-area > label:active {
-    position: relative;
   }
 }
