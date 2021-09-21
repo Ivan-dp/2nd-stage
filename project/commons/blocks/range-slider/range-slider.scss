@@ -7,7 +7,7 @@
       @include Montserrat(bold, 12px, 15px);
       color: #1f2041;
       text-transform: uppercase;
-      width: 100px;
+      width: auto;
       &.value {
         width: auto;
         color: rgba(31, 32, 65, 0.5);

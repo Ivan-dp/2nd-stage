@@ -1,3 +1,5 @@
+@import "/commons/mixins/scss-mixins/rich-checkbox-button.scss";
+
 .rich-checkbox-buttons {
   flex-direction: column;
   display: flex;
@@ -8,58 +10,5 @@
     @include Montserrat(bold, 12px, 15px);
     text-transform: uppercase;
     margin-bottom: 17px;
-  }
-  &__container {
-    display: flex;
-    user-select: none;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
-    cursor: pointer;
-    input {
-      opacity: 0;
-      width: 0;
-      height: 0;
-      &:checked ~ .rich-checkbox-buttons__checkmark {
-        border: 1px solid #bc9cff;
-        &::after {
-          display: block;
-        }
-      }
-    }
-
-    p {
-      @include Montserrat(bold, 14px, 18px);
-      color: rgba(31, 32, 65, 0.75);
-      width: auto;
-      &.desc {
-        color: rgba(31, 32, 65, 0.5);
-        @include Montserrat(normal, 12px, 14px);
-        margin-left: 30px;
-        margin-top: 5px;
-      }
-    }
-  }
-  &__checkmark {
-    width: 20px;
-    height: 20px;
-    display: block;
-    background: #ffffff;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin-right: 10px;
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      display: none;
-      left: 6px;
-      top: 4px;
-      width: 6px;
-      height: 8px;
-      border: solid #bc9cff;
-      border-width: 0 2px 2px 0;
-      transform: rotate(45deg);
-    }
   }
 }

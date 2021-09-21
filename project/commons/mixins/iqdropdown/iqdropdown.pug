@@ -1,0 +1,22 @@
+mixin iqdropdown(titleLeft="", titleRight="", mainId="rooms", mainClass, mainTitle, id1, id2, id3, title1, title2, title3)
+  .dropdown
+    .dropdown__title 
+      h3.dropdown__title__left= titleLeft
+      h3.dropdown__title__right= titleRight
+    .iqdropdown(id= mainId)(class= mainClass)
+      p.iqdropdown-selection= mainTitle
+      .iqdropdown-menu
+        .iqdropdown-menu-option(data-id= id1)
+          div
+            p.iqdropdown-item= title1
+        .iqdropdown-menu-option(data-id= id2)
+          div
+            p.iqdropdown-item= title2
+        .iqdropdown-menu-option(data-id= id3)
+          div
+            p.iqdropdown-item= title3
+        .button-block
+          button.clear-button
+            p очистить
+          button.apply-button
+            p применить

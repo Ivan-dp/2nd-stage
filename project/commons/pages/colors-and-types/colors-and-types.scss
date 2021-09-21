@@ -1,11 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@mixin Montserrat($weight, $size, $height) {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: $weight;
-  font-size: $size;
-  line-height: $height;
-}
+@import "/commons/mixins/scss-mixins/scss-mixins.scss";
 @import "../../blocks/colors/colors";
 @import "../../blocks/types/types";
 

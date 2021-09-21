@@ -10,7 +10,8 @@ module.exports = {
     cards: './commons/pages/cards/cards.js',
     colors_and_types: './commons/pages/colors-and-types/colors-and-types.js',
     headers_and_footers: './commons/pages/headers-and-footers/headers-and-footers.js',
-    landing_page: './commons/pages/landing-page/landing-page.js'
+    landing_page: './commons/pages/landing-page/landing-page.js',
+    search_room: './commons/pages/search-room/search-room.js'
   },
   output: {
     filename: 'js/[name].bundle.js',
@@ -41,6 +42,11 @@ module.exports = {
       filename: 'html/landing-page.html',
       template: './commons/pages/landing-page/landing-page.pug',
       chunks: ['landing_page']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'html/search-room.html',
+      template: './commons/pages/search-room/search-room.pug',
+      chunks: ['search_room']
     }),
     new CleanWebpackPlugin()    
   ],

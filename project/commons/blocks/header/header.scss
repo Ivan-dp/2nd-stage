@@ -9,10 +9,12 @@ header {
   display: flex;
 }
 
+$hh: 70px;
+
 .header {
   margin: auto;
   display: flex;
-  height: 70px;
+  height: $hh;
   width: 1160px;
   align-items: center;
   justify-content: space-between;

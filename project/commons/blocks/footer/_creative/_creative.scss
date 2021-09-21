@@ -1,13 +1,5 @@
 @import "../../logo/logo.scss";
 
-@mixin Montserrat($weight, $size, $height) {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: $weight;
-  font-size: $size;
-  line-height: $height;
-}
-
 .footer-creative {
   width: 768px;
   height: 367px;

@@ -35,19 +35,6 @@ var rMenu2 = r2.querySelector('.iqdropdown-menu');
 $(rMenu1).css('z-index', '100');
 $(rMenu2).css('z-index', '99');
 
-
-// var b = r1.querySelectorAll('.iqdropdown-menu-option');
-// var c = r2.querySelectorAll('.iqdropdown-menu-option');
-// b[0].setAttribute("data-defaultcount", 2);
-// b[1].setAttribute("data-defaultcount", 2);
-// c[0].setAttribute("data-defaultcount", 2);
-// c[1].setAttribute("data-defaultcount", 2);
-// var buttonBlock2 = r2.querySelector('.button-block');
-// var clear2 = buttonBlock2.querySelector('.clear-button');
-// $(clear2).css('visibility', 'visible');
-
-
-
 // Задаём массивы слов со склонениями для функции выбора слов с правильным склонением
 
 var arr1 = ['Спальня', 'Спальни', 'Спален'];

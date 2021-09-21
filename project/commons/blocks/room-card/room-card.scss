@@ -9,16 +9,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  &__photo {
+  &__photo-888 {
     background-image: url(/commons/blocks/room-card/img/room_1.png);
   }
-  &__photo-1 {
+  &__photo-840 {
     background-image: url(/commons/blocks/room-card/img/room_2.png);
   }
-  &__photo,
-  &__photo-1 {
+  &__photo-888,
+  &__photo-840 {
     overflow: hidden;
-
     background-size: 120%;
     background-position: 20% 70%;
     background-repeat: no-repeat;
