@@ -15,7 +15,7 @@
 }
 
 body {
-  background-color: cadetblue;
+  // background-color: cadetblue;
 }
 
 main {
@@ -119,6 +119,14 @@ main {
     width: 834px;
     height: 100%;
     @import "/commons/mixins/rating-area/rating-area.scss";
+    &__title {
+      h1 {
+        @include Montserrat(bold, 24px, 29px);
+        color: #1f2041;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+    }
     &__content {
       display: flex;
       flex-wrap: wrap;
@@ -138,6 +146,36 @@ main {
         }
         &__photo-840 {
           background-image: url(/commons/blocks/room-card/img/room_2.png);
+        }
+        &__photo-980 {
+          background-image: url(/commons/blocks/room-card/img/room_3.png);
+        }
+        &__photo-856 {
+          background-image: url(/commons/blocks/room-card/img/room_4.png);
+        }
+        &__photo-740 {
+          background-image: url(/commons/blocks/room-card/img/room_5.png);
+        }
+        &__photo-982 {
+          background-image: url(/commons/blocks/room-card/img/room_6.png);
+        }
+        &__photo-678 {
+          background-image: url(/commons/blocks/room-card/img/room_7.png);
+        }
+        &__photo-450 {
+          background-image: url(/commons/blocks/room-card/img/room_8.png);
+        }
+        &__photo-350 {
+          background-image: url(/commons/blocks/room-card/img/room_9.png);
+        }
+        &__photo-666 {
+          background-image: url(/commons/blocks/room-card/img/room_10.png);
+        }
+        &__photo-444 {
+          background-image: url(/commons/blocks/room-card/img/room_11.png);
+        }
+        &__photo-352 {
+          background-image: url(/commons/blocks/room-card/img/room_12.png);
         }
         &__photo-888,
         &__photo-840,
