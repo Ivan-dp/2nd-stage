@@ -8,6 +8,7 @@
 @import "/commons/blocks/range-slider/range-slider.scss";
 @import "/commons/mixins/scss-mixins/checkbox-buttons.scss";
 @import "/commons/mixins/scss-mixins/rich-checkbox-button.scss";
+@import "/commons/blocks/pagination/pagination.scss";
 
 * {
   margin: 0;
@@ -79,9 +80,9 @@ main {
       .iqdropdown {
         width: 266px;
       }
-    }
-    .dropdown h3 {
-      margin: 0;
+      h3 {
+        margin: 0;
+      }
     }
     .range-slider {
       margin-bottom: 30px;
@@ -113,18 +114,98 @@ main {
     .accessibility {
       width: 266px;
       margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    .room-amenities {
+      // margin-top: 30px;
+      .dropdown {
+        margin-bottom: 0;
+      }
+    }
+    .additional {
+      width: 266px;
+      height: auto;
+      margin-top: 10px;
+      // position: relative;
+      &__container {
+        width: 100%;
+        // height: 44px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        @include Montserrat(bold, 12px, 15px);
+        text-transform: uppercase;
+        color: #1f2041;
+        p {
+          width: 222px;
+        }
+        input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+          &:checked ~ .additional__checkmark::after {
+            transform: rotate(225deg);
+            transition: 0.5s cubic-bezier(0.4, 0, 0, 0.9);
+          }
+          &:checked ~ .additional__checkboxes {
+            opacity: 1;
+            // width: 100%;
+            // height: 240px;
+          }
+          &:checked ~ .additional {
+            height: 240px;
+          }
+          &:checked ~ .additional__container {
+            height: 240px;
+          }
+        }
+        .additional__checkmark {
+          width: 44px;
+          height: 44px;
+          display: block;
+          background: #ffffff;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-bottom: 2px solid rgba(31, 32, 65, 0.5);
+            border-right: 2px solid rgba(31, 32, 65, 0.5);
+            transform: rotate(45deg);
+            transition: 0.5s cubic-bezier(0.4, 0, 0, 0.9);
+          }
+        }
+      }
+      &__checkboxes {
+        opacity: 0;
+        & label {
+          & p {
+            text-transform: none;
+          }
+        }
+      }
     }
   }
   .container {
     width: 834px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @import "/commons/mixins/rating-area/rating-area.scss";
     &__title {
+      width: 100%;
+      height: 80px;
+      padding-top: 30px;
+      padding-bottom: 20px;
       h1 {
         @include Montserrat(bold, 24px, 29px);
         color: #1f2041;
-        margin-top: 30px;
-        margin-bottom: 20px;
       }
     }
     &__content {
@@ -141,6 +222,9 @@ main {
         flex-direction: column;
         align-items: center;
         margin-bottom: 12px;
+        cursor: pointer;
+        &:hover {
+        }
         &__photo-888 {
           background-image: url(/commons/blocks/room-card/img/room_1.png);
         }
@@ -270,6 +354,7 @@ main {
           justify-content: space-between;
           margin-top: 20px;
           margin-bottom: 5px;
+          align-items: baseline;
         }
         &__number {
           display: flex;
@@ -281,7 +366,7 @@ main {
           }
           h1 {
             color: #1f2041;
-            @include Montserrat(bold, 24px, 29px);
+            @include Montserrat(bold, 19px, 23px);
             margin-left: 5px;
             margin-right: 2px;
             height: 20px;
@@ -334,10 +419,20 @@ main {
         }
       }
     }
+    .pagination {
+      margin-top: 40px;
+      h3 {
+        display: none;
+      }
+    }
   }
 }
 
 .material-icons {
   font-family: "Material Icons";
   color: #bc9cff;
+}
+
+.footer {
+  border-top: 1px solid rgba(31, 32, 65, 0.25);
 }

@@ -3,6 +3,7 @@ import "../../blocks/date-dropdown/dist/js/datepicker.min";
 import "./item-quantity-dropdown.min";
 import "./iqdropdown";
 import "../../blocks/range-slider/range-slider";
+import "./dropdown-rooms";
 
 var mainDatepicker = $(function() {
   $('#main-datepicker').datepicker({

@@ -22,6 +22,23 @@ block container
         h3 доступность
         +rich-checkbox-button("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
         +rich-checkbox-button("Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера.")
+      .room-amenities
+        include ../../mixins/iqdropdown/iqdropdown
+        +iqdropdown('удобства номера','', "rooms", "", "Выберите удобства", 'rooms1', 'rooms2', 'rooms3', 'Спальни', "Кровати", 'Ванные комнаты')
+      .additional
+        label.additional__container 
+          p дополнительные удобства
+          input#open(type='checkbox')     
+          .additional__checkmark
+          .additional__checkboxes
+            +checkbox-button('Завтрак')
+            +checkbox-button('Письменный стол')
+            +checkbox-button('Стул для кормления')
+            +checkbox-button('Кроватка')
+            +checkbox-button('Телевизор')
+            +checkbox-button('Шампунь')
+            +checkbox-button('Телевизор')
+            +checkbox-button('Шампунь')
     .container
       .container__title
         h1 Номера, которые мы для вас подобрали
@@ -39,3 +56,4 @@ block container
         +room-card("666","5000","25","-9")
         +room-card("444","5000","15","-10")
         +room-card("352","5000","55","-11")
+      include ../../blocks/pagination/pagination
