@@ -35,9 +35,9 @@ $doubleDatepicker.datepicker({
 
 var el = document.getElementById("btn_from");
 $(el).on('click', function() {
-  $('.from').datepicker().data('datepicker').show();
+  $('#from').datepicker().data('datepicker').show();
 });
 var el1 = document.getElementById("btn_to");
 $(el1).on('click', function() {
-  $('.to').datepicker().data('datepicker').show();
+  $('#to').datepicker().data('datepicker').show();
 });

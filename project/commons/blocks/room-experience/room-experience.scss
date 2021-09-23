@@ -1,0 +1,12 @@
+.room-experience {
+  width: 311px;
+  height: 170px;
+  h3 {
+    @include Montserrat(bold, 19px, 23px);
+    color: #1f2041;
+  }
+  canvas {
+    width: 311px;
+    height: 126px;
+  }
+}

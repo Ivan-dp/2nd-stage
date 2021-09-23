@@ -35,11 +35,11 @@ $newDatepicker.datepicker({
     }
   });
 
-var el = roomRes.querySelector("#btn_from");
+var el = roomRes.querySelector("#btn_1");
 $(el).on('click', function() {
-  $('.from').datepicker().data('datepicker').show();
+  $('#from1').datepicker().data('datepicker').show();
 });
-var el1 = roomRes.querySelector("#btn_to");
+var el1 = roomRes.querySelector("#btn_2");
 $(el1).on('click', function() {
-  $('.to').datepicker().data('datepicker').show();
+  $('#to1').datepicker().data('datepicker').show();
 });

@@ -1,5 +1,7 @@
 @import "/commons/blocks/date-dropdown/date-dropdown.scss";
+@import "/commons/blocks/dropdown/dropdown.scss";
 @import "/commons/blocks/reservation-button/reservation-button.scss";
+@import "/commons/blocks/room-reservation/dist/css/datepicker.min.css";
 
 .room-reservation {
   width: 380px;

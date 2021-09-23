@@ -9,6 +9,9 @@
     align-items: center;
     border-bottom: 1px solid;
     border-color: rgba(31, 32, 65, 0.1);
+    &:last-child {
+      border-bottom: none;
+    }
   }
   &__icon {
     span {
@@ -31,10 +34,4 @@
       @include Montserrat(normal, 14px, 24px);
     }
   }
-}
-
-hr {
-  width: 280px;
-  height: 1px;
-  background: rgba(31, 32, 65, 0.1);
 }

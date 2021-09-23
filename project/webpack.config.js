@@ -11,7 +11,8 @@ module.exports = {
     colors_and_types: './commons/pages/colors-and-types/colors-and-types.js',
     headers_and_footers: './commons/pages/headers-and-footers/headers-and-footers.js',
     landing_page: './commons/pages/landing-page/landing-page.js',
-    search_room: './commons/pages/search-room/search-room.js'
+    search_room: './commons/pages/search-room/search-room.js',
+    room_details: './commons/pages/room-details/room-details.js'
   },
   output: {
     filename: 'js/[name].bundle.js',
@@ -47,6 +48,11 @@ module.exports = {
       filename: 'html/search-room.html',
       template: './commons/pages/search-room/search-room.pug',
       chunks: ['search_room']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'html/room-details.html',
+      template: './commons/pages/room-details/room-details.pug',
+      chunks: ['room_details']
     }),
     new CleanWebpackPlugin()    
   ],

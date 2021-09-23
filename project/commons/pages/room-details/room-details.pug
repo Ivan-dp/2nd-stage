@@ -1,0 +1,17 @@
+extends ../../templates/header-and-footer
+
+append head 
+  title № 888 люкс
+  script(src="/commons/pages/room-details/room-details.js")
+block container
+  .room 
+    .room__photo
+      .bigger
+      .smaller
+      .smaller
+    .room__info 
+      .room__info__details
+        include ../../blocks/room-information/room-information
+        include ../../blocks/room-experience/room-experience
+      .room__info__card  
+        include ../../blocks/room-reservation/room-reservation
