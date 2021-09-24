@@ -6,6 +6,7 @@
 @import "/commons/blocks/room-experience/room-experience.scss";
 @import "/commons/blocks/room-reviews/room-reviews.scss";
 @import "/commons/blocks/room-rules/room-rules.scss";
+@import "/commons/blocks/room-cancellation/room-cancellation.scss";
 
 .room {
   &__photo {
@@ -46,6 +47,7 @@
     justify-content: space-between;
     margin: auto;
     padding-top: 70px;
+    margin-bottom: 70px;
     &__details {
       width: 720px;
       height: 100%;
