@@ -13,7 +13,8 @@ module.exports = {
     landing_page: './commons/pages/landing-page/landing-page.js',
     search_room: './commons/pages/search-room/search-room.js',
     room_details: './commons/pages/room-details/room-details.js',
-    registration: './commons/pages/registration/registration.js'
+    registration: './commons/pages/registration/registration.js',
+    sign_in: './commons/pages/sign-in/sign-in.js'
   },
   output: {
     filename: 'js/[name].bundle.js',
@@ -59,6 +60,11 @@ module.exports = {
       filename: 'html/registration.html',
       template: './commons/pages/registration/registration.pug',
       chunks: ['registration']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'html/sign-in.html',
+      template: './commons/pages/sign-in/sign-in.pug',
+      chunks: ['sign_in']
     }),
     new CleanWebpackPlugin()    
   ],
