@@ -1,0 +1,22 @@
+.bullet-list__items {
+  li {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    .item {
+      background: rgba(31, 32, 65, 0.25);
+      width: 10px;
+      height: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 6.5px;
+    }
+    .title {
+      color: rgba(31, 32, 65, 0.75);
+      @include Montserrat(normal, 14px, 24px);
+      margin-left: 10px;
+      width: 240px;
+    }
+  }
+}

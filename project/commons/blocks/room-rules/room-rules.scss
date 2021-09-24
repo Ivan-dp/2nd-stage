@@ -1,0 +1,10 @@
+@import "/commons/mixins/scss-mixins/bullet-list__items.scss";
+
+.room-rules {
+  h3 {
+    color: #1f2041;
+    @include Montserrat(bold, 19px, 23px);
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+}
