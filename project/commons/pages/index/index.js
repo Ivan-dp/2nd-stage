@@ -1,6 +1,6 @@
 import "../../blocks/date-dropdown/date-dropdown";
 import "../../blocks/dropdown/dropdown_1";
-import "./landing-page.scss";
+import "./index.scss";
 
 var titles = document.querySelectorAll('.form .date-dropdown .date-dropdown_box');
 

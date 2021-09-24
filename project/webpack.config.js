@@ -10,7 +10,7 @@ module.exports = {
     cards: './commons/pages/cards/cards.js',
     colors_and_types: './commons/pages/colors-and-types/colors-and-types.js',
     headers_and_footers: './commons/pages/headers-and-footers/headers-and-footers.js',
-    landing_page: './commons/pages/landing-page/landing-page.js',
+    index: './commons/pages/index/index.js',
     search_room: './commons/pages/search-room/search-room.js',
     room_details: './commons/pages/room-details/room-details.js',
     registration: './commons/pages/registration/registration.js',
@@ -42,9 +42,9 @@ module.exports = {
       chunks: ['headers_and_footers']
     }),
     new HtmlWebpackPlugin({
-      filename: 'html/landing-page.html',
-      template: './commons/pages/landing-page/landing-page.pug',
-      chunks: ['landing_page']
+      filename: 'html/index.html',
+      template: './commons/pages/index/index.pug',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       filename: 'html/search-room.html',
