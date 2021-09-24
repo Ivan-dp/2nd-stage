@@ -18,6 +18,7 @@
   width: 260px;
   & p {
     @include Montserrat(normal, 14px, 24px);
+    margin-top: 20px;
   }
 }
 

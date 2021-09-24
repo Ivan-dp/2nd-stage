@@ -1,0 +1,22 @@
+@import "../../mixins/scss-mixins/scss-mixins.scss";
+@import "../../blocks/header/header.scss";
+@import "../../blocks/footer/footer.scss";
+@import "../../blocks/registration/registration.scss";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/commons/pages/registration/img/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .registration {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
+.footer {
+  border-top: none;
+}
