@@ -7,7 +7,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   &__avatar {
     width: 48px;
@@ -44,7 +44,7 @@
   &__like {
     display: flex;
     justify-content: center;
-    width: 48px;
+    min-width: 48px;
     margin-top: 3px;
   }
   &__desc {

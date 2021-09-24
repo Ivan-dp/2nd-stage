@@ -1,11 +1,9 @@
-// import "../../../node_modules/chart.js/dist/chart";
 import Chart from 'chart.js/auto';
 
 var ctx = document.getElementById('myChart');
 var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        // labels: ['Разочарован', 'Удовлетворительно', 'Хорошо', 'Великолепно'],
         labels: ['Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован'],
         datasets: [{
             label: 'My First Dataset',
@@ -16,7 +14,7 @@ var myChart = new Chart(ctx, {
                 '#BC9CFF',
                 '#919191'
             ],
-            hoverOffset: 4,
+            hoverOffset: 10,
             borderWidth: 1
         }]
     },
@@ -24,6 +22,8 @@ var myChart = new Chart(ctx, {
       cutout: '92%',
       rotation: 180,
       responsive: false,
+      viewBox: 120,
+      raius: 60,
       layout: {
         padding: {
           left: 0

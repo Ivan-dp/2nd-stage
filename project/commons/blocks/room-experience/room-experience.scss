@@ -4,9 +4,26 @@
   h3 {
     @include Montserrat(bold, 19px, 23px);
     color: #1f2041;
+    margin-bottom: 20px;
   }
-  canvas {
-    width: 311px;
-    height: 126px;
+  #myChart {
+    margin-left: -17px;
+  }
+  &__total {
+    width: 65px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: -88px;
+    margin-left: 35px;
+  }
+  .count {
+    color: #bc9cff;
+    @include Montserrat(bold, 24px, 29px);
+  }
+  .item {
+    color: #bc9cff;
+    @include Montserrat(bold, 12px, 15px);
   }
 }
