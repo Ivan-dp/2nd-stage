@@ -68,30 +68,33 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
-    .sign-in_btn {
-      width: 99px;
-      height: 44px;
-      border-radius: 22px;
-      @include Montserrat(bold, 12px, 15px);
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: none;
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-      &::after {
+    a {
+      text-decoration: none;
+      .sign-in_btn {
+        width: 99px;
+        height: 44px;
+        border-radius: 22px;
+        @include Montserrat(bold, 12px, 15px);
+        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 95px;
-        height: 40px;
-        border-radius: 20px;
         border: none;
-        background-color: white;
-        content: "Войти";
-        @include Montserrat(bold, 12px, 15px);
-        text-transform: uppercase;
-        color: #bc9cff;
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        &::after {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 95px;
+          height: 40px;
+          border-radius: 20px;
+          border: none;
+          background-color: white;
+          content: "Войти";
+          @include Montserrat(bold, 12px, 15px);
+          text-transform: uppercase;
+          color: #bc9cff;
+        }
       }
     }
   }
