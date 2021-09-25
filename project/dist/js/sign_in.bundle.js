@@ -1,1 +1,339 @@
-(()=>{"use strict";var t,e,n,o,i,r,a,s,l,p,f,d,g,c,u={5403:(t,e,n)=>{n.d(e,{Z:()=>g});var o=n(3645),i=n.n(o),r=n(1667),a=n.n(r),s=new URL(n(7689),n.b),l=new URL(n(3106),n.b),p=i()((function(t){return t[1]}));p.push([t.id,"@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);"]),p.push([t.id,"@import url(https://fonts.googleapis.com/icon?family=Material+Icons);"]);var f=a()(s),d=a()(l);p.push([t.id,'*{margin:0;padding:0}.footer{border-top:1px solid rgba(31,32,65,0.25)}.logo{display:flex;align-items:center;box-sizing:border-box;width:106px}.logo-img{width:40px;height:40px}.logo-name{width:53px;height:13px;margin-left:12.5px}.menu{list-style-type:none;display:flex;font-family:"Montserrat", sans-serif;color:rgba(31,32,65,0.5);align-items:center}.menu>li{margin-left:20px;display:flex}.submenu{position:absolute;visibility:hidden;list-style-type:none;opacity:0;padding-left:0;margin-top:18px;z-index:5;min-width:100px;transform-origin:0% 0%;transition:0.3s linear}.submenu li{margin:10px}.submenu li a{font-family:"Montserrat", sans-serif;font-style:normal;font-weight:bold;font-size:12px;line-height:15px;text-transform:uppercase;text-decoration:none}.menu li:hover .submenu{visibility:visible;opacity:1;background-color:#fff}.menu svg{fill:rgba(31,32,65,0.5);text-align:center;margin:auto}.authorization a{text-decoration:none;cursor:pointer}.authorization a .log-in_btn{width:87px;height:34px;color:#bc9cff;border:2px solid;border-color:linear-gradient(180deg, #bc9cff, #8ba4f9);border-radius:22px;box-sizing:border-box;background:white;font-family:"Montserrat", sans-serif;text-transform:uppercase;font-style:normal;font-weight:bold;font-size:12px;line-height:15px;letter-spacing:0.7px;margin-left:20px;cursor:pointer}.authorization a .sign-in_btn{width:196px;height:34px;color:white;background:linear-gradient(180deg, #bc9cff, #8ba4f9);border:none;border-radius:22px;font-family:"Montserrat", sans-serif;text-transform:uppercase;font-style:normal;font-weight:bold;font-size:12px;line-height:15px;letter-spacing:0.7px;margin-left:20px;cursor:pointer}header{width:100%;background:#ffffff;box-shadow:0px 10px 20px rgba(31,32,65,0.05);display:flex}.header{margin:auto;display:flex;height:70px;width:1160px;align-items:center;justify-content:space-between}.right{display:flex;align-items:center;vertical-align:middle}.author{display:flex}.v-line{border-left:1px solid rgba(31,32,65,0.1);height:30px;margin-left:20px;margin-right:20px;margin-top:auto;margin-bottom:auto}.user{font-family:"Montserrat", sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:17px;color:rgba(31,32,65,0.5)}.widgets{height:372px;width:100%;background:#ffffff;display:flex}.widgets__container{width:1160px;margin:100px auto;display:flex;flex-direction:row;justify-content:space-between}.widgets__container__main{width:260px}.widgets__container__main p{font-family:"Montserrat", sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:24px;margin-top:20px}ul{margin:0;padding:0}ul li{list-style-type:none}.widgets__container__navigation li,.widgets__container__about li,.widgets__container__support li{font-family:"Montserrat", sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:17px;margin-bottom:20px}.widgets__container__navigation .bold,.widgets__container__about .bold,.widgets__container__support .bold{font-family:"Montserrat", sans-serif;font-style:normal;font-weight:bold;font-size:12px;line-height:15px;text-transform:uppercase;margin-bottom:21px}.widgets__container__subscribe{width:260px}.widgets__container__subscribe p{font-family:"Montserrat", sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:24px;margin:0;margin-bottom:20px}.widgets__container__subscribe .bold{font-family:"Montserrat", sans-serif;font-style:normal;font-weight:bold;font-size:12px;line-height:15px;text-transform:uppercase;margin-bottom:21px}.subscribe__input{width:260px;height:44px;border:1px solid rgba(31,32,65,0.25);box-sizing:border-box;border-radius:4px}.subscribe__input input{width:216px;height:100%;background:#ffffff;border:none;border-radius:4px;box-sizing:border-box;font-family:"Montserrat", sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:24px;color:rgba(31,32,65,0.25);padding-left:15px;outline:none}.subscribe__input::after{content:url('+f+');display:inline-block;position:absolute;width:44px;height:44px;cursor:pointer;box-sizing:border-box;text-align:center;padding-top:12px}.copyright-bar{height:70px;width:100%;background:#ffffff;box-sizing:border-box;box-shadow:0px 10px 20px rgba(31,32,65,0.05);margin:auto;display:flex;justify-content:space-around;border-top:1px solid #e5e5e5}.copyright-bar__container{display:flex;justify-content:space-between;width:1160px}.copyright-bar__container__copyright{font-family:"Montserrat", sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:17px;margin-top:auto;margin-bottom:auto}.copyright-bar__container__social{display:flex}.copyright-bar__container__social a{margin-left:20px;margin-top:auto;margin-bottom:auto}.copyright-bar__container__social a img{color:linear-gradient(180deg, #bc9cff, #8ba4f9)}footer{width:100%;height:443px;background:#e5e5e5}.footer{height:100%;width:100%;display:flex;flex-direction:column;justify-content:space-between}.log-in-button{width:320px;height:44px;padding:auto;display:flex;justify-content:space-around;cursor:pointer;border-radius:22px}.log-in-button .button{width:276px;height:44px;background:linear-gradient(180deg, #bc9cff, #8ba4f9);border:none;border-radius:22px 0 0 22px}.log-in-button .arrow{font-family:"Material Icons";font-weight:normal;font-size:24px;line-height:24px;color:white;background-color:transparent;border:none;width:44px;height:44px;background:linear-gradient(180deg, #bc9cff, #8ba4f9);border:none;border-radius:0 22px 22px 0}.log-in-button::after{content:"войти";font-family:"Montserrat", sans-serif;font-style:normal;font-weight:bold;font-size:12px;line-height:15px;position:absolute;text-transform:uppercase;color:white;width:320px;height:44px;display:flex;justify-content:center;align-items:center}.log-in{width:380px;height:358px;background-color:#fff;border:1px solid rgba(0,0,0,0.12);box-sizing:border-box;box-shadow:0px 0px 25px rgba(0,0,0,0.2);border-radius:4px;padding:40px 30px 30px 30px}.log-in__title{width:100%;margin-bottom:20px}.log-in__title h1{font-family:"Montserrat", sans-serif;font-style:normal;font-weight:bold;font-size:24px;line-height:29px;margin:0;color:#1f2041;display:block}.log-in__form{margin-bottom:20px}.log-in__email{margin-bottom:10px}.log-in__email .input{width:320px;height:44px}.log-in__email input{width:100%;height:100%;border:1px solid rgba(31,32,65,0.25);box-sizing:border-box;border-radius:4px;font-family:"Montserrat", sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:18px;color:rgba(31,32,65,0.25);padding-left:15px}.log-in__email input:active{outline:none}.log-in__email input:focus{outline:none}.log-in__email input:hover{border:1px solid rgba(31,32,65,0.5);color:rgba(31,32,65,0.75)}.log-in__email input:focus{border:1px solid rgba(31,32,65,0.5);color:rgba(31,32,65,0.75)}.log-in__password .input{width:320px;height:44px}.log-in__password input{width:100%;height:100%;border:1px solid rgba(31,32,65,0.25);box-sizing:border-box;border-radius:4px;font-family:"Montserrat", sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:18px;color:rgba(31,32,65,0.25);padding-left:15px}.log-in__password input:active{outline:none}.log-in__password input:focus{outline:none}.log-in__password input:hover{border:1px solid rgba(31,32,65,0.5);color:rgba(31,32,65,0.75)}.log-in__password input:focus{border:1px solid rgba(31,32,65,0.5);color:rgba(31,32,65,0.75)}.log-in__registration{width:320px;font-family:"Montserrat", sans-serif;font-style:normal;font-weight:normal;font-size:14px;line-height:18px;color:#000000;display:flex;justify-content:space-between;align-items:center;margin-top:30px}.log-in__registration a{text-decoration:none}.log-in__registration_btn{width:99px;height:44px;border-radius:22px;font-family:"Montserrat", sans-serif;font-style:normal;font-weight:bold;font-size:12px;line-height:15px;cursor:pointer;display:flex;justify-content:center;align-items:center;border:none;background:linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%)}.log-in__registration_btn::after{display:flex;justify-content:center;align-items:center;width:95px;height:40px;border-radius:20px;border:none;background-color:white;content:"Создать";font-family:"Montserrat", sans-serif;font-style:normal;font-weight:bold;font-size:12px;line-height:15px;text-transform:uppercase;color:#bc9cff}.container{display:flex;justify-content:center;align-items:center;background-image:url('+d+");background-position:center;background-repeat:no-repeat;background-size:cover}.container .log-in{margin-bottom:163px;margin-top:163px}.footer{border-top:none}\n",""]);const g=p},3645:t=>{t.exports=function(t){var e=[];return e.toString=function(){return this.map((function(e){var n=t(e);return e[2]?"@media ".concat(e[2]," {").concat(n,"}"):n})).join("")},e.i=function(t,n,o){"string"==typeof t&&(t=[[null,t,""]]);var i={};if(o)for(var r=0;r<this.length;r++){var a=this[r][0];null!=a&&(i[a]=!0)}for(var s=0;s<t.length;s++){var l=[].concat(t[s]);o&&i[l[0]]||(n&&(l[2]?l[2]="".concat(n," and ").concat(l[2]):l[2]=n),e.push(l))}},e}},1667:t=>{t.exports=function(t,e){return e||(e={}),t?(t=String(t.__esModule?t.default:t),/^['"].*['"]$/.test(t)&&(t=t.slice(1,-1)),e.hash&&(t+=e.hash),/["'() \t\n]|(%20)/.test(t)||e.needQuotes?'"'.concat(t.replace(/"/g,'\\"').replace(/\n/g,"\\n"),'"'):t):t}},3379:t=>{var e=[];function n(t){for(var n=-1,o=0;o<e.length;o++)if(e[o].identifier===t){n=o;break}return n}function o(t,o){for(var r={},a=[],s=0;s<t.length;s++){var l=t[s],p=o.base?l[0]+o.base:l[0],f=r[p]||0,d="".concat(p," ").concat(f);r[p]=f+1;var g=n(d),c={css:l[1],media:l[2],sourceMap:l[3]};-1!==g?(e[g].references++,e[g].updater(c)):e.push({identifier:d,updater:i(c,o),references:1}),a.push(d)}return a}function i(t,e){var n=e.domAPI(e);return n.update(t),function(e){if(e){if(e.css===t.css&&e.media===t.media&&e.sourceMap===t.sourceMap)return;n.update(t=e)}else n.remove()}}t.exports=function(t,i){var r=o(t=t||[],i=i||{});return function(t){t=t||[];for(var a=0;a<r.length;a++){var s=n(r[a]);e[s].references--}for(var l=o(t,i),p=0;p<r.length;p++){var f=n(r[p]);0===e[f].references&&(e[f].updater(),e.splice(f,1))}r=l}}},569:t=>{var e={};t.exports=function(t,n){var o=function(t){if(void 0===e[t]){var n=document.querySelector(t);if(window.HTMLIFrameElement&&n instanceof window.HTMLIFrameElement)try{n=n.contentDocument.head}catch(t){n=null}e[t]=n}return e[t]}(t);if(!o)throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");o.appendChild(n)}},9216:t=>{t.exports=function(t){var e=document.createElement("style");return t.setAttributes(e,t.attributes),t.insert(e),e}},3565:(t,e,n)=>{t.exports=function(t){var e=n.nc;e&&t.setAttribute("nonce",e)}},7795:t=>{t.exports=function(t){var e=t.insertStyleElement(t);return{update:function(n){!function(t,e,n){var o=n.css,i=n.media,r=n.sourceMap;i?t.setAttribute("media",i):t.removeAttribute("media"),r&&"undefined"!=typeof btoa&&(o+="\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(r))))," */")),e.styleTagTransform(o,t)}(e,t,n)},remove:function(){!function(t){if(null===t.parentNode)return!1;t.parentNode.removeChild(t)}(e)}}}},4589:t=>{t.exports=function(t,e){if(e.styleSheet)e.styleSheet.cssText=t;else{for(;e.firstChild;)e.removeChild(e.firstChild);e.appendChild(document.createTextNode(t))}}},7689:(t,e,n)=>{t.exports=n.p+"img/ae9e8d9bc1e9ad88ca1c..svg"},3106:(t,e,n)=>{t.exports=n.p+"img/8acac74938976b7a8c73..png"}},x={};function b(t){var e=x[t];if(void 0!==e)return e.exports;var n=x[t]={id:t,exports:{}};return u[t](n,n.exports,b),n.exports}b.m=u,b.n=t=>{var e=t&&t.__esModule?()=>t.default:()=>t;return b.d(e,{a:e}),e},b.d=(t,e)=>{for(var n in e)b.o(e,n)&&!b.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:e[n]})},b.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(t){if("object"==typeof window)return window}}(),b.o=(t,e)=>Object.prototype.hasOwnProperty.call(t,e),(()=>{var t;b.g.importScripts&&(t=b.g.location+"");var e=b.g.document;if(!t&&e&&(e.currentScript&&(t=e.currentScript.src),!t)){var n=e.getElementsByTagName("script");n.length&&(t=n[n.length-1].src)}if(!t)throw new Error("Automatic publicPath is not supported in this browser");t=t.replace(/#.*$/,"").replace(/\?.*$/,"").replace(/\/[^\/]+$/,"/"),b.p=t+"../"})(),b.b=document.baseURI||self.location.href,t=b(3379),e=b.n(t),n=b(7795),o=b.n(n),i=b(569),r=b.n(i),a=b(3565),s=b.n(a),l=b(9216),p=b.n(l),f=b(4589),d=b.n(f),g=b(5403),(c={}).styleTagTransform=d(),c.setAttributes=s(),c.insert=r().bind(null,"head"),c.domAPI=o(),c.insertStyleElement=p(),e()(g.Z,c),g.Z&&g.Z.locals&&g.Z.locals})();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./commons/pages/sign-in/sign-in.js":
+/*!******************************************!*\
+  !*** ./commons/pages/sign-in/sign-in.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sign_in_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sign-in.scss */ \"./commons/pages/sign-in/sign-in.scss\");\n\n\n//# sourceURL=webpack://project/./commons/pages/sign-in/sign-in.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./commons/pages/sign-in/sign-in.scss":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./commons/pages/sign-in/sign-in.scss ***!
+  \*******************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../commons/fonts/Montserrat-bold/Montserrat-Bold.woff */ \"./commons/fonts/Montserrat-bold/Montserrat-Bold.woff\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../commons/fonts/Montserrat-Bold/Montserrat-Bold.ttf */ \"./commons/fonts/Montserrat-Bold/Montserrat-Bold.ttf\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../commons/fonts/Montserrat-Bold/Montserrat-Bold.svg */ \"./commons/fonts/Montserrat-Bold/Montserrat-Bold.svg\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ../../commons/fonts/Montserrat-Regular/Montserrat-Regular.woff */ \"./commons/fonts/Montserrat-Regular/Montserrat-Regular.woff\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ../../commons/fonts/Montserrat-Regular/Montserrat-Regular.ttf */ \"./commons/fonts/Montserrat-Regular/Montserrat-Regular.ttf\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(/*! ../../commons/fonts/Montserrat-Regular/Montserrat-Regular.svg */ \"./commons/fonts/Montserrat-Regular/Montserrat-Regular.svg\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(/*! ../../commons/blocks/widgets/img/arrow-forward.svg */ \"./commons/blocks/widgets/img/arrow-forward.svg\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_7___ = new URL(/* asset import */ __webpack_require__(/*! ../../commons/pages/registration/img/background.png */ \"./commons/pages/registration/img/background.png\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/icon?family=Material+Icons);\"]);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(___CSS_LOADER_URL_IMPORT_0___);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(___CSS_LOADER_URL_IMPORT_1___);\nvar ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(___CSS_LOADER_URL_IMPORT_2___, { hash: \"#Montserrat-bold\" });\nvar ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(___CSS_LOADER_URL_IMPORT_3___);\nvar ___CSS_LOADER_URL_REPLACEMENT_4___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(___CSS_LOADER_URL_IMPORT_4___);\nvar ___CSS_LOADER_URL_REPLACEMENT_5___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(___CSS_LOADER_URL_IMPORT_5___, { hash: \"#Montserrat-normal\" });\nvar ___CSS_LOADER_URL_REPLACEMENT_6___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(___CSS_LOADER_URL_IMPORT_6___);\nvar ___CSS_LOADER_URL_REPLACEMENT_7___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(___CSS_LOADER_URL_IMPORT_7___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"@charset \\\"UTF-8\\\";\\n* {\\n  margin: 0;\\n  padding: 0; }\\n\\n@font-face {\\n  font-family: \\\"Montserrat-bold\\\";\\n  src: local(\\\"Montserrat-bold\\\");\\n  src: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \") format(\\\"woff\\\"), url(\" + ___CSS_LOADER_URL_REPLACEMENT_1___ + \") format(\\\"truetype\\\"), url(\" + ___CSS_LOADER_URL_REPLACEMENT_2___ + \") format(\\\"svg\\\");\\n  font-style: normal;\\n  font-weight: 700; }\\n\\n@font-face {\\n  font-family: \\\"Montserrat-normal\\\";\\n  src: local(\\\"Montserrat-normal\\\");\\n  src: url(\" + ___CSS_LOADER_URL_REPLACEMENT_3___ + \") format(\\\"woff\\\"), url(\" + ___CSS_LOADER_URL_REPLACEMENT_4___ + \") format(\\\"truetype\\\"), url(\" + ___CSS_LOADER_URL_REPLACEMENT_5___ + \") format(\\\"svg\\\");\\n  font-style: normal;\\n  font-weight: 400; }\\n\\n.footer {\\n  border-top: 1px solid rgba(31, 32, 65, 0.25); }\\n\\n.logo {\\n  display: flex;\\n  align-items: center;\\n  box-sizing: border-box;\\n  width: 106px; }\\n\\n.logo-img {\\n  width: 40px;\\n  height: 40px; }\\n\\n.logo-name {\\n  width: 53px;\\n  height: 13px;\\n  margin-left: 12.5px; }\\n\\n.menu {\\n  list-style-type: none;\\n  display: flex;\\n  font-family: \\\"Montserrat\\\", sans-serif;\\n  color: rgba(31, 32, 65, 0.5);\\n  align-items: center; }\\n\\n.menu > li {\\n  margin-left: 20px;\\n  display: flex; }\\n\\n.submenu {\\n  position: absolute;\\n  visibility: hidden;\\n  list-style-type: none;\\n  opacity: 0;\\n  padding-left: 0;\\n  margin-top: 18px;\\n  z-index: 5;\\n  min-width: 100px;\\n  transform-origin: 0% 0%;\\n  transition: 0.3s linear; }\\n  .submenu li {\\n    margin: 10px; }\\n    .submenu li a {\\n      font-family: \\\"Montserrat-bold\\\", sans-serif;\\n      font-style: normal;\\n      font-weight: bold;\\n      font-size: 12px;\\n      line-height: 15px;\\n      text-transform: uppercase;\\n      text-decoration: none; }\\n\\n.menu li:hover .submenu {\\n  visibility: visible;\\n  opacity: 1;\\n  background-color: #fff; }\\n\\n.menu svg {\\n  fill: rgba(31, 32, 65, 0.5);\\n  text-align: center;\\n  margin: auto; }\\n\\n.authorization a {\\n  text-decoration: none;\\n  cursor: pointer; }\\n  .authorization a .log-in_btn {\\n    width: 87px;\\n    height: 34px;\\n    color: #bc9cff;\\n    border: 2px solid;\\n    border-color: linear-gradient(180deg, #bc9cff, #8ba4f9);\\n    border-radius: 22px;\\n    box-sizing: border-box;\\n    background: white;\\n    font-family: \\\"Montserrat\\\", sans-serif;\\n    text-transform: uppercase;\\n    font-style: normal;\\n    font-weight: bold;\\n    font-size: 12px;\\n    line-height: 15px;\\n    letter-spacing: 0.7px;\\n    margin-left: 20px;\\n    cursor: pointer; }\\n  .authorization a .sign-in_btn {\\n    width: 196px;\\n    height: 34px;\\n    color: white;\\n    background: linear-gradient(180deg, #bc9cff, #8ba4f9);\\n    border: none;\\n    border-radius: 22px;\\n    font-family: \\\"Montserrat\\\", sans-serif;\\n    text-transform: uppercase;\\n    font-style: normal;\\n    font-weight: bold;\\n    font-size: 12px;\\n    line-height: 15px;\\n    letter-spacing: 0.7px;\\n    margin-left: 20px;\\n    cursor: pointer; }\\n\\nheader {\\n  width: 100%;\\n  background: #ffffff;\\n  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);\\n  display: flex; }\\n\\n.header {\\n  margin: auto;\\n  display: flex;\\n  height: 70px;\\n  width: 1160px;\\n  align-items: center;\\n  justify-content: space-between; }\\n\\n.right {\\n  display: flex;\\n  align-items: center;\\n  vertical-align: middle; }\\n\\n.author {\\n  display: flex; }\\n\\n.v-line {\\n  border-left: 1px solid rgba(31, 32, 65, 0.1);\\n  height: 30px;\\n  margin-left: 20px;\\n  margin-right: 20px;\\n  margin-top: auto;\\n  margin-bottom: auto; }\\n\\n.user {\\n  font-family: \\\"Montserrat\\\", sans-serif;\\n  font-style: normal;\\n  font-weight: normal;\\n  font-size: 14px;\\n  line-height: 17px;\\n  color: rgba(31, 32, 65, 0.5); }\\n\\n.widgets {\\n  height: 372px;\\n  width: 100%;\\n  background: #ffffff;\\n  display: flex; }\\n\\n.widgets__container {\\n  width: 1160px;\\n  margin: 100px auto;\\n  display: flex;\\n  flex-direction: row;\\n  justify-content: space-between; }\\n\\n.widgets__container__main {\\n  width: 260px; }\\n  .widgets__container__main p {\\n    font-family: \\\"Montserrat-normal\\\", sans-serif;\\n    font-style: normal;\\n    font-weight: normal;\\n    font-size: 14px;\\n    line-height: 24px;\\n    margin-top: 20px; }\\n\\nul {\\n  margin: 0;\\n  padding: 0; }\\n  ul li {\\n    list-style-type: none; }\\n\\n.widgets__container__navigation li,\\n.widgets__container__about li,\\n.widgets__container__support li {\\n  font-family: \\\"Montserrat-normal\\\", sans-serif;\\n  font-style: normal;\\n  font-weight: normal;\\n  font-size: 14px;\\n  line-height: 17px;\\n  margin-bottom: 20px; }\\n\\n.widgets__container__navigation .bold,\\n.widgets__container__about .bold,\\n.widgets__container__support .bold {\\n  font-family: \\\"Montserrat-bold\\\", sans-serif;\\n  font-style: normal;\\n  font-weight: bold;\\n  font-size: 12px;\\n  line-height: 15px;\\n  text-transform: uppercase;\\n  margin-bottom: 21px; }\\n\\n.widgets__container__subscribe {\\n  width: 260px; }\\n  .widgets__container__subscribe p {\\n    font-family: \\\"Montserrat-normal\\\", sans-serif;\\n    font-style: normal;\\n    font-weight: normal;\\n    font-size: 14px;\\n    line-height: 24px;\\n    margin: 0;\\n    margin-bottom: 20px; }\\n  .widgets__container__subscribe .bold {\\n    font-family: \\\"Montserrat-bold\\\", sans-serif;\\n    font-style: normal;\\n    font-weight: bold;\\n    font-size: 12px;\\n    line-height: 15px;\\n    text-transform: uppercase;\\n    margin-bottom: 21px; }\\n\\n.subscribe__input {\\n  width: 260px;\\n  height: 44px;\\n  border: 1px solid rgba(31, 32, 65, 0.25);\\n  box-sizing: border-box;\\n  border-radius: 4px; }\\n  .subscribe__input input {\\n    width: 216px;\\n    height: 100%;\\n    background: #ffffff;\\n    border: none;\\n    border-radius: 4px;\\n    box-sizing: border-box;\\n    font-family: \\\"Montserrat-normal\\\", sans-serif;\\n    font-style: normal;\\n    font-weight: normal;\\n    font-size: 14px;\\n    line-height: 24px;\\n    color: rgba(31, 32, 65, 0.25);\\n    padding-left: 15px;\\n    outline: none; }\\n  .subscribe__input::after {\\n    content: url(\" + ___CSS_LOADER_URL_REPLACEMENT_6___ + \");\\n    display: inline-block;\\n    position: absolute;\\n    width: 44px;\\n    height: 44px;\\n    cursor: pointer;\\n    box-sizing: border-box;\\n    text-align: center;\\n    padding-top: 12px; }\\n\\n.copyright-bar {\\n  height: 70px;\\n  width: 100%;\\n  background: #ffffff;\\n  box-sizing: border-box;\\n  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);\\n  margin: auto;\\n  display: flex;\\n  justify-content: space-around;\\n  border-top: 1px solid #e5e5e5; }\\n  .copyright-bar__container {\\n    display: flex;\\n    justify-content: space-between;\\n    width: 1160px; }\\n    .copyright-bar__container__copyright {\\n      font-family: \\\"Montserrat-normal\\\", sans-serif;\\n      font-style: normal;\\n      font-weight: normal;\\n      font-size: 14px;\\n      line-height: 17px;\\n      margin-top: auto;\\n      margin-bottom: auto; }\\n    .copyright-bar__container__social {\\n      display: flex; }\\n      .copyright-bar__container__social a {\\n        margin-left: 20px;\\n        margin-top: auto;\\n        margin-bottom: auto; }\\n        .copyright-bar__container__social a img {\\n          color: linear-gradient(180deg, #bc9cff, #8ba4f9); }\\n\\nfooter {\\n  width: 100%;\\n  height: 443px;\\n  background: #e5e5e5; }\\n\\n.footer {\\n  height: 100%;\\n  width: 100%;\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: space-between; }\\n\\n.log-in-button {\\n  width: 320px;\\n  height: 44px;\\n  padding: auto;\\n  display: flex;\\n  justify-content: space-around;\\n  cursor: pointer;\\n  border-radius: 22px; }\\n  .log-in-button .button {\\n    width: 276px;\\n    height: 44px;\\n    background: linear-gradient(180deg, #bc9cff, #8ba4f9);\\n    border: none;\\n    border-radius: 22px 0 0 22px; }\\n  .log-in-button .arrow {\\n    font-family: \\\"Material Icons\\\";\\n    font-weight: normal;\\n    font-size: 24px;\\n    line-height: 24px;\\n    color: white;\\n    background-color: transparent;\\n    border: none;\\n    width: 44px;\\n    height: 44px;\\n    background: linear-gradient(180deg, #bc9cff, #8ba4f9);\\n    border: none;\\n    border-radius: 0 22px 22px 0; }\\n  .log-in-button::after {\\n    content: \\\"войти\\\";\\n    font-family: \\\"Montserrat-bold\\\", sans-serif;\\n    font-style: normal;\\n    font-weight: bold;\\n    font-size: 12px;\\n    line-height: 15px;\\n    position: absolute;\\n    text-transform: uppercase;\\n    color: white;\\n    width: 320px;\\n    height: 44px;\\n    display: flex;\\n    justify-content: center;\\n    align-items: center; }\\n\\n.log-in {\\n  width: 380px;\\n  height: 358px;\\n  background-color: #fff;\\n  border: 1px solid rgba(0, 0, 0, 0.12);\\n  box-sizing: border-box;\\n  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);\\n  border-radius: 4px;\\n  padding: 40px 30px 30px 30px; }\\n  .log-in__title {\\n    width: 100%;\\n    margin-bottom: 20px; }\\n    .log-in__title h1 {\\n      font-family: \\\"Montserrat-bold\\\", sans-serif;\\n      font-style: normal;\\n      font-weight: bold;\\n      font-size: 24px;\\n      line-height: 29px;\\n      margin: 0;\\n      color: #1f2041;\\n      display: block; }\\n  .log-in__form {\\n    margin-bottom: 20px; }\\n  .log-in__email {\\n    margin-bottom: 10px; }\\n    .log-in__email .input {\\n      width: 320px;\\n      height: 44px; }\\n    .log-in__email input {\\n      width: 100%;\\n      height: 100%;\\n      border: 1px solid rgba(31, 32, 65, 0.25);\\n      box-sizing: border-box;\\n      border-radius: 4px;\\n      font-family: \\\"Montserrat-normal\\\", sans-serif;\\n      font-style: normal;\\n      font-weight: normal;\\n      font-size: 14px;\\n      line-height: 18px;\\n      color: rgba(31, 32, 65, 0.25);\\n      padding-left: 15px; }\\n      .log-in__email input:active {\\n        outline: none; }\\n      .log-in__email input:focus {\\n        outline: none; }\\n      .log-in__email input:hover {\\n        border: 1px solid rgba(31, 32, 65, 0.5);\\n        color: rgba(31, 32, 65, 0.75); }\\n      .log-in__email input:focus {\\n        border: 1px solid rgba(31, 32, 65, 0.5);\\n        color: rgba(31, 32, 65, 0.75); }\\n  .log-in__password .input {\\n    width: 320px;\\n    height: 44px; }\\n  .log-in__password input {\\n    width: 100%;\\n    height: 100%;\\n    border: 1px solid rgba(31, 32, 65, 0.25);\\n    box-sizing: border-box;\\n    border-radius: 4px;\\n    font-family: \\\"Montserrat-normal\\\", sans-serif;\\n    font-style: normal;\\n    font-weight: normal;\\n    font-size: 14px;\\n    line-height: 18px;\\n    color: rgba(31, 32, 65, 0.25);\\n    padding-left: 15px; }\\n    .log-in__password input:active {\\n      outline: none; }\\n    .log-in__password input:focus {\\n      outline: none; }\\n    .log-in__password input:hover {\\n      border: 1px solid rgba(31, 32, 65, 0.5);\\n      color: rgba(31, 32, 65, 0.75); }\\n    .log-in__password input:focus {\\n      border: 1px solid rgba(31, 32, 65, 0.5);\\n      color: rgba(31, 32, 65, 0.75); }\\n  .log-in__registration {\\n    width: 320px;\\n    font-family: \\\"Montserrat-normal\\\", sans-serif;\\n    font-style: normal;\\n    font-weight: normal;\\n    font-size: 14px;\\n    line-height: 18px;\\n    color: #000000;\\n    display: flex;\\n    justify-content: space-between;\\n    align-items: center;\\n    margin-top: 30px; }\\n    .log-in__registration a {\\n      text-decoration: none; }\\n    .log-in__registration_btn {\\n      width: 99px;\\n      height: 44px;\\n      border-radius: 22px;\\n      font-family: \\\"Montserrat-bold\\\", sans-serif;\\n      font-style: normal;\\n      font-weight: bold;\\n      font-size: 12px;\\n      line-height: 15px;\\n      cursor: pointer;\\n      display: flex;\\n      justify-content: center;\\n      align-items: center;\\n      border: none;\\n      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%); }\\n      .log-in__registration_btn::after {\\n        display: flex;\\n        justify-content: center;\\n        align-items: center;\\n        width: 95px;\\n        height: 40px;\\n        border-radius: 20px;\\n        border: none;\\n        background-color: white;\\n        content: \\\"Создать\\\";\\n        font-family: \\\"Montserrat-bold\\\", sans-serif;\\n        font-style: normal;\\n        font-weight: bold;\\n        font-size: 12px;\\n        line-height: 15px;\\n        text-transform: uppercase;\\n        color: #bc9cff; }\\n\\n.container {\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_7___ + \");\\n  background-position: center;\\n  background-repeat: no-repeat;\\n  background-size: cover; }\\n  .container .log-in {\\n    margin-bottom: 163px;\\n    margin-top: 163px; }\\n\\n.footer {\\n  border-top: none; }\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://project/./commons/pages/sign-in/sign-in.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/api.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+/***/ ((module) => {
+
+eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (cssWithMappingToString) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \" {\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join(\"\");\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery, dedupe) {\n    if (typeof modules === \"string\") {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, \"\"]];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var i = 0; i < this.length; i++) {\n        // eslint-disable-next-line prefer-destructuring\n        var id = this[i][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = [].concat(modules[_i]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        // eslint-disable-next-line no-continue\n        continue;\n      }\n\n      if (mediaQuery) {\n        if (!item[2]) {\n          item[2] = mediaQuery;\n        } else {\n          item[2] = \"\".concat(mediaQuery, \" and \").concat(item[2]);\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\n//# sourceURL=webpack://project/./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // eslint-disable-next-line no-param-reassign\n    options = {};\n  }\n\n  if (!url) {\n    return url;\n  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n\n\n  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    // eslint-disable-next-line no-param-reassign\n    url = url.slice(1, -1);\n  }\n\n  if (options.hash) {\n    // eslint-disable-next-line no-param-reassign\n    url += options.hash;\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]|(%20)/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack://project/./node_modules/css-loader/dist/runtime/getUrl.js?");
+
+/***/ }),
+
+/***/ "./commons/pages/sign-in/sign-in.scss":
+/*!********************************************!*\
+  !*** ./commons/pages/sign-in/sign-in.scss ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ \"./node_modules/style-loader/dist/runtime/styleDomAPI.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ \"./node_modules/style-loader/dist/runtime/insertBySelector.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ \"./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ \"./node_modules/style-loader/dist/runtime/insertStyleElement.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ \"./node_modules/style-loader/dist/runtime/styleTagTransform.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_sign_in_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./sign-in.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./commons/pages/sign-in/sign-in.scss\");\n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n\nvar options = {};\n\noptions.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());\noptions.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());\n\n      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, \"head\");\n    \noptions.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());\noptions.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_sign_in_scss__WEBPACK_IMPORTED_MODULE_6__.default, options);\n\n\n\n\n       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_sign_in_scss__WEBPACK_IMPORTED_MODULE_6__.default && _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_sign_in_scss__WEBPACK_IMPORTED_MODULE_6__.default.locals ? _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_sign_in_scss__WEBPACK_IMPORTED_MODULE_6__.default.locals : undefined);\n\n\n//# sourceURL=webpack://project/./commons/pages/sign-in/sign-in.scss?");
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \****************************************************************************/
+/***/ ((module) => {
+
+eval("\n\nvar stylesInDom = [];\n\nfunction getIndexByIdentifier(identifier) {\n  var result = -1;\n\n  for (var i = 0; i < stylesInDom.length; i++) {\n    if (stylesInDom[i].identifier === identifier) {\n      result = i;\n      break;\n    }\n  }\n\n  return result;\n}\n\nfunction modulesToDom(list, options) {\n  var idCountMap = {};\n  var identifiers = [];\n\n  for (var i = 0; i < list.length; i++) {\n    var item = list[i];\n    var id = options.base ? item[0] + options.base : item[0];\n    var count = idCountMap[id] || 0;\n    var identifier = \"\".concat(id, \" \").concat(count);\n    idCountMap[id] = count + 1;\n    var index = getIndexByIdentifier(identifier);\n    var obj = {\n      css: item[1],\n      media: item[2],\n      sourceMap: item[3]\n    };\n\n    if (index !== -1) {\n      stylesInDom[index].references++;\n      stylesInDom[index].updater(obj);\n    } else {\n      stylesInDom.push({\n        identifier: identifier,\n        updater: addStyle(obj, options),\n        references: 1\n      });\n    }\n\n    identifiers.push(identifier);\n  }\n\n  return identifiers;\n}\n\nfunction addStyle(obj, options) {\n  var api = options.domAPI(options);\n  api.update(obj);\n  return function updateStyle(newObj) {\n    if (newObj) {\n      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap) {\n        return;\n      }\n\n      api.update(obj = newObj);\n    } else {\n      api.remove();\n    }\n  };\n}\n\nmodule.exports = function (list, options) {\n  options = options || {};\n  list = list || [];\n  var lastIdentifiers = modulesToDom(list, options);\n  return function update(newList) {\n    newList = newList || [];\n\n    for (var i = 0; i < lastIdentifiers.length; i++) {\n      var identifier = lastIdentifiers[i];\n      var index = getIndexByIdentifier(identifier);\n      stylesInDom[index].references--;\n    }\n\n    var newLastIdentifiers = modulesToDom(newList, options);\n\n    for (var _i = 0; _i < lastIdentifiers.length; _i++) {\n      var _identifier = lastIdentifiers[_i];\n\n      var _index = getIndexByIdentifier(_identifier);\n\n      if (stylesInDom[_index].references === 0) {\n        stylesInDom[_index].updater();\n\n        stylesInDom.splice(_index, 1);\n      }\n    }\n\n    lastIdentifiers = newLastIdentifiers;\n  };\n};\n\n//# sourceURL=webpack://project/./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js?");
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/insertBySelector.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/insertBySelector.js ***!
+  \********************************************************************/
+/***/ ((module) => {
+
+eval("\n\nvar memo = {};\n/* istanbul ignore next  */\n\nfunction getTarget(target) {\n  if (typeof memo[target] === \"undefined\") {\n    var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself\n\n    if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {\n      try {\n        // This will throw an exception if access to iframe is blocked\n        // due to cross-origin restrictions\n        styleTarget = styleTarget.contentDocument.head;\n      } catch (e) {\n        // istanbul ignore next\n        styleTarget = null;\n      }\n    }\n\n    memo[target] = styleTarget;\n  }\n\n  return memo[target];\n}\n/* istanbul ignore next  */\n\n\nfunction insertBySelector(insert, style) {\n  var target = getTarget(insert);\n\n  if (!target) {\n    throw new Error(\"Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.\");\n  }\n\n  target.appendChild(style);\n}\n\nmodule.exports = insertBySelector;\n\n//# sourceURL=webpack://project/./node_modules/style-loader/dist/runtime/insertBySelector.js?");
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/insertStyleElement.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/insertStyleElement.js ***!
+  \**********************************************************************/
+/***/ ((module) => {
+
+eval("\n\n/* istanbul ignore next  */\nfunction insertStyleElement(options) {\n  var style = document.createElement(\"style\");\n  options.setAttributes(style, options.attributes);\n  options.insert(style);\n  return style;\n}\n\nmodule.exports = insertStyleElement;\n\n//# sourceURL=webpack://project/./node_modules/style-loader/dist/runtime/insertStyleElement.js?");
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js ***!
+  \**********************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("\n\n/* istanbul ignore next  */\nfunction setAttributesWithoutAttributes(style) {\n  var nonce =  true ? __webpack_require__.nc : 0;\n\n  if (nonce) {\n    style.setAttribute(\"nonce\", nonce);\n  }\n}\n\nmodule.exports = setAttributesWithoutAttributes;\n\n//# sourceURL=webpack://project/./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js?");
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/styleDomAPI.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/styleDomAPI.js ***!
+  \***************************************************************/
+/***/ ((module) => {
+
+eval("\n\n/* istanbul ignore next  */\nfunction apply(style, options, obj) {\n  var css = obj.css;\n  var media = obj.media;\n  var sourceMap = obj.sourceMap;\n\n  if (media) {\n    style.setAttribute(\"media\", media);\n  } else {\n    style.removeAttribute(\"media\");\n  }\n\n  if (sourceMap && typeof btoa !== \"undefined\") {\n    css += \"\\n/*# sourceMappingURL=data:application/json;base64,\".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), \" */\");\n  } // For old IE\n\n  /* istanbul ignore if  */\n\n\n  options.styleTagTransform(css, style);\n}\n\nfunction removeStyleElement(style) {\n  // istanbul ignore if\n  if (style.parentNode === null) {\n    return false;\n  }\n\n  style.parentNode.removeChild(style);\n}\n/* istanbul ignore next  */\n\n\nfunction domAPI(options) {\n  var style = options.insertStyleElement(options);\n  return {\n    update: function update(obj) {\n      apply(style, options, obj);\n    },\n    remove: function remove() {\n      removeStyleElement(style);\n    }\n  };\n}\n\nmodule.exports = domAPI;\n\n//# sourceURL=webpack://project/./node_modules/style-loader/dist/runtime/styleDomAPI.js?");
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/styleTagTransform.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/styleTagTransform.js ***!
+  \*********************************************************************/
+/***/ ((module) => {
+
+eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, style) {\n  if (style.styleSheet) {\n    style.styleSheet.cssText = css;\n  } else {\n    while (style.firstChild) {\n      style.removeChild(style.firstChild);\n    }\n\n    style.appendChild(document.createTextNode(css));\n  }\n}\n\nmodule.exports = styleTagTransform;\n\n//# sourceURL=webpack://project/./node_modules/style-loader/dist/runtime/styleTagTransform.js?");
+
+/***/ }),
+
+/***/ "./commons/blocks/widgets/img/arrow-forward.svg":
+/*!******************************************************!*\
+  !*** ./commons/blocks/widgets/img/arrow-forward.svg ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"img/ae9e8d9bc1e9ad88ca1c..svg\";\n\n//# sourceURL=webpack://project/./commons/blocks/widgets/img/arrow-forward.svg?");
+
+/***/ }),
+
+/***/ "./commons/fonts/Montserrat-Bold/Montserrat-Bold.svg":
+/*!***********************************************************!*\
+  !*** ./commons/fonts/Montserrat-Bold/Montserrat-Bold.svg ***!
+  \***********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"img/3d43db1faf321166a0a6..svg\";\n\n//# sourceURL=webpack://project/./commons/fonts/Montserrat-Bold/Montserrat-Bold.svg?");
+
+/***/ }),
+
+/***/ "./commons/fonts/Montserrat-Regular/Montserrat-Regular.svg":
+/*!*****************************************************************!*\
+  !*** ./commons/fonts/Montserrat-Regular/Montserrat-Regular.svg ***!
+  \*****************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"img/464c2aa1390cd8659acd..svg\";\n\n//# sourceURL=webpack://project/./commons/fonts/Montserrat-Regular/Montserrat-Regular.svg?");
+
+/***/ }),
+
+/***/ "./commons/pages/registration/img/background.png":
+/*!*******************************************************!*\
+  !*** ./commons/pages/registration/img/background.png ***!
+  \*******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"img/8acac74938976b7a8c73..png\";\n\n//# sourceURL=webpack://project/./commons/pages/registration/img/background.png?");
+
+/***/ }),
+
+/***/ "./commons/fonts/Montserrat-Bold/Montserrat-Bold.ttf":
+/*!***********************************************************!*\
+  !*** ./commons/fonts/Montserrat-Bold/Montserrat-Bold.ttf ***!
+  \***********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"9a0eb35bac9b72d55aca.ttf\";\n\n//# sourceURL=webpack://project/./commons/fonts/Montserrat-Bold/Montserrat-Bold.ttf?");
+
+/***/ }),
+
+/***/ "./commons/fonts/Montserrat-Regular/Montserrat-Regular.ttf":
+/*!*****************************************************************!*\
+  !*** ./commons/fonts/Montserrat-Regular/Montserrat-Regular.ttf ***!
+  \*****************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"79c80e637519c578b98f.ttf\";\n\n//# sourceURL=webpack://project/./commons/fonts/Montserrat-Regular/Montserrat-Regular.ttf?");
+
+/***/ }),
+
+/***/ "./commons/fonts/Montserrat-Regular/Montserrat-Regular.woff":
+/*!******************************************************************!*\
+  !*** ./commons/fonts/Montserrat-Regular/Montserrat-Regular.woff ***!
+  \******************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"3408b582a6e9ecf5468e.woff\";\n\n//# sourceURL=webpack://project/./commons/fonts/Montserrat-Regular/Montserrat-Regular.woff?");
+
+/***/ }),
+
+/***/ "./commons/fonts/Montserrat-bold/Montserrat-Bold.woff":
+/*!************************************************************!*\
+  !*** ./commons/fonts/Montserrat-bold/Montserrat-Bold.woff ***!
+  \************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"f3cf7520afac85f4276d.woff\";\n\n//# sourceURL=webpack://project/./commons/fonts/Montserrat-bold/Montserrat-Bold.woff?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			id: moduleId,
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl + "../";
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"sign_in": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./commons/pages/sign-in/sign-in.js");
+/******/ 	
+/******/ })()
+;

@@ -3,12 +3,36 @@
   padding: 0;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@font-face {
+  font-family: "Montserrat-bold";
+  src: local("Montserrat-bold");
+  src: url("/commons/fonts/Montserrat-bold/Montserrat-Bold.woff") format("woff"),
+    url("/commons/fonts/Montserrat-Bold/Montserrat-Bold.ttf") format("truetype"),
+    url("/commons/fonts/Montserrat-Bold/Montserrat-Bold.svg#Montserrat-bold")
+      format("svg");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Montserrat-normal";
+  src: local("Montserrat-normal");
+  src: url("/commons/fonts/Montserrat-Regular/Montserrat-Regular.woff")
+      format("woff"),
+    url("/commons/fonts/Montserrat-Regular/Montserrat-Regular.ttf")
+      format("truetype"),
+    url("/commons/fonts/Montserrat-Regular/Montserrat-Regular.svg#Montserrat-normal")
+      format("svg");
+  font-style: normal;
+  font-weight: 400;
+}
+
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 @mixin Montserrat($weight, $size, $height) {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat-" + $weight, sans-serif;
   font-style: normal;
   font-weight: $weight;
   font-size: $size;

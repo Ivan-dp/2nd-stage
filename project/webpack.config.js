@@ -108,7 +108,8 @@ module.exports = {
       },
       //fonts
       {
-        test: /\.(woff(2)?|ttf|otf|eot)$/,
+        test: /\.(woff(2)?|ttf|otf|eot|svg)$/,
+        exclude: /\.(png|jpe?g|svg|gif)$/,
         loader: 'file-loader',
         options: {
           name: 'fonts/[name].[ext]',
