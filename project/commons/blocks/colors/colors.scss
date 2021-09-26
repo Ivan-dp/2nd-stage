@@ -8,46 +8,43 @@
 
 .colors {
   width: 285px;
-}
-
-.colors__item {
-  display: flex;
-  height: 70px;
-  margin-bottom: 20px;
-}
-
-.colors__item__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  h2 {
-    @include Montserrat($bold-fw, 19px, 28px);
-    color: $dark-shade-100;
+  &__item {
+    display: flex;
+    height: 70px;
+    margin-bottom: 20px;
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h2 {
+        @include Montserrat($bold-fw, 19px, 28px);
+        color: $dark-shade-100;
+      }
+      p {
+        @include Montserrat($normal-fw, 19px, 28px);
+        color: $dark-shade-100;
+      }
+    }
+    &__ds100 {
+      @include colors($dark-shade-100);
+    }
+    &__ds75 {
+      @include colors($dark-shade-75);
+    }
+    &__ds50 {
+      @include colors($dark-shade-50);
+    }
+    &__ds25 {
+      @include colors($dark-shade-25);
+    }
+    &__ds5 {
+      @include colors($dark-shade-5);
+    }
+    &__purple {
+      @include colors($purple);
+    }
+    &__green {
+      @include colors($green);
+    }
   }
-  p {
-    @include Montserrat($normal-fw, 19px, 28px);
-    color: $dark-shade-100;
-  }
-}
-
-.colors__item__ds100 {
-  @include colors($dark-shade-100);
-}
-.colors__item__ds75 {
-  @include colors($dark-shade-75);
-}
-.colors__item__ds50 {
-  @include colors($dark-shade-50);
-}
-.colors__item__ds25 {
-  @include colors($dark-shade-25);
-}
-.colors__item__ds5 {
-  @include colors($dark-shade-5);
-}
-.colors__item__purple {
-  @include colors($purple);
-}
-.colors__item__green {
-  @include colors($green);
 }

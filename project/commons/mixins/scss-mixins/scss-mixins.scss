@@ -3,36 +3,8 @@
   padding: 0;
 }
 
-@font-face {
-  font-family: "Montserrat-bold";
-  src: local("Montserrat-Bold");
-  src: url("/commons/fonts/Montserrat-bold/Montserrat-Bold.woff") format("woff"),
-    url("/commons/fonts/Montserrat-Bold/Montserrat-Bold.ttf") format("truetype"),
-    url("/commons/fonts/Montserrat-Bold/Montserrat-Bold.svg#Montserrat-bold")
-      format("svg");
-  font-style: normal;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Montserrat-normal";
-  src: local("Montserrat-Regular");
-  src: url("/commons/fonts/Montserrat-Regular/Montserrat-Regular.woff")
-      format("woff"),
-    url("/commons/fonts/Montserrat-Regular/Montserrat-Regular.ttf")
-      format("truetype"),
-    url("/commons/fonts/Montserrat-Regular/Montserrat-Regular.svg#Montserrat-normal")
-      format("svg");
-  font-style: normal;
-  font-weight: 400;
-}
-
-// @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-
 @mixin Montserrat($weight, $size, $height) {
-  font-family: "Montserrat-" + $weight, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: $weight;
   font-size: $size;
@@ -64,23 +36,23 @@
     @include LineNone();
     width: 100%;
     height: 100%;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1px solid $dark-shade-25;
     box-sizing: border-box;
     border-radius: 4px;
-    @include Montserrat(normal, 14px, 18px);
-    color: rgba(31, 32, 65, 0.25);
+    @include Montserrat($normal-fw, $checkbox-item-fs, $checkbox-item-lh);
+    color: $dark-shade-25;
     padding-left: 15px;
     &:hover {
-      border: 1px solid rgba(31, 32, 65, 0.5);
-      color: rgba(31, 32, 65, 0.75);
+      border: 1px solid $dark-shade-50;
+      color: $dark-shade-75;
     }
     &:focus {
-      border: 1px solid rgba(31, 32, 65, 0.5);
-      color: rgba(31, 32, 65, 0.75);
+      border: 1px solid $dark-shade-50;
+      color: $dark-shade-75;
     }
   }
 }
 
 .footer {
-  border-top: 1px solid rgba(31, 32, 65, 0.25);
+  border-top: 1px solid $dark-shade-25;
 }
