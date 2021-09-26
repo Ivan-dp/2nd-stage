@@ -1,9 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-@mixin whrc($color) {
+@mixin colors($color) {
   background: $color;
   width: 70px;
   height: 70px;
@@ -26,33 +21,33 @@
   flex-direction: column;
   justify-content: center;
   h2 {
-    @include Montserrat(bold, 19px, 28px);
-    color: #1f2041;
+    @include Montserrat($bold-fw, 19px, 28px);
+    color: $dark-shade-100;
   }
   p {
-    @include Montserrat(normal, 19px, 28px);
-    color: #1f2041;
+    @include Montserrat($normal-fw, 19px, 28px);
+    color: $dark-shade-100;
   }
 }
 
 .colors__item__ds100 {
-  @include whrc(#1f2041);
+  @include colors($dark-shade-100);
 }
 .colors__item__ds75 {
-  @include whrc(rgba(31, 32, 65, 0.75));
+  @include colors($dark-shade-75);
 }
 .colors__item__ds50 {
-  @include whrc(rgba(31, 32, 65, 0.5));
+  @include colors($dark-shade-50);
 }
 .colors__item__ds25 {
-  @include whrc(rgba(31, 32, 65, 0.25));
+  @include colors($dark-shade-25);
 }
 .colors__item__ds5 {
-  @include whrc(rgba(31, 32, 65, 0.05));
+  @include colors($dark-shade-5);
 }
 .colors__item__purple {
-  @include whrc(#bc9cff);
+  @include colors($purple);
 }
 .colors__item__green {
-  @include whrc(#6fcf97);
+  @include colors($green);
 }
