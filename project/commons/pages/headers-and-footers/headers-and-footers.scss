@@ -23,9 +23,8 @@ header {
 }
 
 .menu__about {
-  font-weight: 700;
-  color: #1f2041;
-  opacity: 0.75;
+  @include Montserrat(bold, 14px, 17px);
+  color: $dark-shade-75;
 }
 
 footer {

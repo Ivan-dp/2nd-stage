@@ -1,7 +1,6 @@
 .widgets {
   height: 372px;
   width: 100%;
-  // margin-bottom: 1px;
   background: #ffffff;
   display: flex;
 }
@@ -16,7 +15,7 @@
 
 .widgets__container__main {
   width: 260px;
-  & p {
+  p {
     @include Montserrat(normal, 14px, 24px);
     margin-top: 20px;
   }
@@ -25,7 +24,7 @@
 ul {
   margin: 0;
   padding: 0;
-  & li {
+  li {
     list-style-type: none;
   }
 }
@@ -33,11 +32,11 @@ ul {
 .widgets__container__navigation,
 .widgets__container__about,
 .widgets__container__support {
-  & li {
+  li {
     @include Montserrat(normal, 14px, 17px);
     margin-bottom: 20px;
   }
-  & .bold {
+  .bold {
     @include Montserrat(bold, 12px, 15px);
     text-transform: uppercase;
     margin-bottom: 21px;
@@ -46,12 +45,12 @@ ul {
 
 .widgets__container__subscribe {
   width: 260px;
-  & p {
+  p {
     @include Montserrat(normal, 14px, 24px);
     margin: 0;
     margin-bottom: 20px;
   }
-  & .bold {
+  .bold {
     @include Montserrat(bold, 12px, 15px);
     text-transform: uppercase;
     margin-bottom: 21px;
@@ -61,7 +60,7 @@ ul {
 .subscribe__input {
   width: 260px;
   height: 44px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid $dark-shade-25;
   box-sizing: border-box;
   border-radius: 4px;
   input {
@@ -72,7 +71,7 @@ ul {
     border-radius: 4px;
     box-sizing: border-box;
     @include Montserrat(normal, 14px, 24px);
-    color: rgba(31, 32, 65, 0.25);
+    color: $dark-shade-25;
     padding-left: 15px;
     outline: none;
   }

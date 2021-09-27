@@ -4,7 +4,7 @@
 }
 
 @mixin Montserrat($weight, $size, $height) {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat-" + $weight, sans-serif;
   font-style: normal;
   font-weight: $weight;
   font-size: $size;
@@ -51,8 +51,4 @@
       color: $dark-shade-75;
     }
   }
-}
-
-.footer {
-  border-top: 1px solid $dark-shade-25;
 }

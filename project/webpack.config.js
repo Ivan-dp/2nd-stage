@@ -92,6 +92,7 @@ module.exports = {
       //img
       {
         test: /\.(png|jpe?g|svg|gif)$/,
+        exclude: /fonts/,
         type: 'asset/resource',
         generator: {
           filename: "img/[name].[contenthash].[ext]"
@@ -110,11 +111,12 @@ module.exports = {
       {
         test: /\.(woff(2)?|ttf|otf|eot|svg)$/,
         exclude: /img/,
-        loader: 'file-loader',
-        options: {
-          name: 'fonts/[name].[contenthash].[ext]',
-          publicPath: '/dist'
-        }
+        type: 'asset/inline'
+        // loader: "file-loader"
+        // options: {
+        //   filename: "fonts/[name].[contenthash].[ext]",
+        //   publicPath: '/dist'
+        // }
       }
     ]
   }
