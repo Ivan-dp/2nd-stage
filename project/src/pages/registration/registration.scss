@@ -1,0 +1,29 @@
+@import "/commons/mixins/scss-mixins/variables.scss";
+@import "/commons/mixins/scss-mixins/fonts.scss";
+@import "../../mixins/scss-mixins/scss-mixins.scss";
+@import "../../blocks/header/header.scss";
+@import "../../blocks/footer/footer.scss";
+@import "../../blocks/registration/registration.scss";
+@import "../../blocks/registration/dist/css/datepicker.min.css";
+@import "../../mixins/scss-mixins/datepicker-style.scss";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/commons/pages/registration/img/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .registration {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    .pay-button::after {
+      content: "Зарегистрироваться";
+    }
+  }
+}
+
+.footer {
+  border-top: none;
+}

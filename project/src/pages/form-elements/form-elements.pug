@@ -1,0 +1,36 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Form elements
+    script(src="./form-elements.js")
+  body 
+    a.logo-grey(href="/dist/html/index.html")
+      img(src="/commons/pages/form-elements/img/logo_grey.svg", alt="logo")
+    .form-elements__container
+      .form-elements__container__column
+        include ../../blocks/text-fields/text-fields
+      .form-elements__container__column
+        include ../../blocks/checkboxes/checkboxes
+      .form-elements__container__column
+        include ../../blocks/ranges-and-buttons/ranges-and-buttons
+      .form-elements__container__column 
+        include ../../blocks/dropdown-rooms/dropdown-rooms
+      .form-elements__container__column-o
+        include ../../blocks/dropdown/dropdown
+      .form-elements__container__column-o
+        include ../../blocks/dropdown/dropdown
+      .form-elements__container__column 
+        include ../../blocks/checkbox-list/checkbox-list
+      .form-elements__container__column 
+        include ../../blocks/rich-checkbox-buttons/rich-checkbox-buttons
+      .form-elements__container__column 
+        include ../../blocks/bullet-list/bullet-list
+      .form-elements__container__column 
+        include ../../blocks/advantages/advantages
+      .form-elements__container__column-1 
+        include ../../blocks/feedback/feedback
+      
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")

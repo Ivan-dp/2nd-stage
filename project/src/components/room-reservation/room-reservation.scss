@@ -1,0 +1,119 @@
+@import "/commons/blocks/date-dropdown/date-dropdown.scss";
+@import "/commons/blocks/dropdown/dropdown.scss";
+@import "/commons/blocks/reservation-button/reservation-button.scss";
+@import "/commons/blocks/room-reservation/dist/css/datepicker.min.css";
+
+.room-reservation {
+  width: 380px;
+  height: 512px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px 30px 30px 30px;
+  &__title {
+    width: 320px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__number {
+    display: flex;
+    align-items: flex-end;
+    h3 {
+      color: #1f2041;
+      @include Montserrat(bold, 14px, 17px);
+      height: 17px;
+    }
+    h1 {
+      color: #1f2041;
+      @include Montserrat(bold, 24px, 29px);
+      margin-left: 5px;
+      margin-right: 10px;
+      height: 27px;
+    }
+    .pink {
+      color: #bc9cff;
+      text-transform: uppercase;
+      @include Montserrat(bold, 12px, 15px);
+      height: 15px;
+    }
+  }
+  &__price {
+    display: flex;
+    align-items: flex-end;
+    p {
+      color: rgba(31, 32, 65, 0.5);
+      @include Montserrat(normal, 12px, 18px);
+      height: 15px;
+      margin: 0;
+      padding: 0;
+    }
+    .bold {
+      @include Montserrat(bold, 14px, 18px);
+      margin-right: 6px;
+    }
+  }
+  &__form {
+    width: 320px;
+    margin-bottom: 20px;
+  }
+  &__datepicker {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__detail {
+    width: 320px;
+    height: 105px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &__detail__row {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(31, 32, 65, 0.75);
+    @include Montserrat(normal, 14px, 18px);
+    .service {
+      width: 240px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .info {
+      width: 20px;
+      height: 20px;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      color: rgba(31, 32, 65, 0.25);
+      @include Montserrat(bold, 12px, 14px);
+      cursor: pointer;
+    }
+  }
+  &__total {
+    width: 320px;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: baseline;
+
+    &-dotted {
+      height: 1px;
+      width: 180px;
+      border-bottom: 1px dotted rgba(31, 32, 65, 0.25);
+    }
+    p {
+      color: #1f2041;
+      @include Montserrat(bold, 19px, 23px);
+    }
+  }
+}

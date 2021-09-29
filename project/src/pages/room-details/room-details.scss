@@ -1,0 +1,70 @@
+@import "/commons/mixins/scss-mixins/variables.scss";
+@import "/commons/mixins/scss-mixins/fonts.scss";
+@import "/commons/mixins/scss-mixins/scss-mixins.scss";
+@import "/commons/blocks/header/header.scss";
+@import "/commons/blocks/room-reservation/room-reservation.scss";
+@import "/commons/blocks/footer/footer.scss";
+@import "/commons/blocks/room-information/room-information.scss";
+@import "/commons/blocks/room-experience/room-experience.scss";
+@import "/commons/blocks/room-reviews/room-reviews.scss";
+@import "/commons/blocks/room-rules/room-rules.scss";
+@import "/commons/blocks/room-cancellation/room-cancellation.scss";
+
+.room {
+  &__photo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 485px;
+    width: 100%;
+    .bigger {
+      height: 100%;
+      width: 70%;
+      // position: relative;
+      background-image: url(/commons/pages/room-details/img/photo1.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .smaller {
+      // position: relative;
+      height: 50%;
+      width: 30%;
+      background-image: url(/commons/pages/room-details/img/photo2.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      &:last-child {
+        background-image: url(/commons/pages/room-details/img/photo3.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  &__info {
+    width: 1160px;
+    min-height: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 70px;
+    margin-bottom: 70px;
+    &__details {
+      width: 720px;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__card {
+      width: 380px;
+      height: 100%;
+    }
+  }
+  &-reviews {
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+}

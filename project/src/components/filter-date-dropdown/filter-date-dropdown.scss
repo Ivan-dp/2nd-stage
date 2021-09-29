@@ -1,0 +1,50 @@
+@import "/commons/mixins/scss-mixins/datepicker-style.scss";
+
+.filter-date-dropdown {
+  width: 266px;
+  height: 65px;
+  margin-right: 20px;
+  h3 {
+    @include Montserrat(bold, 12px, 15px);
+    text-transform: uppercase;
+  }
+  &__field {
+    width: 100%;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    #btn_calendar {
+      display: flex;
+      width: 44px;
+      height: 44px;
+      cursor: pointer;
+      box-sizing: border-box;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      border-radius: 4px;
+      background-color: white;
+    }
+    input {
+      width: 222px;
+      height: 44px;
+      box-sizing: border-box;
+      border: none;
+      padding-left: 15px;
+      border-radius: 4px;
+      @include Montserrat(normal, 14px, 18px);
+      color: rgba(31, 32, 65, 0.75);
+      @include LineNone();
+    }
+  }
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  color: #bc9cff;
+}

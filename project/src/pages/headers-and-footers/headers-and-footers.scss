@@ -1,0 +1,36 @@
+@import "/commons/mixins/scss-mixins/variables.scss";
+@import "/commons/mixins/scss-mixins/fonts.scss";
+@import "/commons/mixins/scss-mixins/scss-mixins.scss";
+@import "../../blocks/header/header.scss";
+@import "../../blocks/footer/footer";
+@import "../../blocks/footer/_creative/creative";
+
+body {
+  background: #e5e5e5;
+  margin: 0;
+  padding: 0;
+  margin-top: 140px;
+}
+
+.logo-grey {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+.menu__about {
+  @include Montserrat(bold, 14px, 17px);
+  color: $dark-shade-75;
+}
+
+footer {
+  margin-bottom: 40px;
+}
+
+.footer-creative {
+  margin-bottom: 40px;
+}

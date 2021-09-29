@@ -1,0 +1,14 @@
+@import "/commons/blocks/toggle__block/toggle__block.scss";
+
+.toggle {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  h3 {
+    color: #1f2041;
+    @include Montserrat(bold, 12px, 15px);
+    text-transform: uppercase;
+    margin-bottom: 17px;
+  }
+}

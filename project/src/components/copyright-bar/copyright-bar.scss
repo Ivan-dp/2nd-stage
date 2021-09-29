@@ -1,0 +1,33 @@
+.copyright-bar {
+  height: 70px;
+  width: 100%;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px $dark-shade-5;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #e5e5e5;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    &__copyright {
+      @include Montserrat(normal, 14px, 17px);
+      margin-top: auto;
+      margin-bottom: auto;
+      color: $dark-shade-75;
+    }
+    &__social {
+      display: flex;
+      a {
+        margin-left: 20px;
+        margin-top: auto;
+        margin-bottom: auto;
+        img {
+          color: linear-gradient(180deg, #bc9cff, #8ba4f9);
+        }
+      }
+    }
+  }
+}

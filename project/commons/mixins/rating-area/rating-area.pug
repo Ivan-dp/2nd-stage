@@ -1,7 +1,0 @@
-mixin rating-area(num="")
-  .rating-area
-    - var i = 1
-    while i < 6
-      input(id="star-" + i + num)(type="radio")(name="rating" + num)(value= i)
-      label(for="star-" + i + num)(title="Оценка " + i) 
-      - i++

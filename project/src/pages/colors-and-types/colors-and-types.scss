@@ -1,0 +1,19 @@
+@import "/commons/mixins/scss-mixins/variables.scss";
+@import "/commons/mixins/scss-mixins/fonts.scss";
+@import "/commons/mixins/scss-mixins/scss-mixins.scss";
+@import "../../blocks/colors/colors";
+@import "../../blocks/types/types";
+
+.logo-grey {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  height: 610px;
+  margin: 145px auto auto auto;
+}

@@ -1,0 +1,15 @@
+include ../../mixins/input/input
+
+.log-in 
+  .log-in__title 
+    h1 Войти
+  .log-in__form 
+    .log-in__email
+      +input(class="input" value="Email" type="Email")
+    .log-in__password
+      +input(class="input" value="Пароль" type="text")
+  include ../log-in-button/log-in-button
+  .log-in__registration 
+    p Нет аккаунта на Toxin?
+    a(href="/dist/html/registration.html")  
+      button.log-in__registration_btn

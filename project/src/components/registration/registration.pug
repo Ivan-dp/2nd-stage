@@ -1,0 +1,29 @@
+include ../../mixins/input/input
+
+.registration 
+  .registration__title 
+    h1 Регистрация аккаунта
+  .registration__person 
+    .registration__name
+      +input(class="input" type="text" value="Имя")
+    .registration__surname
+      +input(class="input" type="text" value="Фамилия")
+    include ../radio-buttons__block/radio-buttons__block
+    .registration__born 
+      h3 Дата рождения
+      .registration__datepicker
+        +input(class="input" type="text" value="ДД.ММ.ГГГГ" id="calendar_born")
+  .registration__login 
+    h3 Данные для входа в сервис
+    .registration__email 
+      +input(class="input" type="text" value="Email")
+    .registration__password 
+      +input(class="input password" type="text" value="Пароль")
+    .registration__offers 
+      include ../toggle__block/toggle__block
+    .registration__pay
+      include ../pay-button/pay-button
+    .registration__sign-in 
+      p Уже есть аккаунт на Toxin
+      a(href="/dist/html/sign-in.html")
+        button.sign-in_btn
