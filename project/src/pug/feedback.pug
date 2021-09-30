@@ -1,0 +1,14 @@
+include like-button__container
+mixin feedback(img, name, time, desc)
+  .feedback
+    .feedback__title 
+      .feedback__avatar
+        img(src= img, alt="avatar")
+      .feedback__user 
+        p.feedback__name= name
+        p.feedback__time= time
+    .feedback__description 
+      .feedback__like
+        +like-button__container
+      .feedback__desc
+        p= desc

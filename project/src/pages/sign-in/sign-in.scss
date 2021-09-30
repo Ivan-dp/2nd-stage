@@ -1,15 +1,15 @@
-@import "/commons/mixins/scss-mixins/variables.scss";
-@import "/commons/mixins/scss-mixins/fonts.scss";
-@import "../../mixins/scss-mixins/scss-mixins.scss";
-@import "../../blocks/header/header.scss";
-@import "../../blocks/footer/footer.scss";
-@import "../../blocks/log-in/log-in.scss";
+@import "/src/scss/variables.scss";
+@import "/src/scss/fonts.scss";
+@import "/src/scss/scss-mixins.scss";
+@import "/src/blocks/header/header.scss";
+@import "/src/blocks/footer/footer.scss";
+@import "/src/blocks/log-in/log-in.scss";
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/commons/pages/registration/img/background.png);
+  background-image: url(/src/img/background.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,14 +1,14 @@
-@import "/commons/mixins/scss-mixins/variables.scss";
-@import "/commons/mixins/scss-mixins/fonts.scss";
-@import "/commons/mixins/scss-mixins/scss-mixins.scss";
-@import "/commons/blocks/header/header.scss";
-@import "/commons/blocks/room-reservation/room-reservation.scss";
-@import "/commons/blocks/footer/footer.scss";
-@import "/commons/blocks/room-information/room-information.scss";
-@import "/commons/blocks/room-experience/room-experience.scss";
-@import "/commons/blocks/room-reviews/room-reviews.scss";
-@import "/commons/blocks/room-rules/room-rules.scss";
-@import "/commons/blocks/room-cancellation/room-cancellation.scss";
+@import "/src/scss/variables.scss";
+@import "/src/scss/fonts.scss";
+@import "/src/scss/scss-mixins.scss";
+@import "/src/blocks/header/header.scss";
+@import "/src/blocks/room-reservation/room-reservation.scss";
+@import "/src/blocks/footer/footer.scss";
+@import "/src/blocks/room-information/room-information.scss";
+@import "/src/blocks/room-experience/room-experience.scss";
+@import "/src/blocks/room-reviews/room-reviews.scss";
+@import "/src/blocks/room-rules/room-rules.scss";
+@import "/src/blocks/room-cancellation/room-cancellation.scss";
 
 .room {
   &__photo {
@@ -21,7 +21,7 @@
       height: 100%;
       width: 70%;
       // position: relative;
-      background-image: url(/commons/pages/room-details/img/photo1.png);
+      background-image: url(/src/img/photo1.png);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -30,12 +30,12 @@
       // position: relative;
       height: 50%;
       width: 30%;
-      background-image: url(/commons/pages/room-details/img/photo2.png);
+      background-image: url(/src/img/photo2.png);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       &:last-child {
-        background-image: url(/commons/pages/room-details/img/photo3.png);
+        background-image: url(/src/img/photo3.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;

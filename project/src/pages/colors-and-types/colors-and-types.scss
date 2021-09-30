@@ -1,8 +1,8 @@
-@import "/commons/mixins/scss-mixins/variables.scss";
-@import "/commons/mixins/scss-mixins/fonts.scss";
-@import "/commons/mixins/scss-mixins/scss-mixins.scss";
-@import "../../blocks/colors/colors";
-@import "../../blocks/types/types";
+@import "/src/scss/variables.scss";
+@import "/src/scss/fonts.scss";
+@import "/src/scss/scss-mixins.scss";
+@import "/src/blocks/colors/colors";
+@import "/src/blocks/types/types";
 
 .logo-grey {
   position: absolute;

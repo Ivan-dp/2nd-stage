@@ -1,20 +1,20 @@
-@import "/commons/mixins/scss-mixins/variables.scss";
-@import "/commons/mixins/scss-mixins/fonts.scss";
-@import "/commons/mixins/scss-mixins/scss-mixins.scss";
+@import "/src/scss/variables.scss";
+@import "/src/scss/fonts.scss";
+@import "/src/scss/scss-mixins.scss";
 
 body {
   width: 100%;
 }
 
-@import "../../blocks/text-fields/text-fields.scss";
-@import "../../blocks/checkboxes/checkboxes.scss";
-@import "../../blocks/ranges-and-buttons/ranges-and-buttons.scss";
-@import "../../blocks/dropdown-rooms/dropdown-rooms.scss";
-@import "../../blocks/checkbox-list/checkbox-list.scss";
-@import "../../blocks/rich-checkbox-buttons/rich-checkbox-buttons.scss";
-@import "../../blocks/bullet-list/bullet-list.scss";
-@import "../../blocks/advantages/advantages.scss";
-@import "../../blocks/feedback/feedback.scss";
+@import "/src/blocks/text-fields/text-fields.scss";
+@import "/src/blocks/checkboxes/checkboxes.scss";
+@import "/src/blocks/ranges-and-buttons/ranges-and-buttons.scss";
+@import "/src/blocks/dropdown-rooms/dropdown-rooms.scss";
+@import "/src/blocks/checkbox-list/checkbox-list.scss";
+@import "/src/blocks/rich-checkbox-buttons/rich-checkbox-buttons.scss";
+@import "/src/blocks/bullet-list/bullet-list.scss";
+@import "/src/blocks/advantages/advantages.scss";
+@import "/src/blocks/feedback/feedback.scss";
 
 .logo-grey {
   position: absolute;

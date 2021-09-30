@@ -1,9 +1,0 @@
-@import "/commons/blocks/advantages/advantages.scss";
-.room-information {
-  max-width: 280px;
-  height: auto;
-  h3 {
-    @include Montserrat(bold, 19px, 23px);
-    color: #1f2041;
-  }
-}

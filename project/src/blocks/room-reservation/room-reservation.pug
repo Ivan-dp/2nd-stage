@@ -1,0 +1,43 @@
+include ../../pug/date-dropdown-mixin
+.room-reservation 
+  .room-reservation__title 
+    .room-reservation__number 
+      h3 №
+      h1 888
+      h3.pink люкс
+    .room-reservation__price 
+      p.bold 9 990₽
+      p в сутки
+  .room-reservation__form 
+    .room-reservation__datepicker
+      +date-dropdown_box("Прибытие", "from1")(class="doubleDatepicker-1" value="ДД.ММ.ГГГГ" type="text" id="btn_1")
+      +date-dropdown_box("Выезд", "to1")(class="doubleDatepicker-1" value="ДД.ММ.ГГГГ" type="text" id="btn_2")
+    .room-registration__dropdown-guest 
+      include ../../blocks/dropdown/dropdown
+  .room-reservation__detail 
+    .room-reservation__detail__row
+      .service 
+        p 9 990₽ х 4 суток
+      .price
+        p 39 960₽
+    .room-reservation__detail__row
+      .service 
+        p Сбор за услуги: скидка 2 179₽
+        .info
+          p i
+      .price
+        p 0₽
+    .room-reservation__detail__row
+      .service 
+        p Сбор за дополнительные услуги
+        .info
+          p i
+      .price
+        p 300₽
+  .room-reservation__total 
+    .room-reservation__total-name 
+      p Итого
+    .room-reservation__total-dotted
+    .room-reservation__total-price
+      p 38 081₽
+  include ../reservation-button/reservation-button

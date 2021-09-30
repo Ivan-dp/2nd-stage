@@ -1,12 +1,12 @@
-@import "/commons/mixins/scss-mixins/variables.scss";
-@import "/commons/mixins/scss-mixins/fonts.scss";
-@import "/commons/mixins/scss-mixins/scss-mixins.scss";
-@import "/commons/blocks/header/header.scss";
-@import "/commons/blocks/findroom/findroom.scss";
-@import "/commons/blocks/footer/footer.scss";
+@import "/src/scss/variables.scss";
+@import "/src/scss/fonts.scss";
+@import "/src/scss/scss-mixins.scss";
+@import "/src/blocks/header/header.scss";
+@import "/src/blocks/findroom/findroom.scss";
+@import "/src/blocks/footer/footer.scss";
 
 body {
-  background-image: url(/commons/pages/index/img/main-bcg.png);
+  background-image: url(/src/img/main-bcg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

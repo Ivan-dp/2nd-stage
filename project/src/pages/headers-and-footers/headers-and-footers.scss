@@ -1,9 +1,9 @@
-@import "/commons/mixins/scss-mixins/variables.scss";
-@import "/commons/mixins/scss-mixins/fonts.scss";
-@import "/commons/mixins/scss-mixins/scss-mixins.scss";
-@import "../../blocks/header/header.scss";
-@import "../../blocks/footer/footer";
-@import "../../blocks/footer/_creative/creative";
+@import "/src/scss/variables.scss";
+@import "/src/scss/fonts.scss";
+@import "/src/scss/scss-mixins.scss";
+@import "/src/blocks/header/header.scss";
+@import "/src/blocks/footer/footer";
+@import "/src/blocks/footer/_creative/creative";
 
 body {
   background: #e5e5e5;

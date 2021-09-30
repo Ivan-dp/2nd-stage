@@ -1,16 +1,16 @@
-@import "/commons/mixins/scss-mixins/variables.scss";
-@import "/commons/mixins/scss-mixins/fonts.scss";
-@import "/commons/mixins/scss-mixins/scss-mixins.scss";
-@import "/commons/blocks/header/header.scss";
-@import "/commons/blocks/footer/footer.scss";
-@import "/commons/pages/search-room/item-quantity-dropdown.min.css";
-@import "/commons/blocks/filter-date-dropdown/dist/css/datepicker.min.css";
-@import "/commons/blocks/dropdown/dropdown.scss";
-@import "/commons/mixins/scss-mixins/datepicker-style.scss";
-@import "/commons/blocks/range-slider/range-slider.scss";
-@import "/commons/mixins/scss-mixins/checkbox-buttons.scss";
-@import "/commons/mixins/scss-mixins/rich-checkbox-button.scss";
-@import "/commons/blocks/pagination/pagination.scss";
+@import "/src/scss/variables.scss";
+@import "/src/scss/fonts.scss";
+@import "/src/scss/scss-mixins.scss";
+@import "/src/blocks/header/header.scss";
+@import "/src/blocks/footer/footer.scss";
+@import "/src/pages/search-room/item-quantity-dropdown.min.css";
+@import "/src/blocks/filter-date-dropdown/dist/css/datepicker.min.css";
+@import "/src/blocks/dropdown/dropdown.scss";
+@import "/src/scss/datepicker-style.scss";
+@import "/src/blocks/range-slider/range-slider.scss";
+@import "/src/scss/checkbox-buttons.scss";
+@import "/src/scss/rich-checkbox-button.scss";
+@import "/src/blocks/pagination/pagination.scss";
 
 * {
   margin: 0;
@@ -199,7 +199,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    @import "/commons/mixins/rating-area/rating-area.scss";
+    @import "/src/scss/rating-area.scss";
     &__title {
       width: 100%;
       height: 80px;
@@ -228,40 +228,40 @@ main {
         &:hover {
         }
         &__photo-888 {
-          background-image: url(/commons/blocks/room-card/img/room_1.png);
+          background-image: url(/src/blocks/room-card/img/room_1.png);
         }
         &__photo-840 {
-          background-image: url(/commons/blocks/room-card/img/room_2.png);
+          background-image: url(/src/blocks/room-card/img/room_2.png);
         }
         &__photo-980 {
-          background-image: url(/commons/blocks/room-card/img/room_3.png);
+          background-image: url(/src/blocks/room-card/img/room_3.png);
         }
         &__photo-856 {
-          background-image: url(/commons/blocks/room-card/img/room_4.png);
+          background-image: url(/src/blocks/room-card/img/room_4.png);
         }
         &__photo-740 {
-          background-image: url(/commons/blocks/room-card/img/room_5.png);
+          background-image: url(/src/blocks/room-card/img/room_5.png);
         }
         &__photo-982 {
-          background-image: url(/commons/blocks/room-card/img/room_6.png);
+          background-image: url(/src/blocks/room-card/img/room_6.png);
         }
         &__photo-678 {
-          background-image: url(/commons/blocks/room-card/img/room_7.png);
+          background-image: url(/src/blocks/room-card/img/room_7.png);
         }
         &__photo-450 {
-          background-image: url(/commons/blocks/room-card/img/room_8.png);
+          background-image: url(/src/blocks/room-card/img/room_8.png);
         }
         &__photo-350 {
-          background-image: url(/commons/blocks/room-card/img/room_9.png);
+          background-image: url(/src/blocks/room-card/img/room_9.png);
         }
         &__photo-666 {
-          background-image: url(/commons/blocks/room-card/img/room_10.png);
+          background-image: url(/src/blocks/room-card/img/room_10.png);
         }
         &__photo-444 {
-          background-image: url(/commons/blocks/room-card/img/room_11.png);
+          background-image: url(/src/blocks/room-card/img/room_11.png);
         }
         &__photo-352 {
-          background-image: url(/commons/blocks/room-card/img/room_12.png);
+          background-image: url(/src/blocks/room-card/img/room_12.png);
         }
         &__photo-888,
         &__photo-840,

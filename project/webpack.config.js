@@ -6,15 +6,15 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    form_elements: './commons/pages/form-elements/form-elements.js',
-    cards: './commons/pages/cards/cards.js',
-    colors_and_types: './commons/pages/colors-and-types/colors-and-types.js',
-    headers_and_footers: './commons/pages/headers-and-footers/headers-and-footers.js',
-    index: './commons/pages/index/index.js',
-    search_room: './commons/pages/search-room/search-room.js',
-    room_details: './commons/pages/room-details/room-details.js',
-    registration: './commons/pages/registration/registration.js',
-    sign_in: './commons/pages/sign-in/sign-in.js'
+    form_elements: './src/pages/form-elements/form-elements.js',
+    cards: './src/pages/cards/cards.js',
+    colors_and_types: './src/pages/colors-and-types/colors-and-types.js',
+    headers_and_footers: './src/pages/headers-and-footers/headers-and-footers.js',
+    index: './src/pages/index/index.js',
+    search_room: './src/pages/search-room/search-room.js',
+    room_details: './src/pages/room-details/room-details.js',
+    registration: './src/pages/registration/registration.js',
+    sign_in: './src/pages/sign-in/sign-in.js'
   },
   output: {
     filename: 'js/[name].bundle.js',
@@ -23,47 +23,47 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'html/form-elements.html',
-      template: './commons/pages/form-elements/form-elements.pug',
+      template: './src/pages/form-elements/form-elements.pug',
       chunks: ['form_elements']
     }),
     new HtmlWebpackPlugin({
       filename: 'html/cards.html',
-      template: './commons/pages/cards/cards.pug',
+      template: './src/pages/cards/cards.pug',
       chunks: ['cards']
     }),
     new HtmlWebpackPlugin({
       filename: 'html/colors-and-types.html',
-      template: './commons/pages/colors-and-types/colors-and-types.pug',
+      template: './src/pages/colors-and-types/colors-and-types.pug',
       chunks: ['colors_and_types']
     }),
     new HtmlWebpackPlugin({
       filename: 'html/headers-and-footers.html',
-      template: './commons/pages/headers-and-footers/headers-and-footers.pug',
+      template: './src/pages/headers-and-footers/headers-and-footers.pug',
       chunks: ['headers_and_footers']
     }),
     new HtmlWebpackPlugin({
       filename: 'html/index.html',
-      template: './commons/pages/index/index.pug',
+      template: './src/pages/index/index.pug',
       chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       filename: 'html/search-room.html',
-      template: './commons/pages/search-room/search-room.pug',
+      template: './src/pages/search-room/search-room.pug',
       chunks: ['search_room']
     }),
     new HtmlWebpackPlugin({
       filename: 'html/room-details.html',
-      template: './commons/pages/room-details/room-details.pug',
+      template: './src/pages/room-details/room-details.pug',
       chunks: ['room_details']
     }),
     new HtmlWebpackPlugin({
       filename: 'html/registration.html',
-      template: './commons/pages/registration/registration.pug',
+      template: './src/pages/registration/registration.pug',
       chunks: ['registration']
     }),
     new HtmlWebpackPlugin({
       filename: 'html/sign-in.html',
-      template: './commons/pages/sign-in/sign-in.pug',
+      template: './src/pages/sign-in/sign-in.pug',
       chunks: ['sign_in']
     }),
     new CleanWebpackPlugin()    
