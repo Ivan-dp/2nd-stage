@@ -1,3 +1,5 @@
+@import "./checkbox-list_checked.scss";
+
 .checkbox-list {
   width: 266px;
   height: auto;
@@ -5,7 +7,6 @@
   position: relative;
   &__container {
     width: 100%;
-    // height: 44px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -20,21 +21,6 @@
       opacity: 0;
       width: 0;
       height: 0;
-      &:checked ~ .checkbox-list__checkmark::after {
-        transform: rotate(225deg);
-        transition: 0.5s cubic-bezier(0.4, 0, 0, 0.9);
-      }
-      &:checked ~ .checkbox-list__checkboxes {
-        opacity: 1;
-        // width: 100%;
-        // height: 240px;
-      }
-      &:checked ~ .checkbox-list {
-        height: 240px;
-      }
-      &:checked ~ .checkbox-list__container {
-        height: 240px;
-      }
     }
     .checkbox-list__checkmark {
       width: 44px;
