@@ -2,7 +2,7 @@ import "../../blocks/date-dropdown/date-dropdown";
 import "../../blocks/dropdown/dropdown_1";
 import "./index.scss";
 
-var titles = document.querySelectorAll('.form .date-dropdown .date-dropdown_box');
+var titles = document.querySelectorAll('.form .date-dropdown .date-dropdown__box');
 
 var from1 = titles[0].querySelector('h3');
 var to1 = titles[1].querySelector('h3');

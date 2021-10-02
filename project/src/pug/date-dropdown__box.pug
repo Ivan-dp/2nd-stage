@@ -1,0 +1,7 @@
+mixin date-dropdown__box(title, id)
+  .date-dropdown__box
+    h3= title
+    form.date-dropdown__field
+      input(class!=attributes.class value!=attributes.value type!=attributes.type)(id= id)
+      button(type="button")(id!=attributes.id)
+        img(src='/src/blocks/findroom-form/img/expand_more.svg')

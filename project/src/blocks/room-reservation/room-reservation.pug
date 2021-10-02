@@ -1,4 +1,4 @@
-include ../../pug/date-dropdown-mixin
+include ../../pug/date-dropdown__box
 .room-reservation 
   .room-reservation__title 
     .room-reservation__number 
@@ -10,8 +10,8 @@ include ../../pug/date-dropdown-mixin
       p в сутки
   .room-reservation__form 
     .room-reservation__datepicker
-      +date-dropdown_box("Прибытие", "from1")(class="doubleDatepicker-1" value="ДД.ММ.ГГГГ" type="text" id="btn_1")
-      +date-dropdown_box("Выезд", "to1")(class="doubleDatepicker-1" value="ДД.ММ.ГГГГ" type="text" id="btn_2")
+      +date-dropdown__box("Прибытие", "from1")(class="doubleDatepicker-1" value="ДД.ММ.ГГГГ" type="text" id="btn_1")
+      +date-dropdown__box("Выезд", "to1")(class="doubleDatepicker-1" value="ДД.ММ.ГГГГ" type="text" id="btn_2")
     .room-registration__dropdown-guest 
       include ../../blocks/dropdown/dropdown
   .room-reservation__detail 

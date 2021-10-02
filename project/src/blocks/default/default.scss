@@ -13,15 +13,15 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 5px;
-    &__left {
-      @include Montserrat(bold, 12px, 15px);
-      text-transform: uppercase;
-      color: #1f2041;
-    }
-    &__right {
-      @include Montserrat(normal, 12px, 15px);
-      text-transform: uppercase;
-      color: rgba(31, 32, 65, 0.5);
-    }
+  }
+  &__left {
+    @include Montserrat(bold, 12px, 15px);
+    text-transform: uppercase;
+    color: #1f2041;
+  }
+  &__right {
+    @include Montserrat(normal, 12px, 15px);
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
   }
 }

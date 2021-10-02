@@ -6,8 +6,8 @@ append head
 block container
   main 
     .sidebar 
-      include ../../pug/date-dropdown-mixin
-      +date-dropdown_box("Даты пребывания в отеле", "main-datepicker")(class="input" value="ДД.ММ.ГГГГ" id="btn-datepicker")
+      include ../../pug/date-dropdown__box
+      +date-dropdown__box("Даты пребывания в отеле", "main-datepicker")(class="input" value="ДД.ММ.ГГГГ" id="btn-datepicker")
       include ../../pug/iqdropdown
       +iqdropdown('гости','', "guests", "", "Сколько гостей", 'guest1', 'guest2', 'guest3', 'Взрослые', "Дети", 'Младенцы')
       include ../../blocks/range-slider/range-slider

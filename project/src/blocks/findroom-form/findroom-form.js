@@ -1,7 +1,7 @@
 import "../date-dropdown/date-dropdown";
 import "../dropdown/dropdown_1";
 
-var dateDropdownCards = document.querySelectorAll('.form .date-dropdown .date-dropdown_box');
+var dateDropdownCards = document.querySelectorAll('.form .date-dropdown .date-dropdown__box');
 
 var fromTitle = dateDropdownCards[0].querySelector('h3');
 var toTitle = dateDropdownCards[1].querySelector('h3');
