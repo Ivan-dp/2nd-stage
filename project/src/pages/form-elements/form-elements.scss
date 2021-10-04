@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 1158px;
+  max-width: 1158px;
   margin: auto;
   padding-top: 140px;
   padding-bottom: 140px;
@@ -36,16 +36,17 @@ body {
   margin-bottom: 100px;
 }
 
-.form-elements__container__column,
-.form-elements__container__column-o,
-.form-elements__container__column-1 {
+.form-elements__column,
+.form-elements__column-o,
+.form-elements__column-1 {
   // padding: 20px;
   height: auto;
   width: 320px;
   // background: coral;
+  // border: 3px solid green;
 }
 
-.form-elements__container__column-1 {
+.form-elements__column-1 {
   width: 739px;
 }
 

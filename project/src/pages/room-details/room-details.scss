@@ -50,12 +50,15 @@
     margin: auto;
     padding-top: 70px;
     margin-bottom: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
     &__details {
       width: 720px;
       height: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      margin-right: 40px;
     }
 
     &__card {

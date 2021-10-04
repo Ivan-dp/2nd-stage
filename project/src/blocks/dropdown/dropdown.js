@@ -137,7 +137,7 @@ $(document).ready(() => {
       
 function menuOpen() {
   var parent1 = document.querySelector('.form-elements__container');
-  var parent = parent1.querySelectorAll('.form-elements__container__column-o');
+  var parent = parent1.querySelectorAll('.form-elements__column-o');
   
   var element1 = parent[0].querySelector('.dropdown');
   var element2 = parent[1].querySelector('.dropdown');
