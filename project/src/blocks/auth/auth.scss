@@ -1,32 +1,10 @@
+@import "/src/scss/btn.scss";
+@import "/src/scss/btn_gradient.scss";
+@import "/src/blocks/auth/auth__sign-in.scss";
+@import "/src/blocks/auth/auth__registration.scss";
+
 .auth {
-  a {
-    text-decoration: none;
-    cursor: pointer;
-  }
-  &__log-in {
-    width: 87px;
-    height: 34px;
-    color: $purple;
-    border: 2px solid;
-    border-color: linear-gradient(180deg, #bc9cff, #8ba4f9);
-    border-radius: 22px;
-    box-sizing: border-box;
-    background: white;
-    @include Montserrat(bold, 12px, 15px);
-    text-transform: uppercase;
-    margin-left: 20px;
-    cursor: pointer;
-  }
-  &__sign-in {
-    width: 196px;
-    height: 34px;
-    color: white;
-    background: linear-gradient(180deg, #bc9cff, #8ba4f9);
-    border: none;
-    border-radius: 22px;
-    @include Montserrat(bold, 12px, 15px);
-    text-transform: uppercase;
-    margin-left: 20px;
-    cursor: pointer;
-  }
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
 }

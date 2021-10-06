@@ -1,0 +1,6 @@
+mixin bullet-list(classname, ...items)
+  ul.bullet-list(class= classname)
+    each item in items
+      li
+        span.item 
+        p.title= item

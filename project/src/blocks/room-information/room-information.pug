@@ -1,7 +1,7 @@
-include ../../pug/advantage__item
+include ../../pug/advantage
 
 .room-information
   h3 Сведения о номере
-  +advantage__item("insert_emoticon", "Комфорт", "Шумопоглощающие стены")
-  +advantage__item("location_city", "Удобство", "Окно в каждой из спален")
-  +advantage__item("whatshot", "Уют", "Номер оснащён камином")
+  +advantage("insert_emoticon", "Комфорт", "Шумопоглощающие стены", "room-information__advantage")
+  +advantage("location_city", "Удобство", "Окно в каждой из спален", "room-information__advantage")
+  +advantage("whatshot", "Уют", "Номер оснащён камином", "room-information__advantage")
