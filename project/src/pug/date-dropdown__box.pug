@@ -1,5 +1,5 @@
-mixin date-dropdown__box(title, id)
-  .date-dropdown__box
+mixin date-dropdown__box(title, id, classname="")
+  .date-dropdown__box(class= classname)
     h3= title
     form.date-dropdown__field
       input(class!=attributes.class value!=attributes.value type!=attributes.type)(id= id)
