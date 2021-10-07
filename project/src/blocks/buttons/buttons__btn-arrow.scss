@@ -1,0 +1,14 @@
+@import "/src/scss/btn-arrow.scss";
+
+.buttons__btn-arrow::after {
+  content: "перейти к оплате";
+  @include Montserrat(bold, 12px, 15px);
+  position: absolute;
+  text-transform: uppercase;
+  color: white;
+  width: 320px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,5 +1,5 @@
-mixin checkbox-button(desc)
-  label.checkbox-buttons__container
+mixin checkbox-button(classname, desc)
+  label.checkbox-button(class= classname)
     input(type='checkbox')     
-    span.checkbox-buttons__checkmark
+    span.checkbox-button__checkmark
     p= desc

@@ -1,0 +1,24 @@
+.color {
+  display: flex;
+  height: 70px;
+  margin-bottom: 20px;
+  &__example {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    margin-right: 40px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      @include Montserrat($bold-fw, 19px, 28px);
+      color: $dark-shade-100;
+    }
+    p {
+      @include Montserrat($normal-fw, 19px, 28px);
+      color: $dark-shade-100;
+    }
+  }
+}

@@ -1,50 +1,28 @@
-@mixin colors($color) {
-  background: $color;
-  width: 70px;
-  height: 70px;
-  border-radius: 6px;
-  margin-right: 40px;
-}
+@import "/src/scss/color.scss";
 
 .colors {
   width: 285px;
-  &__item {
-    display: flex;
-    height: 70px;
-    margin-bottom: 20px;
-    &__info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      h2 {
-        @include Montserrat($bold-fw, 19px, 28px);
-        color: $dark-shade-100;
-      }
-      p {
-        @include Montserrat($normal-fw, 19px, 28px);
-        color: $dark-shade-100;
-      }
-    }
+  .color {
     &__ds100 {
-      @include colors($dark-shade-100);
+      background: $dark-shade-100;
     }
     &__ds75 {
-      @include colors($dark-shade-75);
+      background: $dark-shade-75;
     }
     &__ds50 {
-      @include colors($dark-shade-50);
+      background: $dark-shade-50;
     }
     &__ds25 {
-      @include colors($dark-shade-25);
+      background: $dark-shade-25;
     }
     &__ds5 {
-      @include colors($dark-shade-5);
+      background: $dark-shade-5;
     }
     &__purple {
-      @include colors($purple);
+      background: $purple;
     }
     &__green {
-      @include colors($green);
+      background: $green;
     }
   }
 }

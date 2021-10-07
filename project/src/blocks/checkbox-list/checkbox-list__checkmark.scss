@@ -1,0 +1,20 @@
+.checkbox-list__checkmark {
+  width: 44px;
+  height: 44px;
+  display: block;
+  background: #ffffff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid rgba(31, 32, 65, 0.5);
+    border-right: 2px solid rgba(31, 32, 65, 0.5);
+    transform: rotate(45deg);
+    transition: 0.5s cubic-bezier(0.4, 0, 0, 0.9);
+  }
+}

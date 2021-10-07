@@ -1,6 +1,10 @@
-@import "/src/blocks/pay-button/pay-button.scss";
 @import "/src/scss/btn.scss";
 @import "/src/scss/btn_gradient.scss";
+@import "/src/blocks/buttons/buttons__flex.scss";
+@import "/src/blocks/buttons/buttons__btn.scss";
+@import "/src/blocks/buttons/buttons__btn_hover.scss";
+@import "/src/blocks/buttons/buttons__link.scss";
+@import "/src/blocks/buttons/buttons__btn-arrow.scss";
 
 .buttons {
   width: 220px;
@@ -10,28 +14,5 @@
     color: #1f2041;
     text-transform: uppercase;
     margin-bottom: 16px;
-  }
-  &__btn {
-    width: 99px;
-    height: 44px;
-    margin-bottom: 30px;
-    &_hover {
-      opacity: 0.5;
-      margin-left: 20px;
-    }
-  }
-  &__flex {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  &__link {
-    text-decoration: none;
-    @include Montserrat(bold, 12px, 15px);
-    text-transform: uppercase;
-    color: #bc9cff;
-    margin-right: 20px;
-    &[disabled="disabled"] {
-      color: rgba(31, 32, 65, 0.5);
-    }
   }
 }

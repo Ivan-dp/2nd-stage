@@ -22,7 +22,8 @@ include ../../pug/input
     .registration__offers 
       include ../toggle__block/toggle__block
     .registration__pay
-      include ../pay-button/pay-button
+      include ../../pug/btn-arrow
+      +btn-arrow("registration__btn-arrow")
     .registration__sign-in 
       p Уже есть аккаунт на Toxin
       a(href="/dist/html/sign-in.html")
