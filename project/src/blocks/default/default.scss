@@ -1,27 +1,9 @@
-@import "/src/blocks/default__input/default__input.scss";
-
-* {
-  padding: 0;
-  margin: 0;
-}
+@import "/src/blocks/default-input/default-input.scss";
+@import "/src/blocks/default/default__head.scss";
+@import "/src/blocks/default/default__title.scss";
+@import "/src/blocks/default/default__title_masked.scss";
 
 .default {
   width: 320px;
   height: 65px;
-  &__title {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 5px;
-  }
-  &__left {
-    @include Montserrat(bold, 12px, 15px);
-    text-transform: uppercase;
-    color: #1f2041;
-  }
-  &__right {
-    @include Montserrat(normal, 12px, 15px);
-    text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5);
-  }
 }

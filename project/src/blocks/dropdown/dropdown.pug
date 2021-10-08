@@ -1,20 +1,2 @@
-.dropdown
-  .dropdown__title 
-    h3.dropdown__title__left dropdown
-  .iqdropdown#guest
-    p.iqdropdown-selection Сколько гостей
-    .iqdropdown-menu
-      .iqdropdown-menu-option(data-id='item1')
-        div
-          p.iqdropdown-item Взрослые
-      .iqdropdown-menu-option(data-id='item2')
-        div
-          p.iqdropdown-item Дети
-      .iqdropdown-menu-option(data-id='item3')
-        div
-          p.iqdropdown-item Младенцы
-      .button-block
-        button.clear-button
-          p очистить
-        button.apply-button
-          p применить
+include ../../pug/iqdropdown
++iqdropdown('dropdown', '', 'guest', '', 'Сколько гостей', 'item1', 'item2', 'item3','Взрослые', 'Дети', 'Младенцы')

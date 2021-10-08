@@ -1,0 +1,4 @@
+.title_masked {
+  color: $dark-shade-50;
+  @include Montserrat(normal, 12px, 15px);
+}
