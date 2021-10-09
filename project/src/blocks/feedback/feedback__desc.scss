@@ -1,0 +1,6 @@
+.feedback__desc {
+  color: rgba(31, 32, 65, 0.75);
+  @include Montserrat(normal, 14px, 24px);
+  margin-left: 10px;
+  width: auto;
+}
