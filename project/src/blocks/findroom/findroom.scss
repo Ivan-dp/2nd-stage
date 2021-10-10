@@ -1,9 +1,5 @@
 @import "/src/blocks/findroom-form/findroom-form.scss";
-
-* {
-  margin: 0;
-  padding: 0;
-}
+@import "/src/blocks/findroom/findroom__title.scss";
 
 .findroom {
   width: 380px;
@@ -14,14 +10,4 @@
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px 30px 30px 30px;
-  &__title {
-    width: 100%;
-    height: 59px;
-    h1 {
-      @include Montserrat(bold, 24px, 29px);
-      margin: 0;
-      color: #1f2041;
-      display: block;
-    }
-  }
 }
