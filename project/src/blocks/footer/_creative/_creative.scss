@@ -1,4 +1,6 @@
 @import "../../logo/logo.scss";
+@import "/src/blocks/footer/_creative/footer_creative__copyright.scss";
+@import "/src/blocks/footer/_creative/footer_creative__social.scss";
 
 .footer_creative {
   width: 768px;
@@ -12,17 +14,4 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  &__copyright {
-    @include Montserrat(normal, 14px, 17px);
-    margin-top: 20px;
-    margin-bottom: 25px;
-    color: $dark-shade-75;
-  }
-  &__social {
-    display: flex;
-    & a {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-  }
 }
