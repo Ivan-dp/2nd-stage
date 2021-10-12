@@ -1,0 +1,20 @@
+@import "/src/blocks/like-button/like-button.scss";
+
+.uikit-like-button {
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+  h3 {
+    color: #1f2041;
+    @include Montserrat(bold, 12px, 15px);
+    text-transform: uppercase;
+    position: absolute;
+  }
+  &__like-button {
+    margin-top: 31px;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

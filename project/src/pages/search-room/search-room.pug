@@ -1,5 +1,4 @@
-extends ../../pug/header-and-footer
-
+extends ../../pug/layouts/layout
 append head 
   title Номера, которые мы для вас подобрали
   script(src="/src/pages/search-room/search-room.js")
@@ -8,22 +7,22 @@ block container
     .sidebar 
       include ../../pug/date-dropdown__box
       +date-dropdown__box("Даты пребывания в отеле", "main-datepicker")(class="input" value="ДД.ММ.ГГГГ" id="btn-datepicker")
-      include ../../pug/iqdropdown
+      include ../../blocks/iqdropdown/iqdropdown
       +iqdropdown('гости','', "guests", "", "Сколько гостей", 'guest1', 'guest2', 'guest3', 'Взрослые', "Дети", 'Младенцы')
       include ../../blocks/range-slider/range-slider
-      include ../../pug/checkbox-button
+      include ../../blocks/checkbox-button/checkbox-button
       .rules 
         h3 правила дома
         +checkbox-button("Можно курить")
         +checkbox-button("Можно с питомцами")
         +checkbox-button("Можно пригласить гостей (до 10 человек)") 
-      include ../../pug/rich-checkbox-button
+      include ../../blocks/rich-checkbox-button/rich-checkbox-button
       .accessibility
         h3 доступность
         +rich-checkbox-button("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
         +rich-checkbox-button("Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера.")
       .room-amenities
-        include ../../pug/iqdropdown
+        include ../../blocks/iqdropdown/iqdropdown
         +iqdropdown('удобства номера','', "rooms", "", "Выберите удобства", 'rooms1', 'rooms2', 'rooms3', 'Спальни', "Кровати", 'Ванные комнаты')
       .additional
         label.additional__container 
@@ -43,7 +42,7 @@ block container
       .container__title
         h1 Номера, которые мы для вас подобрали
       .container__content 
-        include ../../pug/room-card
+        include ../../blocks/room-card/room-card
         +room-card("888","9990","145","", "люкс")
         +room-card("840","9900","65","-1")
         +room-card("980","8500","35","-2", "люкс")

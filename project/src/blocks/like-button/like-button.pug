@@ -1,8 +1,4 @@
-include ../../pug/like-button__container
-
-.like-button
-  h3 like button 
-  .container
-    +like-button__container
-  .container  
-    +like-button__container
+mixin like-button(classname="")
+  label.like-button(class= classname)
+    input(type='checkbox')
+    span.like-button__checkmark

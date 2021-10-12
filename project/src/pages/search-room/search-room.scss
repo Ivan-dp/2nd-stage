@@ -1,6 +1,6 @@
-@import "/src/scss/variables.scss";
-@import "/src/scss/fonts.scss";
-@import "/src/scss/scss-mixins.scss";
+@import "/src/scss/mixins/variables.scss";
+@import "/src/scss/mixins/fonts.scss";
+@import "/src/scss/mixins/scss-mixins.scss";
 @import "/src/blocks/header/header.scss";
 @import "/src/blocks/footer/footer.scss";
 @import "/src/pages/search-room/item-quantity-dropdown.min.css";
@@ -8,14 +8,10 @@
 @import "/src/blocks/dropdown/dropdown.scss";
 @import "/src/scss/datepicker-style.scss";
 @import "/src/blocks/range-slider/range-slider.scss";
-@import "/src/scss/checkbox-button.scss";
-@import "/src/scss/rich-checkbox-button.scss";
+@import "/src/blocks/checkbox-button/checkbox-button.scss";
+@import "/src/blocks/rich-checkbox-button/rich-checkbox-button.scss";
 @import "/src/blocks/pagination/pagination.scss";
-
-* {
-  margin: 0;
-  padding: 0;
-}
+@import "/src/blocks/room-card/room-card.scss";
 
 body {
   // background-color: cadetblue;
@@ -206,7 +202,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin-left: 20px;
-    @import "/src/scss/rating-area.scss";
+
     &__title {
       width: 100%;
       height: 80px;
@@ -222,209 +218,41 @@ main {
       flex-wrap: wrap;
       justify-content: space-between;
       .room-card {
-        width: 270px;
-        height: 257px;
-        background: #ffffff;
-        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-        border-radius: 4px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 12px;
-        cursor: pointer;
-        &:hover {
-        }
         &__photo-888 {
-          background-image: url(/src/blocks/room-card/img/room_1.png);
+          background-image: url(/src/img/room-cards/room_1.png);
         }
         &__photo-840 {
-          background-image: url(/src/blocks/room-card/img/room_2.png);
+          background-image: url(/src/img/room-cards/room_2.png);
         }
         &__photo-980 {
-          background-image: url(/src/blocks/room-card/img/room_3.png);
+          background-image: url(/src/img/room-cards/room_3.png);
         }
         &__photo-856 {
-          background-image: url(/src/blocks/room-card/img/room_4.png);
+          background-image: url(/src/img/room-cards/room_4.png);
         }
         &__photo-740 {
-          background-image: url(/src/blocks/room-card/img/room_5.png);
+          background-image: url(/src/img/room-cards/room_5.png);
         }
         &__photo-982 {
-          background-image: url(/src/blocks/room-card/img/room_6.png);
+          background-image: url(/src/img/room-cards/room_6.png);
         }
         &__photo-678 {
-          background-image: url(/src/blocks/room-card/img/room_7.png);
+          background-image: url(/src/img/room-cards/room_7.png);
         }
         &__photo-450 {
-          background-image: url(/src/blocks/room-card/img/room_8.png);
+          background-image: url(/src/img/room-cards/room_8.png);
         }
         &__photo-350 {
-          background-image: url(/src/blocks/room-card/img/room_9.png);
+          background-image: url(/src/img/room-cards/room_9.png);
         }
         &__photo-666 {
-          background-image: url(/src/blocks/room-card/img/room_10.png);
+          background-image: url(/src/img/room-cards/room_10.png);
         }
         &__photo-444 {
-          background-image: url(/src/blocks/room-card/img/room_11.png);
+          background-image: url(/src/img/room-cards/room_11.png);
         }
         &__photo-352 {
-          background-image: url(/src/blocks/room-card/img/room_12.png);
-        }
-        &__photo-888,
-        &__photo-840,
-        &__photo-980,
-        &__photo-856,
-        &__photo-740,
-        &__photo-982,
-        &__photo-678,
-        &__photo-450,
-        &__photo-350,
-        &__photo-666,
-        &__photo-444,
-        &__photo-352 {
-          overflow: hidden;
-          background-size: 120%;
-          background-position: 20% 70%;
-          background-repeat: no-repeat;
-          width: 100%;
-          height: 151px;
-          text-align: center;
-          border-top-left-radius: 4px;
-          border-top-right-radius: 4px;
-          display: flex;
-          justify-content: space-between;
-          &::before {
-            content: "chevron_left";
-            @include Material(normal, 24px, 24px);
-            color: #ffffff;
-            // position: absolute;
-            width: 42px;
-            height: 151px;
-            background: linear-gradient(
-              90deg,
-              rgba(0, 0, 0, 0.5) 0%,
-              rgba(0, 0, 0, 0) 99.99%,
-              rgba(255, 255, 255, 0) 100%
-            );
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-          }
-          &::after {
-            content: "chevron_left";
-            float: right;
-            @include Material(normal, 24px, 24px);
-            color: #ffffff;
-            width: 42px;
-            height: 151px;
-            // position: absolute;
-            background: linear-gradient(
-              90deg,
-              rgba(0, 0, 0, 0.5) 0%,
-              rgba(0, 0, 0, 0) 99.99%,
-              rgba(255, 255, 255, 0) 100%
-            );
-            transform: matrix(-1, 0, 0, 1, 0, 0);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            // right: - 20px;
-            cursor: pointer;
-          }
-        }
-        &__slider {
-          width: 41.25px;
-          height: 7.5px;
-          display: flex;
-          justify-content: space-between;
-          z-index: 1;
-          margin-right: -27px;
-          margin-bottom: 15px;
-          margin-left: auto;
-          margin-top: auto;
-          span {
-            display: block;
-            width: 7.5px;
-            height: 7.5px;
-            border: 1px solid #ffffff;
-            border-radius: 50%;
-            box-sizing: border-box;
-            filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
-          }
-          .filled {
-            background: #ffffff;
-          }
-        }
-        &__title {
-          width: 230px;
-          height: 30px;
-          display: flex;
-          justify-content: space-between;
-          margin-top: 20px;
-          margin-bottom: 5px;
-          align-items: baseline;
-        }
-        &__number {
-          display: flex;
-          align-items: baseline;
-          h3 {
-            color: #1f2041;
-            @include Montserrat(bold, 14px, 17px);
-            height: 20px;
-          }
-          h1 {
-            color: #1f2041;
-            @include Montserrat(bold, 19px, 23px);
-            margin-left: 5px;
-            margin-right: 2px;
-            height: 20px;
-          }
-          .pink {
-            color: #bc9cff;
-            text-transform: uppercase;
-            @include Montserrat(bold, 12px, 15px);
-            height: 20px;
-          }
-        }
-        &__price {
-          display: flex;
-          align-items: flex-end;
-          p {
-            color: rgba(31, 32, 65, 0.5);
-            @include Montserrat(normal, 12px, 18px);
-            height: 20px;
-            margin: 0;
-            padding: 0;
-          }
-          .bold {
-            @include Montserrat(bold, 14px, 18px);
-            margin-right: 5px;
-          }
-        }
-        &__rating {
-          width: 230px;
-          height: auto;
-          border-top: 1px solid rgba(31, 32, 65, 0.1);
-          display: flex;
-          justify-content: space-between;
-          padding-top: 15px;
-        }
-        &__feedback {
-          width: 90px;
-          display: flex;
-          justify-content: space-between;
-          p {
-            color: rgba(31, 32, 65, 0.5);
-            @include Montserrat(normal, 14px, 18px);
-            height: 20px;
-            margin: 0;
-            padding: 0;
-          }
-          .bold {
-            @include Montserrat(bold, 14px, 18px);
-            margin-right: 5px;
-          }
+          background-image: url(/src/img/room-cards/room_12.png);
         }
       }
     }

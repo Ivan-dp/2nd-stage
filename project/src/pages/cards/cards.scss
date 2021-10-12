@@ -1,12 +1,12 @@
-@import "/src/scss/variables.scss";
-@import "/src/scss/fonts.scss";
-@import "/src/scss/scss-mixins.scss";
+@import "/src/scss/mixins/variables.scss";
+@import "/src/scss/mixins/fonts.scss";
+@import "/src/scss/mixins/scss-mixins.scss";
 @import "/src/blocks/findroom/findroom.scss";
 @import "/src/blocks/registration/registration.scss";
 @import "/src/blocks/room-reservation/room-reservation.scss";
 @import "/src/blocks/log-in/log-in.scss";
 @import "/src/blocks/datepicker/datepicker.scss";
-@import "/src/blocks/room-card/room-card.scss";
+@import "/src/blocks/uikit-room-card/uikit-room-card.scss";
 
 body {
   background-color: #e5e5e5;
@@ -36,7 +36,6 @@ body {
 .registration,
 .room-reservation,
 .log-in,
-.datepicker-here,
-.room-card {
+.datepicker-here {
   margin: 20px;
 }

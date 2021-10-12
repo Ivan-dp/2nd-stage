@@ -1,0 +1,46 @@
+.radio-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    &:checked ~ .radio-button__checkmark {
+      border: 1px solid #bc9cff;
+      &::after {
+        display: block;
+      }
+    }
+    &:checked ~ p {
+      color: rgba(31, 32, 65, 0.75);
+    }
+  }
+  &__checkmark {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: #ffffff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 3px;
+      top: 3px;
+      width: 12px;
+      height: 12px;
+      border: none;
+      border-radius: 50%;
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    }
+  }
+  p {
+    @include Montserrat(normal, 14px, 24px);
+    color: rgba(31, 32, 65, 0.5);
+    margin-left: 10px;
+  }
+}

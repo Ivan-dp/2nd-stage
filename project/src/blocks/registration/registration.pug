@@ -8,7 +8,7 @@ include ../../pug/input
       +input(class="input" type="text" value="Имя")
     .registration__surname
       +input(class="input" type="text" value="Фамилия")
-    include ../radio-buttons__block/radio-buttons__block
+    include ../radio-buttons/radio-buttons
     .registration__born 
       h3 Дата рождения
       .registration__datepicker
@@ -22,7 +22,7 @@ include ../../pug/input
     .registration__offers 
       include ../toggle__block/toggle__block
     .registration__pay
-      include ../../pug/btn-arrow
+      include ../btn-arrow/btn-arrow
       +btn-arrow("registration__btn-arrow")
     .registration__sign-in 
       p Уже есть аккаунт на Toxin

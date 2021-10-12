@@ -1,3 +1,14 @@
-include ../../pug/feedback
-
-+feedback("/src/blocks/feedback/img/avatar.png", "Мурад Сарафанов", "5 дней назад", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
+include ../like-button/like-button
+mixin feedback(img, name, time, desc, classname="")
+  .feedback(class= classname)
+    .feedback__title 
+      .feedback__avatar
+        img(src= img, alt="avatar")
+      .feedback__user 
+        p.feedback__name= name
+        p.feedback__time= time
+    .feedback__description 
+      .feedback__like
+        +like-button
+      .feedback__desc
+        p= desc

@@ -1,0 +1,18 @@
+@import "/src/blocks/room-card/room-card.scss";
+
+.uikit-room-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 320px;
+  height: 554px;
+  margin-top: 20px;
+  .room-card {
+    &__photo-888 {
+      background-image: url(/src/blocks/uikit-room-card/img/room_1.png);
+    }
+    &__photo-840 {
+      background-image: url(/src/blocks/uikit-room-card/img/room_2.png);
+    }
+  }
+}

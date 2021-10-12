@@ -1,4 +1,23 @@
-include ../../pug/room-card
+include ../rating-area/rating-area
 
-+room-card("888", "9 990", "145", "", "люкс")
-+room-card("840", "9 900", "65", "-1", "люкс")
+mixin room-card(number, price, feedback, i="", luxe="")
+  .room-card
+    .room-card__photo(class="room-card__photo" + "-" + number) 
+      .room-card__slider 
+        span.filled 
+        span 
+        span 
+        span 
+    .room-card__title 
+      .room-card__number 
+        h3 №
+        h1= number
+        h3.pink= luxe
+      .room-card__price 
+        p.bold= price + "₽"
+        p в сутки
+    .room-card__rating 
+      +rating-area(i)
+      .room-card__feedback
+        p.bold= feedback
+        p Отзывов

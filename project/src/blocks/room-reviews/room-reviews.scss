@@ -20,61 +20,7 @@
       @include Montserrat(normal, 14px, 14px);
     }
   }
-  .feedback {
+  &__feedback {
     margin-bottom: 22px;
-  }
-  .like-button__container {
-    display: flex;
-    user-select: none;
-    cursor: pointer;
-    input {
-      opacity: 0;
-      width: 0;
-      height: 0;
-      &:checked ~ .like-button__checkmark {
-        border: 1px solid #bc9cff;
-        &::before {
-          color: #bc9cff;
-          content: "favorite";
-        }
-        &::after {
-          content: "3";
-          color: #bc9cff;
-        }
-      }
-    }
-  }
-  .like-button__checkmark {
-    display: flex;
-    align-items: center;
-    width: 40px;
-    height: 20px;
-    // display: block;
-    background: #ffffff;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    border-radius: 10px;
-    // margin-right: 10px;
-    // position: relative;
-    &::before {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 20px;
-      height: 20px;
-      left: 3px;
-      content: "favorite_border";
-      @include Material(normal, 10px, 9px);
-      color: rgba(31, 32, 65, 0.25);
-    }
-    &::after {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      right: 3px;
-      content: "2";
-      @include Montserrat(normal, 10px, 12px);
-      color: rgba(31, 32, 65, 0.25);
-    }
   }
 }

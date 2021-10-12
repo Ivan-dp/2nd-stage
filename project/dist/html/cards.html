@@ -81,13 +81,13 @@
           <div class="registration__surname">
                   <input class="input" value="Фамилия" type="text">
           </div>
-          <div class="radio-buttons__block"> 
-                      <label class="radio-buttons__container">
-                        <input type="radio" name="radio"><span class="radio-buttons__checkmark"></span>
+          <div class="radio-buttons"> 
+                      <label class="radio-button radio-buttons__radio-button">
+                        <input type="radio" name="radio"><span class="radio-button__checkmark"></span>
                         <p>Мужчина</p>
                       </label>
-                      <label class="radio-buttons__container">
-                        <input type="radio" name="radio"><span class="radio-buttons__checkmark"></span>
+                      <label class="radio-button radio-buttons__radio-button">
+                        <input type="radio" name="radio"><span class="radio-button__checkmark"></span>
                         <p>Женщина</p>
                       </label>
           </div>
@@ -259,74 +259,76 @@
         </div>
       </div>
 <div class="datepicker-here" id="here"></div>
-            <div class="room-card">
-              <div class="room-card__photo-888"> 
-                <div class="room-card__slider"> <span class="filled"> </span><span> </span><span> </span><span> </span></div>
-              </div>
-              <div class="room-card__title"> 
-                <div class="room-card__number"> 
-                  <h3>№</h3>
-                  <h1>888</h1>
-                  <h3 class="pink">люкс</h3>
+      <div class="uikit-room-card">
+              <div class="room-card">
+                <div class="room-card__photo room-card__photo-888"> 
+                  <div class="room-card__slider"> <span class="filled"> </span><span> </span><span> </span><span> </span></div>
                 </div>
-                <div class="room-card__price"> 
-                  <p class="bold">9 990₽</p>
-                  <p>в сутки</p>
+                <div class="room-card__title"> 
+                  <div class="room-card__number"> 
+                    <h3>№</h3>
+                    <h1>888</h1>
+                    <h3 class="pink">люкс</h3>
+                  </div>
+                  <div class="room-card__price"> 
+                    <p class="bold">9 990₽</p>
+                    <p>в сутки</p>
+                  </div>
                 </div>
-              </div>
-              <div class="room-card__rating"> 
-                      <div class="rating-area">
-                        <input id="star-1" type="radio" name="rating" value="1">
-                        <label for="star-1" title="Оценка 1"> </label>
-                        <input id="star-2" type="radio" name="rating" value="2">
-                        <label for="star-2" title="Оценка 2"> </label>
-                        <input id="star-3" type="radio" name="rating" value="3">
-                        <label for="star-3" title="Оценка 3"> </label>
-                        <input id="star-4" type="radio" name="rating" value="4">
-                        <label for="star-4" title="Оценка 4"> </label>
-                        <input id="star-5" type="radio" name="rating" value="5">
-                        <label for="star-5" title="Оценка 5"> </label>
-                      </div>
-                <div class="room-card__feedback">
-                  <p class="bold">145</p>
-                  <p>Отзывов</p>
-                </div>
-              </div>
-            </div>
-            <div class="room-card">
-              <div class="room-card__photo-840"> 
-                <div class="room-card__slider"> <span class="filled"> </span><span> </span><span> </span><span> </span></div>
-              </div>
-              <div class="room-card__title"> 
-                <div class="room-card__number"> 
-                  <h3>№</h3>
-                  <h1>840</h1>
-                  <h3 class="pink">люкс</h3>
-                </div>
-                <div class="room-card__price"> 
-                  <p class="bold">9 900₽</p>
-                  <p>в сутки</p>
+                <div class="room-card__rating"> 
+                        <div class="rating-area">
+                          <input id="star-1" type="radio" name="rating" value="1">
+                          <label for="star-1" title="Оценка 1"> </label>
+                          <input id="star-2" type="radio" name="rating" value="2">
+                          <label for="star-2" title="Оценка 2"> </label>
+                          <input id="star-3" type="radio" name="rating" value="3">
+                          <label for="star-3" title="Оценка 3"> </label>
+                          <input id="star-4" type="radio" name="rating" value="4">
+                          <label for="star-4" title="Оценка 4"> </label>
+                          <input id="star-5" type="radio" name="rating" value="5">
+                          <label for="star-5" title="Оценка 5"> </label>
+                        </div>
+                  <div class="room-card__feedback">
+                    <p class="bold">145</p>
+                    <p>Отзывов</p>
+                  </div>
                 </div>
               </div>
-              <div class="room-card__rating"> 
-                      <div class="rating-area">
-                        <input id="star-1-1" type="radio" name="rating-1" value="1">
-                        <label for="star-1-1" title="Оценка 1"> </label>
-                        <input id="star-2-1" type="radio" name="rating-1" value="2">
-                        <label for="star-2-1" title="Оценка 2"> </label>
-                        <input id="star-3-1" type="radio" name="rating-1" value="3">
-                        <label for="star-3-1" title="Оценка 3"> </label>
-                        <input id="star-4-1" type="radio" name="rating-1" value="4">
-                        <label for="star-4-1" title="Оценка 4"> </label>
-                        <input id="star-5-1" type="radio" name="rating-1" value="5">
-                        <label for="star-5-1" title="Оценка 5"> </label>
-                      </div>
-                <div class="room-card__feedback">
-                  <p class="bold">65</p>
-                  <p>Отзывов</p>
+              <div class="room-card">
+                <div class="room-card__photo room-card__photo-840"> 
+                  <div class="room-card__slider"> <span class="filled"> </span><span> </span><span> </span><span> </span></div>
+                </div>
+                <div class="room-card__title"> 
+                  <div class="room-card__number"> 
+                    <h3>№</h3>
+                    <h1>840</h1>
+                    <h3 class="pink">люкс</h3>
+                  </div>
+                  <div class="room-card__price"> 
+                    <p class="bold">9 900₽</p>
+                    <p>в сутки</p>
+                  </div>
+                </div>
+                <div class="room-card__rating"> 
+                        <div class="rating-area">
+                          <input id="star-1-1" type="radio" name="rating-1" value="1">
+                          <label for="star-1-1" title="Оценка 1"> </label>
+                          <input id="star-2-1" type="radio" name="rating-1" value="2">
+                          <label for="star-2-1" title="Оценка 2"> </label>
+                          <input id="star-3-1" type="radio" name="rating-1" value="3">
+                          <label for="star-3-1" title="Оценка 3"> </label>
+                          <input id="star-4-1" type="radio" name="rating-1" value="4">
+                          <label for="star-4-1" title="Оценка 4"> </label>
+                          <input id="star-5-1" type="radio" name="rating-1" value="5">
+                          <label for="star-5-1" title="Оценка 5"> </label>
+                        </div>
+                  <div class="room-card__feedback">
+                    <p class="bold">65</p>
+                    <p>Отзывов</p>
+                  </div>
                 </div>
               </div>
-            </div>
+      </div>
     </div>
   </body>
 </html>

@@ -1,13 +1,57 @@
-@import "/src/blocks/feedback/feedback__avatar.scss";
-@import "/src/blocks/feedback/feedback__desc.scss";
-@import "/src/blocks/feedback/feedback__description.scss";
-@import "/src/blocks/feedback/feedback__like.scss";
-@import "/src/blocks/feedback/feedback__name.scss";
-@import "/src/blocks/feedback/feedback__time.scss";
-@import "/src/blocks/feedback/feedback__title.scss";
-@import "/src/blocks/feedback/feedback__user.scss";
+@import "/src/blocks/like-button/like-button.scss";
 
 .feedback {
   width: 100%;
   height: 140px;
+  &__avatar {
+    width: 48px;
+    height: 48px;
+    img {
+      width: 48px;
+      height: 48px;
+      border: none;
+      border-radius: 24px;
+      cursor: pointer;
+      border: 2px solid #ffffff;
+      box-sizing: border-box;
+      filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
+    }
+  }
+  &__desc {
+    color: rgba(31, 32, 65, 0.75);
+    @include Montserrat(normal, 14px, 24px);
+    margin-left: 10px;
+    width: auto;
+  }
+  &__description {
+    display: flex;
+    justify-content: start;
+    width: auto;
+    height: auto;
+  }
+  &__like {
+    display: flex;
+    justify-content: center;
+    min-width: 48px;
+    margin-top: 3px;
+  }
+  &__name {
+    @include Montserrat(bold, 14px, 24px);
+    color: rgba(31, 32, 65, 0.75);
+  }
+  &__time {
+    @include Montserrat(normal, 14px, 24px);
+    color: rgba(31, 32, 65, 0.75);
+  }
+  &__title {
+    height: 50px;
+    width: 280px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  &__user {
+    margin-left: 10px;
+  }
 }
