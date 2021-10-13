@@ -1,24 +1,22 @@
-include ../../pug/input
-
 .registration 
   .registration__title 
     h1 Регистрация аккаунта
   .registration__person 
     .registration__name
-      +input(class="input" type="text" value="Имя")
+      input.input(type="text" value="Имя")
     .registration__surname
-      +input(class="input" type="text" value="Фамилия")
+      input.input(type="text" value="Фамилия")
     include ../radio-buttons/radio-buttons
     .registration__born 
       h3 Дата рождения
       .registration__datepicker
-        +input(class="input" type="text" value="ДД.ММ.ГГГГ" id="calendar_born")
+        input#calendar_born.input(type="text" value="ДД.ММ.ГГГГ")
   .registration__login 
     h3 Данные для входа в сервис
     .registration__email 
-      +input(class="input" type="text" value="Email")
+      input.input(type="text" value="Email")
     .registration__password 
-      +input(class="input password" type="text" value="Пароль")
+      input.input.password(type="text" value="Пароль")
     .registration__offers 
       include ../toggle__block/toggle__block
     .registration__pay

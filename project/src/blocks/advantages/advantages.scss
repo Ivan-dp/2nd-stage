@@ -3,4 +3,8 @@
 .advantages {
   max-width: 280px;
   height: auto;
+  &__advantage {
+    border-bottom: 1px solid;
+    border-color: rgba(31, 32, 65, 0.1);
+  }
 }

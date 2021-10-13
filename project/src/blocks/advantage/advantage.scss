@@ -4,8 +4,6 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  border-bottom: 1px solid;
-  border-color: rgba(31, 32, 65, 0.1);
   &__icon {
     span {
       @include Material(normal, 48px, 41px);

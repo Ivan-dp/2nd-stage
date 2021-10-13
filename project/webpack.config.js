@@ -95,7 +95,7 @@ module.exports = {
         exclude: /fonts/,
         type: 'asset/resource',
         generator: {
-          filename: "img/[name].[contenthash].[ext]"
+          filename: "img/[name][ext]"
         }
         // use: [
         //   {
