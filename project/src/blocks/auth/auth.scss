@@ -1,10 +1,14 @@
-@import "/src/scss/btn.scss";
-@import "/src/scss/btn_gradient.scss";
-@import "/src/blocks/auth/auth__sign-in.scss";
-@import "/src/blocks/auth/auth__registration.scss";
+@import "/src/blocks/btn/btn.scss";
+@import "/src/blocks/btn/btn_gradient.scss";
 
 .auth {
   display: flex;
   justify-content: space-between;
   width: 300px;
+  &__registration {
+    width: 196px;
+  }
+  &__sign-in {
+    width: 87px;
+  }
 }

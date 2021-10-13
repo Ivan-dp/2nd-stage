@@ -1,3 +1,5 @@
+include ../btn/btn
+
 .auth
-  a.btn.auth__sign-in(href="/dist/html/sign-in.html") Войти
-  a.btn.btn_gradient.auth__registration(href="/dist/html/registration.html") Зарегистрироваться
+  +btn("auth__sign-in", "/dist/html/sign-in.html", "Войти")
+  +btn("auth__registration btn_gradient", "/dist/html/registration.html", "Зарегистрироваться")
