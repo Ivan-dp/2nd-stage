@@ -1,5 +1,5 @@
-mixin rating-area(num="")
-  .rating-area
+mixin rating-area(num="", classname="")
+  .rating-area(class= classname)
     - var i = 1
     while i < 6
       input(id="star-" + i + num)(type="radio")(name="rating" + num)(value= i)

@@ -1,3 +1,4 @@
+include ../btn/btn
 .registration 
   .registration__title 
     h1 Регистрация аккаунта
@@ -8,11 +9,13 @@
       input.input(type="text" value="Фамилия")
     include ../radio-buttons/radio-buttons
     .registration__born 
-      h3 Дата рождения
+      .head
+        h3.title Дата рождения
       .registration__datepicker
         input#calendar_born.input(type="text" value="ДД.ММ.ГГГГ")
   .registration__login 
-    h3 Данные для входа в сервис
+    .head
+      h3.title Данные для входа в сервис
     .registration__email 
       input.input(type="text" value="Email")
     .registration__password 
@@ -24,5 +27,4 @@
       +btn-arrow("registration__btn-arrow")
     .registration__sign-in 
       p Уже есть аккаунт на Toxin
-      a(href="/dist/html/sign-in.html")
-        button.sign-in_btn
+      +btn("registration__sign-in-btn", "/dist/html/sign-in.html", "Войти")

@@ -1,6 +1,7 @@
 include ../rating-area/rating-area
 
 .rate-button
-  h3 rate button 
-  +rating-area
-  +rating-area("-1")
+  .head.rate-button__head
+    h3.title.rate-button__title rate button 
+  +rating-area("", "rate-button__rating-area")
+  +rating-area("-1", "rate-button__rating-area")

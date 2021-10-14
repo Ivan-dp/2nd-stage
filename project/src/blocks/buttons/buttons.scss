@@ -1,18 +1,44 @@
-@import "/src/blocks/btn/btn.scss";
-@import "/src/blocks/btn/btn_gradient.scss";
-@import "/src/blocks/buttons/buttons__flex.scss";
-@import "/src/blocks/buttons/buttons__btn.scss";
-@import "/src/blocks/buttons/buttons__btn_hover.scss";
-@import "/src/blocks/buttons/buttons__link.scss";
-@import "/src/blocks/buttons/buttons__btn-arrow.scss";
-
 .buttons {
   width: 220px;
   margin-bottom: 30px;
-  h3 {
-    @include Montserrat(bold, 12px, 15px);
-    color: #1f2041;
-    text-transform: uppercase;
+  &__title {
     margin-bottom: 16px;
+  }
+  &__link {
+    text-decoration: none;
+    @include Montserrat(bold, 12px, 15px);
+    text-transform: uppercase;
+    color: $purple;
+    margin-right: 20px;
+    &[disabled="disabled"] {
+      color: $dark-shade-50;
+    }
+  }
+  &__btn {
+    margin-bottom: 30px;
+    &_hover {
+      opacity: 0.5;
+      margin-left: 20px;
+    }
+    &-arrow::after {
+      content: "перейти к оплате";
+      @include Montserrat(bold, 12px, 15px);
+      position: absolute;
+      text-transform: uppercase;
+      color: $text-dark-bcg;
+      width: 320px;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__flex {
+    display: flex;
+    flex-wrap: wrap;
+    .btn {
+      width: 99px;
+      height: 44px;
+    }
   }
 }

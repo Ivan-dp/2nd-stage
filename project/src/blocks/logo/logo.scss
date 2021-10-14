@@ -3,15 +3,13 @@
   align-items: center;
   box-sizing: border-box;
   width: 106px;
-}
-
-.logo-img {
-  width: 40px;
-  height: 40px;
-}
-
-.logo-name {
-  width: 53px;
-  height: 13px;
-  margin-left: 12.5px;
+  &__img {
+    width: 40px;
+    height: 40px;
+  }
+  &__name {
+    width: 53px;
+    height: 13px;
+    margin-left: 12.5px;
+  }
 }

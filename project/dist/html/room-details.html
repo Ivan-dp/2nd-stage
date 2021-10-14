@@ -10,7 +10,7 @@
   <body> 
     <header> 
       <div class="header"> 
-<div class="logo"><img class="logo-img" src="/src/blocks/logo/img/logo.svg" alt="logo"><img class="logo-name" src="/src/blocks/logo/img/toxin.svg" alt="toxin"></div>
+<div class="logo"><img class="logo__img" src="/src/blocks/logo/img/logo.svg" alt="logo"><img class="logo__name" src="/src/blocks/logo/img/toxin.svg" alt="toxin"></div>
         <div class="right"> 
 <div class="nav"> 
   <ul class="menu">
@@ -59,7 +59,7 @@
       <div class="room__info"> 
         <div class="room__info__details">
           <div class="room-information">
-            <h3>Сведения о номере</h3>
+            <h3 class="h3_size_big">Сведения о номере</h3>
                       <div class="advantage room-information__advantage">
                         <div class="advantage__icon"><span>insert_emoticon</span></div>
                         <div class="advantage__description"> 
@@ -83,7 +83,7 @@
                       </div>
           </div>
 <div class="room-experience">
-  <h3>Впечатления от номера</h3>
+  <h3 class="h3_size_big">Впечатления от номера</h3>
   <canvas id="myChart" width="310" height="130"></canvas>
   <div class="room-experience__total"> 
     <p class="count">260</p>
@@ -91,8 +91,8 @@
   </div>
 </div>
           <div class="room-reviews"> 
-            <div class="room-reviews__title">
-              <h3>Отзывы посетителей номера</h3>
+            <div class="room-reviews__head head">
+              <h3 class="h3_size_big">Отзывы посетителей номера</h3>
               <p>2 отзыва</p>
             </div>
                       <div class="feedback room-reviews__feedback">
@@ -135,7 +135,7 @@
                       </div>
           </div>
           <div class="room-rules"> 
-            <h3>Правила</h3>
+            <h3 class="h3_size_big room-rules__title">Правила</h3>
                       <ul class="bullet-list room-rules__bullet-list">
                         <li><span class="item"> </span>
                           <p>Нельзя с питомцами</p>
@@ -149,7 +149,7 @@
                       </ul>
           </div>
 <div class="room-cancellation">
-  <h3>Отмена</h3>
+  <h3 class="h3_size_big">Отмена</h3>
   <p>Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.</p>
 </div>
         </div>
@@ -169,14 +169,18 @@
             <div class="room-reservation__form"> 
               <div class="room-reservation__datepicker">
                           <div class="date-dropdown__box">
-                            <h3>Прибытие</h3>
+                            <div class="head">
+                              <h3 class="title date-dropdown__title">Прибытие</h3>
+                            </div>
                             <form class="date-dropdown__field">
                               <input class="doubleDatepicker-1" value="ДД.ММ.ГГГГ" type="text" id="from1">
                               <button type="button" id="btn_1"><img src="/src/blocks/findroom-form/img/expand_more.svg"></button>
                             </form>
                           </div>
                           <div class="date-dropdown__box">
-                            <h3>Выезд</h3>
+                            <div class="head">
+                              <h3 class="title date-dropdown__title">Выезд</h3>
+                            </div>
                             <form class="date-dropdown__field">
                               <input class="doubleDatepicker-1" value="ДД.ММ.ГГГГ" type="text" id="to1">
                               <button type="button" id="btn_2"><img src="/src/blocks/findroom-form/img/expand_more.svg"></button>
@@ -261,10 +265,9 @@
                 <p>38 081₽</p>
               </div>
             </div>
-<div class="reservation-button">
-  <button class="button" type="button"></button>
-  <button class="arrow" type="button">arrow_forward</button>
-</div>
+                        <div class="btn-arrow reservation-button"><a href="#">
+                            <button class="btn-arrow__button" type="button"></button>
+                            <button class="btn-arrow__arrow" type="button">arrow_forward</button></a></div>
           </div>
         </div>
       </div>
@@ -274,7 +277,7 @@
 <div class="widgets"> 
   <div class="widgets__container">
     <div class="widgets__container__main"> 
-<div class="logo"><img class="logo-img" src="/src/blocks/logo/img/logo.svg" alt="logo"><img class="logo-name" src="/src/blocks/logo/img/toxin.svg" alt="toxin"></div>
+<div class="logo"><img class="logo__img" src="/src/blocks/logo/img/logo.svg" alt="logo"><img class="logo__name" src="/src/blocks/logo/img/toxin.svg" alt="toxin"></div>
       <p class="widgets__main__description">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
     </div>
     <div class="widgets__container__navigation"> 

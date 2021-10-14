@@ -3,13 +3,9 @@
 .room-information {
   max-width: 280px;
   height: auto;
-  h3 {
-    @include Montserrat(bold, 19px, 23px);
-    color: #1f2041;
-  }
   &__advantage {
     border-bottom: 1px solid;
-    border-color: rgba(31, 32, 65, 0.1);
+    border-color: $dark-shade-10;
     &:last-child {
       border-bottom: none;
     }

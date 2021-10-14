@@ -13,18 +13,18 @@
   &__button {
     width: 276px;
     height: 44px;
-    background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+    background: linear-gradient(180deg, $purple, $purple2);
     border: none;
     border-radius: 22px 0 0 22px;
   }
   &__arrow {
     @include Material(normal, 24px, 24px);
-    color: white;
+    color: $text-dark-bcg;
     background-color: transparent;
     border: none;
     width: 44px;
     height: 44px;
-    background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+    background: linear-gradient(180deg, $purple, $purple2);
     border: none;
     border-radius: 0 22px 22px 0;
   }

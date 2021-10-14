@@ -21,9 +21,9 @@
 </div>
 </div>
 <div class="hover-focus"> 
-  <div class="hover-focus__title"> 
-    <h3 class="hover-focus__title__left">text field</h3>
-    <h3 class="hover-focus__title__right">hover / focus</h3>
+  <div class="hover-focus__head head">
+    <h3 class="hover-focus__title title">text field</h3>
+    <h3 class="hover-focus__title_masked title_masked">hover / focus</h3>
   </div>
   <div class="hover-focus__input">
     <input type="text" value="This is pretty awesome">
@@ -64,8 +64,8 @@
                       </div>
                     </div>
 <div class="masked"> 
-  <div class="masked__title"> 
-    <h3 class="masked__title__left">masked text field</h3>
+  <div class="masked__head head">
+    <h3 class="masked__title title">masked text field</h3>
   </div>
   <div class="masked__input">
     <input type="text" value="ДД.ММ.ГГГГ">
@@ -73,14 +73,18 @@
 </div>
           <div class="date-dropdown">
                       <div class="date-dropdown__box">
-                        <h3>date dropdown</h3>
+                        <div class="head">
+                          <h3 class="title date-dropdown__title">date dropdown</h3>
+                        </div>
                         <form class="date-dropdown__field">
                           <input class="doubleDatepicker" value="ДД.ММ.ГГГГ" type="text" id="from">
                           <button type="button" id="btn_from"><img src="/src/blocks/findroom-form/img/expand_more.svg"></button>
                         </form>
                       </div>
                       <div class="date-dropdown__box">
-                        <h3>date dropdown</h3>
+                        <div class="head">
+                          <h3 class="title date-dropdown__title">date dropdown</h3>
+                        </div>
                         <form class="date-dropdown__field">
                           <input class="doubleDatepicker" value="ДД.ММ.ГГГГ" type="text" id="to">
                           <button type="button" id="btn_to"><img src="/src/blocks/findroom-form/img/expand_more.svg"></button>
@@ -95,8 +99,8 @@
   </form>
 </div>
 <div class="subscription">
-  <div class="subscription__title"> 
-    <h3>subscription text field</h3>
+  <div class="subscription__head head"> 
+    <h3 class="subscription__title title">subscription text field</h3>
   </div>
   <div class="subscription__input">
     <input type="email" name="subscribe" value="Email">
@@ -107,7 +111,9 @@
       </div>
       <div class="form-elements__column">
         <div class="checkbox-buttons">
-          <h3>checkbox buttons </h3>
+          <div class="head">
+            <h3 class="title checkbox-buttons__title">checkbox buttons </h3>
+          </div>
                   <label class="checkbox-button checkbox-buttons__checkbox-button">
                     <input type="checkbox"><span class="checkbox-button__checkmark"></span>
                     <p>Можно курить</p>
@@ -122,6 +128,9 @@
                   </label>
         </div>
         <div class="radio-buttons"> 
+          <div class="head">
+            <h3 class="title radio-buttons__title">radio buttons</h3>
+          </div>
                   <label class="radio-button radio-buttons__radio-button">
                     <input type="radio" name="radio"><span class="radio-button__checkmark"></span>
                     <p>Мужчина</p>
@@ -147,8 +156,10 @@
 </div>
 </div>
         <div class="rate-button">
-          <h3>rate button </h3>
-                  <div class="rating-area">
+          <div class="head rate-button__head">
+            <h3 class="title rate-button__title">rate button </h3>
+          </div>
+                  <div class="rating-area rate-button__rating-area">
                     <input id="star-1" type="radio" name="rating" value="1">
                     <label for="star-1" title="Оценка 1"> </label>
                     <input id="star-2" type="radio" name="rating" value="2">
@@ -160,7 +171,7 @@
                     <input id="star-5" type="radio" name="rating" value="5">
                     <label for="star-5" title="Оценка 5"> </label>
                   </div>
-                  <div class="rating-area">
+                  <div class="rating-area rate-button__rating-area">
                     <input id="star-1-1" type="radio" name="rating-1" value="1">
                     <label for="star-1-1" title="Оценка 1"> </label>
                     <input id="star-2-1" type="radio" name="rating-1" value="2">
@@ -176,22 +187,27 @@
       </div>
       <div class="form-elements__column">
 <div class="range-slider"> 
-  <div class="title">
-    <h3>range slider</h3>
-    <h3 class="value">5 000₽ - 10 000₽</h3>
+  <div class="head range-slider__head">
+    <h3 class="title range-slider__title">range slider</h3>
+    <h3 class="title_masked range-slider__title_masked value"></h3>
   </div>
   <div id="slider"></div>
 </div>
         <div class="buttons"> 
-          <h3>buttons </h3>
-          <div class="buttons__flex"> <a class="btn btn_gradient buttons__btn">click me</a><a class="btn btn_gradient buttons__btn buttons__btn_hover">click me</a><a class="btn buttons__btn">click me</a><a class="btn buttons__btn buttons__btn_hover">click me</a></div>
+          <div class="head"> 
+            <h3 class="title buttons__title">buttons </h3>
+          </div>
+          <div class="buttons__flex"> <a class="btn btn_gradient buttons__btn" href="#">click me</a><a class="btn btn_gradient buttons__btn buttons__btn_hover" href="#">click me</a><a class="btn buttons__btn" href="#">click me</a><a class="btn buttons__btn buttons__btn_hover" href="#">click me</a>
+          </div>
           <div class="buttons__flex"><a class="buttons__link">click me </a><a class="buttons__link" disabled="disabled">click me</a></div>
         </div>
                 <div class="btn-arrow buttons__btn-arrow"><a href="#">
                     <button class="btn-arrow__button" type="button"></button>
                     <button class="btn-arrow__arrow" type="button">arrow_forward</button></a></div>
 <div class="pagination">
-  <h3>pagination</h3>
+  <div class="head">
+    <h3 class="title pagination__title">pagination</h3>
+  </div>
   <div class="pagination__block"> 
     <div class="pagination__pages"> 
       <div class="pagination__start"> 
@@ -406,7 +422,9 @@
       </div>
       <div class="form-elements__column"> 
         <div class="rich-checkbox-buttons">
-          <h3>rich checkbox buttons </h3>
+          <div class="head rich-checkbox-buttons__head">
+            <h3 class="title rich-checkbox-buttons__title">rich checkbox buttons </h3>
+          </div>
                   <label class="rich-checkbox-buttons__container">
                     <input type="checkbox"><span class="rich-checkbox-buttons__checkmark"></span>
                     <p>Широкий коридор</p>
@@ -421,7 +439,9 @@
       </div>
       <div class="form-elements__column"> 
         <div class="bullet">
-          <h3>bullet list </h3>
+          <div class="head">
+            <h3 class="title bullet__title">bullet list </h3>
+          </div>
                   <ul class="bullet-list bullet__bullet-list">
                     <li><span class="item"> </span>
                       <p>Нельзя с питомцами</p>

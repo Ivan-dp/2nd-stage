@@ -12,13 +12,13 @@
       border: none;
       border-radius: 24px;
       cursor: pointer;
-      border: 2px solid #ffffff;
+      border: 2px solid $background;
       box-sizing: border-box;
-      filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
+      filter: drop-shadow(0px 10px 20px $dark-shade-10);
     }
   }
   &__desc {
-    color: rgba(31, 32, 65, 0.75);
+    color: $dark-shade-75;
     @include Montserrat(normal, 14px, 24px);
     margin-left: 10px;
     width: auto;
@@ -37,11 +37,11 @@
   }
   &__name {
     @include Montserrat(bold, 14px, 24px);
-    color: rgba(31, 32, 65, 0.75);
+    color: $dark-shade-75;
   }
   &__time {
     @include Montserrat(normal, 14px, 24px);
-    color: rgba(31, 32, 65, 0.75);
+    color: $dark-shade-75;
   }
   &__title {
     height: 50px;

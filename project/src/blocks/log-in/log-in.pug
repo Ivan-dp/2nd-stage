@@ -1,3 +1,4 @@
+include ../btn/btn
 .log-in 
   .log-in__title 
     h1 Войти
@@ -9,5 +10,4 @@
   include ../log-in-button/log-in-button
   .log-in__registration 
     p Нет аккаунта на Toxin?
-    a(href="/dist/html/registration.html")  
-      button.log-in__registration_btn
+    +btn("log-in__reg-btn", "/dist/html/registration.html", "Создать")

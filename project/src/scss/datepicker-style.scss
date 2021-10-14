@@ -1,10 +1,10 @@
 .datepicker {
   width: 320px !important;
   font-family: "Montserrat";
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  background: $background;
+  border: 1px solid $dark-shade-25;
   box-sizing: border-box;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-shadow: 0px 10px 20px $dark-shade-5;
   border-radius: 4px;
   &--nav {
     width: 280px;
@@ -12,7 +12,7 @@
     margin: 12px auto 22px auto;
     &-title {
       @include Montserrat(bold, 19px, 23px);
-      color: #1f2041;
+      color: $dark-shade-100;
     }
   }
   &--content {
@@ -25,7 +25,7 @@
         width: 40px;
         height: 40px;
         @include Montserrat(bold, 12px, 15px);
-        color: #bc9cff;
+        color: $purple;
         text-transform: none;
       }
     }
@@ -42,17 +42,17 @@
 
 .datepicker--cell-day {
   @include Montserrat(normal, 12px, 15px);
-  color: rgba(31, 32, 65, 0.5);
+  color: $dark-shade-50;
 }
 
 .datepicker--cell-day.-other-month- {
-  color: rgba(31, 32, 65, 0.25);
+  color: $dark-shade-25;
 }
 
 .datepicker--cell-day.-current- {
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  background: linear-gradient(180deg, $green 0%, $green2 100%);
   border-radius: 20px;
-  color: white;
+  color: $text-dark-bcg;
   @include Montserrat(bold, 12px, 15px);
 }
 
@@ -61,13 +61,13 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  background: linear-gradient(180deg, $purple 0%, $purple2 100%);
   opacity: 0.25;
   border-radius: 20px 0 0 20px;
 }
 
 .datepicker--cell.-in-range- {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  background: linear-gradient(180deg, $purple 0%, $purple2 100%);
   opacity: 0.25;
 }
 
@@ -76,7 +76,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  background: linear-gradient(180deg, $purple 0%, $purple2 100%);
   opacity: 0.25;
   border-radius: 0 20px 20px 0;
 }
@@ -84,10 +84,10 @@
 .-range-from-.-selected-,
 .-range-to-.-selected-,
 .datepicker--cell.-selected- {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  background: linear-gradient(180deg, $purple 0%, $purple2 100%);
   border-radius: 20px;
   @include Montserrat(bold, 12px, 15px);
-  color: white;
+  color: $text-dark-bcg;
 }
 
 .datepicker--buttons {
@@ -97,7 +97,7 @@
   .datepicker--button {
     @include Montserrat(bold, 12px, 15px);
     text-transform: uppercase;
-    color: #bc9cff;
+    color: $purple;
     justify-content: none;
     &[data-action="today"] {
       padding: 0 15px 5px 0;
@@ -108,7 +108,7 @@
       justify-content: flex-start;
     }
     &:hover {
-      background-color: white;
+      background-color: $background;
     }
   }
 }

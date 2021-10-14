@@ -8,7 +8,7 @@
     width: 0;
     height: 0;
     &:checked ~ .checkbox-button__checkmark {
-      border: 1px solid #bc9cff;
+      border: 1px solid $purple;
       &::after {
         display: block;
       }
@@ -17,7 +17,7 @@
 
   p {
     @include Montserrat(normal, 14px, 18px);
-    color: rgba(31, 32, 65, 0.5);
+    color: $dark-shade-50;
     width: 192px;
   }
 }
@@ -25,8 +25,8 @@
   width: 20px;
   height: 20px;
   display: block;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  background: $background;
+  border: 1px solid $dark-shade-25;
   box-sizing: border-box;
   border-radius: 4px;
   margin-right: 10px;
@@ -39,7 +39,7 @@
     top: 4px;
     width: 6px;
     height: 8px;
-    border: solid #bc9cff;
+    border: solid $purple;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }

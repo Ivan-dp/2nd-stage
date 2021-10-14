@@ -1,19 +1,15 @@
-@import "/src/blocks/dropdown-rooms/dropdown-rooms__head.scss";
-@import "/src/blocks/dropdown-rooms/dropdown-rooms__title.scss";
-@import "/src/blocks/dropdown-rooms/dropdown-rooms__title_masked.scss";
-
 .dropdown-rooms {
   .dropdown {
     width: 266px;
     height: 64px;
     margin-bottom: 20px;
     & > .iqdropdown {
-      border: 1px solid rgba(31, 32, 65, 0.25);
+      border: 1px solid $dark-shade-25;
       height: 44px;
       width: 266px;
       &.menu-open {
         @include LineNone();
-        border: 1px solid rgba(31, 32, 65, 0.5);
+        border: 1px solid $dark-shade-50;
       }
     }
   }

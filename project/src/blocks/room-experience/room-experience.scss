@@ -3,7 +3,7 @@
   height: 170px;
   h3 {
     @include Montserrat(bold, 19px, 23px);
-    color: #1f2041;
+    color: $dark-shade-100;
     margin-bottom: 20px;
   }
   #myChart {
@@ -19,11 +19,11 @@
     margin-left: 35px;
   }
   .count {
-    color: #bc9cff;
+    color: $purple;
     @include Montserrat(bold, 24px, 29px);
   }
   .item {
-    color: #bc9cff;
+    color: $purple;
     @include Montserrat(bold, 12px, 15px);
   }
 }

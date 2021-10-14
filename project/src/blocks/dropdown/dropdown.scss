@@ -1,15 +1,15 @@
 .dropdown > .iqdropdown {
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid $dark-shade-25;
   height: 44px;
   width: 320px;
-  background-color: white;
+  background-color: $background;
 }
 
 .iqdropdown .iqdropdown-selection::after {
   background-image: none;
   content: "expand_more";
   @include Material(normal, 24px, 24px);
-  color: rgba(31, 32, 65, 0.5);
+  color: $dark-shade-50;
   position: absolute;
   top: -2px;
   right: 6px;
@@ -18,7 +18,7 @@
   background-image: none;
   content: "expand_less";
   @include Material(normal, 24px, 24px);
-  color: rgba(31, 32, 65, 0.5);
+  color: $dark-shade-50;
   position: absolute;
   top: -2px;
   right: 6px;
@@ -28,7 +28,7 @@
   height: 44px;
   width: 320px;
   @include LineNone();
-  border: 1px solid rgba(31, 32, 65, 0.5);
+  border: 1px solid $dark-shade-50;
 }
 
 .iqdropdown.menu-open {
@@ -39,27 +39,27 @@
 .iqdropdown .iqdropdown-item-controls button.button-decrement {
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid $dark-shade-25;
   border-radius: 50%;
   padding: 0;
   display: block;
   &::after {
     content: "-";
     @include Montserrat(normal, 18px, 22px);
-    color: rgba(31, 32, 65, 0.5);
+    color: $dark-shade-50;
   }
 }
 .iqdropdown .iqdropdown-item-controls button.button-increment {
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid $dark-shade-25;
   border-radius: 50%;
   padding: 0;
   display: block;
   &::after {
     content: "+";
     @include Montserrat(normal, 18px, 22px);
-    color: rgba(31, 32, 65, 0.5);
+    color: $dark-shade-50;
   }
 }
 
@@ -86,23 +86,23 @@
     text-align: center;
     align-items: center;
     display: flex;
-    color: #1f2041;
+    color: $dark-shade-100;
   }
 }
 
 .iqdropdown-item {
   @include Montserrat(bold, 12px, 15px);
-  color: #1f2041;
+  color: $dark-shade-100;
   text-transform: uppercase;
 }
 
 .iqdropdown .iqdropdown-menu {
   top: 44px;
-  border: 1px solid rgba(31, 32, 65, 0.5);
+  border: 1px solid $dark-shade-50;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   box-shadow: none;
-  filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.05));
+  filter: drop-shadow(0px 10px 20px $dark-shade-5);
   &-option {
     height: 38px;
   }
@@ -124,7 +124,7 @@
   .clear-button {
     padding-left: 15px;
     @include Montserrat(bold, 12px, 15px);
-    color: #bc9cff;
+    color: $purple;
     text-transform: uppercase;
     padding-bottom: 15px;
     width: 160px;
@@ -137,7 +137,7 @@
   .apply-button {
     padding-right: 15px;
     @include Montserrat(bold, 12px, 15px);
-    color: #bc9cff;
+    color: $purple;
     text-transform: uppercase;
     padding-bottom: 15px;
     width: 160px;

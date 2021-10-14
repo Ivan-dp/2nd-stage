@@ -1,48 +1,33 @@
 .range-slider {
   width: 266px;
-  .title {
-    display: flex;
-    justify-content: space-between;
-    h3 {
-      @include Montserrat(bold, 12px, 15px);
-      color: $dark-shade-100;
-      text-transform: uppercase;
-      width: auto;
-      &.value {
-        @include Montserrat(normal, 12px, 15px);
-        width: auto;
-        color: $dark-shade-50;
-      }
-    }
-  }
+}
 
-  #slider {
-    margin-top: 20px;
-    width: 266px;
+#slider {
+  margin-top: 20px;
+  width: 266px;
+  height: 6px;
+  box-shadow: none;
+  border: 1px solid $dark-shade-25;
+  box-sizing: border-box;
+  border-radius: 3px;
+  .noUi-base {
     height: 6px;
-    box-shadow: none;
-    border: 1px solid $dark-shade-25;
-    box-sizing: border-box;
-    border-radius: 3px;
-    .noUi-base {
-      height: 6px;
-      top: -1px;
-      .noUi-connect {
-        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-      }
-      .noUi-handle {
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        border: 2px solid white;
-        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-        right: -8px;
-        top: -5px;
-        box-shadow: none;
-        &::before,
-        &::after {
-          display: none;
-        }
+    top: -1px;
+    .noUi-connect {
+      background: linear-gradient(180deg, $green 0%, $green2 100%);
+    }
+    .noUi-handle {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 2px solid $background;
+      background: linear-gradient(180deg, $green 0%, $green2 100%);
+      right: -8px;
+      top: -5px;
+      box-shadow: none;
+      &::before,
+      &::after {
+        display: none;
       }
     }
   }

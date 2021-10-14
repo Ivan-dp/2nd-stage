@@ -1,6 +1,7 @@
 mixin date-dropdown__box(title, id, classname="")
   .date-dropdown__box(class= classname)
-    h3= title
+    .head
+      h3.title.date-dropdown__title= title
     form.date-dropdown__field
       input(class!=attributes.class value!=attributes.value type!=attributes.type)(id= id)
       button(type="button")(id!=attributes.id)

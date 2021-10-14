@@ -7,14 +7,14 @@
     width: 0;
     height: 0;
     &:checked ~ .like-button__checkmark {
-      border: 1px solid #bc9cff;
+      border: 1px solid $purple;
       &::before {
-        color: #bc9cff;
+        color: $purple;
         content: "favorite";
       }
       &::after {
         content: "3";
-        color: #bc9cff;
+        color: $purple;
       }
     }
   }
@@ -23,8 +23,8 @@
     align-items: center;
     width: 40px;
     height: 20px;
-    background: #ffffff;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    background: $background;
+    border: 1px solid $dark-shade-25;
     box-sizing: border-box;
     border-radius: 10px;
     &::before {
@@ -36,7 +36,7 @@
       left: 3px;
       content: "favorite_border";
       @include Material(normal, 10px, 9px);
-      color: rgba(31, 32, 65, 0.25);
+      color: $dark-shade-25;
     }
     &::after {
       display: flex;
@@ -45,7 +45,7 @@
       right: 3px;
       content: "2";
       @include Montserrat(normal, 10px, 12px);
-      color: rgba(31, 32, 65, 0.25);
+      color: $dark-shade-25;
     }
   }
 }

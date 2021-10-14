@@ -3,7 +3,7 @@
 .log-in {
   width: 380px;
   height: 358px;
-  background-color: #fff;
+  background-color: $background;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -15,7 +15,7 @@
     h1 {
       @include Montserrat(bold, 24px, 29px);
       margin: 0;
-      color: #1f2041;
+      color: $dark-shade-100;
       display: block;
     }
   }
@@ -32,39 +32,14 @@
   &__registration {
     width: 320px;
     @include Montserrat(normal, 14px, 18px);
-    color: #000000;
+    color: $dark-shade-100;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
-    a {
-      text-decoration: none;
-    }
-    &_btn {
-      width: 99px;
-      height: 44px;
-      border-radius: 22px;
-      @include Montserrat(bold, 12px, 15px);
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: none;
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-      &::after {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 95px;
-        height: 40px;
-        border-radius: 20px;
-        border: none;
-        background-color: white;
-        content: "Создать";
-        @include Montserrat(bold, 12px, 15px);
-        text-transform: uppercase;
-        color: #bc9cff;
-      }
-    }
+  }
+  &__reg-btn {
+    width: 99px;
+    height: 44px;
   }
 }

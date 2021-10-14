@@ -3,8 +3,8 @@
 .room-card {
   width: 270px;
   height: 257px;
-  background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  background: $background;
+  box-shadow: 0px 10px 20px $dark-shade-5;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
     &::before {
       content: "chevron_left";
       @include Material(normal, 24px, 24px);
-      color: #ffffff;
+      color: $text-dark-bcg;
       width: 42px;
       height: 151px;
       background: linear-gradient(
@@ -42,7 +42,7 @@
       content: "chevron_left";
       float: right;
       @include Material(normal, 24px, 24px);
-      color: #ffffff;
+      color: $text-dark-bcg;
       width: 42px;
       height: 151px;
       background: linear-gradient(
@@ -72,13 +72,13 @@
       display: block;
       width: 7.5px;
       height: 7.5px;
-      border: 1px solid #ffffff;
+      border: 1px solid $background;
       border-radius: 50%;
       box-sizing: border-box;
       filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
     }
     .filled {
-      background: #ffffff;
+      background: $background;
     }
   }
   &__title {
@@ -93,19 +93,19 @@
     display: flex;
     align-items: baseline;
     h3 {
-      color: #1f2041;
+      color: $dark-shade-100;
       @include Montserrat(bold, 14px, 17px);
       height: 20px;
     }
     h1 {
-      color: #1f2041;
+      color: $dark-shade-100;
       @include Montserrat(bold, 24px, 29px);
       margin-left: 5px;
       margin-right: 2px;
       height: 20px;
     }
     .pink {
-      color: #bc9cff;
+      color: $purple;
       text-transform: uppercase;
       @include Montserrat(bold, 12px, 15px);
       height: 20px;
@@ -115,7 +115,7 @@
     display: flex;
     align-items: flex-end;
     p {
-      color: rgba(31, 32, 65, 0.5);
+      color: $dark-shade-50;
       @include Montserrat(normal, 12px, 18px);
       height: 20px;
       margin: 0;
@@ -129,7 +129,7 @@
   &__rating {
     width: 230px;
     height: auto;
-    border-top: 1px solid rgba(31, 32, 65, 0.1);
+    border-top: 1px solid $dark-shade-10;
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
@@ -139,7 +139,7 @@
     display: flex;
     justify-content: space-between;
     p {
-      color: rgba(31, 32, 65, 0.5);
+      color: $dark-shade-50;
       @include Montserrat(normal, 14px, 18px);
       height: 20px;
       margin: 0;

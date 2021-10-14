@@ -3,10 +3,7 @@
 .bullet {
   width: 290px;
   height: auto;
-  h3 {
-    color: #1f2041;
-    @include Montserrat(bold, 12px, 15px);
-    text-transform: uppercase;
-    margin-bottom: 17px;
+  &__title {
+    margin-bottom: 16px;
   }
 }

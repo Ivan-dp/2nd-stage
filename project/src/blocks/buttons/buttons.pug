@@ -1,11 +1,13 @@
 include ../btn-arrow/btn-arrow
+include ../btn/btn
 .buttons 
-  h3 buttons 
+  .head 
+    h3.title.buttons__title buttons 
   .buttons__flex 
-    a.btn.btn_gradient.buttons__btn click me
-    a.btn.btn_gradient.buttons__btn.buttons__btn_hover click me
-    a.btn.buttons__btn click me
-    a.btn.buttons__btn.buttons__btn_hover click me
+    +btn("btn_gradient buttons__btn", "#", "click me")
+    +btn("btn_gradient buttons__btn buttons__btn_hover", "#", "click me")
+    +btn("buttons__btn", "#", "click me")
+    +btn("buttons__btn buttons__btn_hover", "#", "click me")
   .buttons__flex
     a.buttons__link click me 
     a.buttons__link(disabled="disabled") click me

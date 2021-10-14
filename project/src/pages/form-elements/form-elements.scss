@@ -1,3 +1,5 @@
+// vars, mixins and fonts
+
 @import "/src/scss/mixins/variables.scss";
 @import "/src/scss/mixins/fonts.scss";
 @import "/src/scss/mixins/scss-mixins.scss";
@@ -5,6 +7,8 @@
 body {
   width: 100%;
 }
+
+// blocks
 
 @import "/src/blocks/text-fields/text-fields.scss";
 @import "/src/blocks/checkboxes/checkboxes.scss";
@@ -15,6 +19,16 @@ body {
 @import "/src/blocks/bullet/bullet.scss";
 @import "/src/blocks/advantages/advantages.scss";
 @import "/src/blocks/feedback/feedback.scss";
+
+// classes
+
+@import "/src/scss/title.scss";
+@import "/src/scss/title_masked.scss";
+@import "/src/scss/head.scss";
+@import "/src/blocks/btn/btn.scss";
+@import "/src/blocks/btn/btn_gradient.scss";
+@import "/src/blocks/btn-arrow/btn-arrow.scss";
+@import "/src/scss/container.scss";
 
 .logo-grey {
   position: absolute;
@@ -55,7 +69,7 @@ body {
 }
 
 .rich-checkbox-buttons,
-.bullet-list {
+.bullet {
   margin-top: 15px;
 }
 

@@ -10,7 +10,7 @@ noUiSlider.create(slider, {
         'min': 0,
         'max': 15000
     },
-    step: 500
+    step: 100
 });
 
 var valueSlider = document.querySelector('.range-slider h3.value');

@@ -9,6 +9,11 @@
 @import "/src/blocks/room-reviews/room-reviews.scss";
 @import "/src/blocks/room-rules/room-rules.scss";
 @import "/src/blocks/room-cancellation/room-cancellation.scss";
+@import "/src/scss/title.scss";
+@import "/src/scss/title_masked.scss";
+@import "/src/scss/head.scss";
+@import "/src/scss/h3_size_big.scss";
+@import "/src/blocks/btn-arrow/btn-arrow.scss";
 
 .room {
   &__photo {

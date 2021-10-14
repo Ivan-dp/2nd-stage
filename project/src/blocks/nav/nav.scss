@@ -34,11 +34,11 @@
 .menu li:hover .submenu {
   visibility: visible;
   opacity: 1;
-  background-color: #fff;
+  background-color: $background;
 }
 
 .menu svg {
-  fill: rgba(31, 32, 65, 0.5);
+  fill: $dark-shade-50;
   text-align: center;
   margin: auto;
 }

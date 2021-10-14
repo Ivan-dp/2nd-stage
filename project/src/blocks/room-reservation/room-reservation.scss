@@ -6,7 +6,7 @@
 .room-reservation {
   width: 380px;
   height: 512px;
-  background-color: #fff;
+  background-color: $background;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -23,19 +23,19 @@
     display: flex;
     align-items: flex-end;
     h3 {
-      color: #1f2041;
+      color: $dark-shade-100;
       @include Montserrat(bold, 14px, 17px);
       height: 17px;
     }
     h1 {
-      color: #1f2041;
+      color: $dark-shade-100;
       @include Montserrat(bold, 24px, 29px);
       margin-left: 5px;
       margin-right: 10px;
       height: 27px;
     }
     .pink {
-      color: #bc9cff;
+      color: $purple;
       text-transform: uppercase;
       @include Montserrat(bold, 12px, 15px);
       height: 15px;
@@ -45,7 +45,7 @@
     display: flex;
     align-items: flex-end;
     p {
-      color: rgba(31, 32, 65, 0.5);
+      color: $dark-shade-50;
       @include Montserrat(normal, 12px, 18px);
       height: 15px;
       margin: 0;
@@ -78,7 +78,7 @@
     width: 320px;
     display: flex;
     justify-content: space-between;
-    color: rgba(31, 32, 65, 0.75);
+    color: $dark-shade-75;
     @include Montserrat(normal, 14px, 18px);
     .service {
       width: 240px;
@@ -88,13 +88,13 @@
     .info {
       width: 20px;
       height: 20px;
-      border: 1px solid rgba(31, 32, 65, 0.25);
+      border: 1px solid $dark-shade-25;
       border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
       box-sizing: border-box;
-      color: rgba(31, 32, 65, 0.25);
+      color: $dark-shade-25;
       @include Montserrat(bold, 12px, 14px);
       cursor: pointer;
     }
@@ -109,10 +109,10 @@
     &-dotted {
       height: 1px;
       width: 180px;
-      border-bottom: 1px dotted rgba(31, 32, 65, 0.25);
+      border-bottom: 1px dotted $dark-shade-25;
     }
     p {
-      color: #1f2041;
+      color: $dark-shade-100;
       @include Montserrat(bold, 19px, 23px);
     }
   }

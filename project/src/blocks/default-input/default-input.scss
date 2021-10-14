@@ -5,11 +5,11 @@
     @include LineNone();
     width: 100%;
     height: 100%;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1px solid $dark-shade-25;
     box-sizing: border-box;
     border-radius: 4px;
     @include Montserrat(normal, 14px, 18px);
-    color: rgba(31, 32, 65, 0.25);
+    color: $dark-shade-25;
     padding-left: 15px;
   }
 }

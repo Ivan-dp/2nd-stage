@@ -1,8 +1,5 @@
 .pagination {
-  h3 {
-    @include Montserrat(bold, 12px, 15px);
-    color: #1f2041;
-    text-transform: uppercase;
+  &__title {
     margin-bottom: 16px;
   }
   &__block {
@@ -22,35 +19,35 @@
       cursor: pointer;
     }
   }
-  &__start {
-    width: 40px;
-    height: 100%;
-    border: none;
-    border-radius: 20px;
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    p {
-      @include Montserrat(bold, 12px, 15px);
-      font-weight: bold !important;
-    }
-  }
+
   p {
     @include Montserrat(normal, 12px, 15px);
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  &__start {
+    width: 40px;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(180deg, $purple 0%, $purple2 100%);
+    color: $text-dark-bcg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    p {
+      @include Montserrat(bold, 12px, 15px);
+    }
+  }
   &__arrow {
     width: 40px;
     height: 100%;
     border: none;
     border-radius: 20px;
-    background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-    color: white;
+    background: linear-gradient(180deg, $green 0%, $green2 100%);
+    color: $text-dark-bcg;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +60,7 @@
     width: 100%;
     height: 25px;
     p {
-      color: rgba(31, 32, 65, 0.75);
+      color: $dark-shade-75;
       @include Montserrat(normal, 14px, 24px);
     }
   }

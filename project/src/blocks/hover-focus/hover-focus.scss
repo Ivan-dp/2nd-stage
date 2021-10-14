@@ -1,36 +1,20 @@
 .hover-focus {
   width: 320px;
   height: 65px;
-  &__title {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 5px;
-    &__left {
-      @include Montserrat(bold, 12px, 15px);
-      text-transform: uppercase;
-      color: #1f2041;
-    }
-    &__right {
-      @include Montserrat(normal, 12px, 15px);
-      text-transform: uppercase;
-      color: rgba(31, 32, 65, 0.75);
-    }
-  }
   &__input {
     input {
       @include LineNone();
       width: 320px;
       height: 44px;
-      border: 1px solid rgba(31, 32, 65, 0.25);
+      border: 1px solid $dark-shade-25;
       box-sizing: border-box;
       border-radius: 4px;
       @include Montserrat(normal, 14px, 24px);
-      color: rgba(31, 32, 65, 0.75);
+      color: $dark-shade-75;
       padding-left: 15px;
       &:hover {
-        border: 1px solid rgba(31, 32, 65, 0.5);
-        color: rgba(31, 32, 65, 0.75);
+        border: 1px solid $dark-shade-50;
+        color: $dark-shade-75;
       }
     }
   }

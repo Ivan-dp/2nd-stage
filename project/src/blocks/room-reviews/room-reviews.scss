@@ -6,17 +6,10 @@
   justify-content: space-between;
   width: 712px;
   height: 306px;
-  &__title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    h3 {
-      color: #1f2041;
-      @include Montserrat(bold, 19px, 23px);
-      margin-bottom: 20px;
-    }
+  &__head {
+    margin-bottom: 20px;
     p {
-      color: rgba(31, 32, 65, 0.5);
+      color: $dark-shade-50;
       @include Montserrat(normal, 14px, 14px);
     }
   }

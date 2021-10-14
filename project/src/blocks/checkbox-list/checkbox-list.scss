@@ -5,4 +5,64 @@
   height: auto;
   margin-bottom: 20px;
   position: relative;
+  &__checkboxes {
+    opacity: 0;
+    label {
+      p {
+        text-transform: none;
+      }
+    }
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    @include Montserrat(bold, 12px, 15px);
+    text-transform: uppercase;
+    color: $dark-shade-100;
+    input:checked ~ .checkbox-list__checkmark::after {
+      transform: rotate(225deg);
+      transition: 0.5s cubic-bezier(0.4, 0, 0, 0.9);
+    }
+    input:checked ~ .checkbox-list__checkboxes {
+      opacity: 1;
+    }
+    input:checked ~ .checkbox-list {
+      height: 240px;
+    }
+    input:checked ~ .checkbox-list__container {
+      height: 240px;
+    }
+    p {
+      width: 222px;
+    }
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+  }
+  &__checkmark {
+    width: 44px;
+    height: 44px;
+    display: block;
+    background: $background;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-bottom: 2px solid $dark-shade-50;
+      border-right: 2px solid $dark-shade-50;
+      transform: rotate(45deg);
+      transition: 0.5s cubic-bezier(0.4, 0, 0, 0.9);
+    }
+  }
 }

@@ -16,14 +16,18 @@
         <div class="form">
           <div class="date-dropdown">
                       <div class="date-dropdown__box">
-                        <h3>date dropdown</h3>
+                        <div class="head">
+                          <h3 class="title date-dropdown__title">date dropdown</h3>
+                        </div>
                         <form class="date-dropdown__field">
                           <input class="doubleDatepicker" value="ДД.ММ.ГГГГ" type="text" id="from">
                           <button type="button" id="btn_from"><img src="/src/blocks/findroom-form/img/expand_more.svg"></button>
                         </form>
                       </div>
                       <div class="date-dropdown__box">
-                        <h3>date dropdown</h3>
+                        <div class="head">
+                          <h3 class="title date-dropdown__title">date dropdown</h3>
+                        </div>
                         <form class="date-dropdown__field">
                           <input class="doubleDatepicker" value="ДД.ММ.ГГГГ" type="text" id="to">
                           <button type="button" id="btn_to"><img src="/src/blocks/findroom-form/img/expand_more.svg"></button>
@@ -65,10 +69,9 @@
                       </div>
                     </div>
         </div>
-<div class="findroom-button">
-  <button class="button" type="button"></button>
-  <button class="arrow" type="button">arrow_forward</button>
-</div>
+                <div class="btn-arrow findroom-button"><a href="#">
+                    <button class="btn-arrow__button" type="button"></button>
+                    <button class="btn-arrow__arrow" type="button">arrow_forward</button></a></div>
       </div>
       <div class="registration"> 
         <div class="registration__title"> 
@@ -82,6 +85,9 @@
             <input class="input" type="text" value="Фамилия">
           </div>
           <div class="radio-buttons"> 
+            <div class="head">
+              <h3 class="title radio-buttons__title">radio buttons</h3>
+            </div>
                       <label class="radio-button radio-buttons__radio-button">
                         <input type="radio" name="radio"><span class="radio-button__checkmark"></span>
                         <p>Мужчина</p>
@@ -92,14 +98,18 @@
                       </label>
           </div>
           <div class="registration__born"> 
-            <h3>Дата рождения</h3>
+            <div class="head">
+              <h3 class="title">Дата рождения</h3>
+            </div>
             <div class="registration__datepicker">
               <input class="input" id="calendar_born" type="text" value="ДД.ММ.ГГГГ">
             </div>
           </div>
         </div>
         <div class="registration__login"> 
-          <h3>Данные для входа в сервис</h3>
+          <div class="head">
+            <h3 class="title">Данные для входа в сервис</h3>
+          </div>
           <div class="registration__email"> 
             <input class="input" type="text" value="Email">
           </div>
@@ -120,8 +130,7 @@
                             <button class="btn-arrow__arrow" type="button">arrow_forward</button></a></div>
           </div>
           <div class="registration__sign-in"> 
-            <p>Уже есть аккаунт на Toxin</p><a href="/dist/html/sign-in.html">
-              <button class="sign-in_btn"></button></a>
+            <p>Уже есть аккаунт на Toxin</p><a class="btn registration__sign-in-btn" href="/dist/html/sign-in.html">Войти</a>
           </div>
         </div>
       </div>
@@ -140,14 +149,18 @@
         <div class="room-reservation__form"> 
           <div class="room-reservation__datepicker">
                   <div class="date-dropdown__box">
-                    <h3>Прибытие</h3>
+                    <div class="head">
+                      <h3 class="title date-dropdown__title">Прибытие</h3>
+                    </div>
                     <form class="date-dropdown__field">
                       <input class="doubleDatepicker-1" value="ДД.ММ.ГГГГ" type="text" id="from1">
                       <button type="button" id="btn_1"><img src="/src/blocks/findroom-form/img/expand_more.svg"></button>
                     </form>
                   </div>
                   <div class="date-dropdown__box">
-                    <h3>Выезд</h3>
+                    <div class="head">
+                      <h3 class="title date-dropdown__title">Выезд</h3>
+                    </div>
                     <form class="date-dropdown__field">
                       <input class="doubleDatepicker-1" value="ДД.ММ.ГГГГ" type="text" id="to1">
                       <button type="button" id="btn_2"><img src="/src/blocks/findroom-form/img/expand_more.svg"></button>
@@ -232,32 +245,29 @@
             <p>38 081₽</p>
           </div>
         </div>
-<div class="reservation-button">
-  <button class="button" type="button"></button>
-  <button class="arrow" type="button">arrow_forward</button>
-</div>
+                <div class="btn-arrow reservation-button"><a href="#">
+                    <button class="btn-arrow__button" type="button"></button>
+                    <button class="btn-arrow__arrow" type="button">arrow_forward</button></a></div>
       </div>
-<div class="log-in"> 
-  <div class="log-in__title"> 
-    <h1>Войти</h1>
-  </div>
-  <div class="log-in__form"> 
-    <div class="log-in__email">
-      <input class="input" value="Email" type="Email">
-    </div>
-    <div class="log-in__password">
-      <input class="input" value="Пароль" type="text">
-    </div>
-  </div>
-<div class="log-in-button">
-  <button class="button" type="button"></button>
-  <button class="arrow" type="button">arrow_forward</button>
-</div>
-  <div class="log-in__registration"> 
-    <p>Нет аккаунта на Toxin?</p><a href="/dist/html/registration.html"> 
-      <button class="log-in__registration_btn"></button></a>
-  </div>
-</div>
+      <div class="log-in"> 
+        <div class="log-in__title"> 
+          <h1>Войти</h1>
+        </div>
+        <div class="log-in__form"> 
+          <div class="log-in__email">
+            <input class="input" value="Email" type="Email">
+          </div>
+          <div class="log-in__password">
+            <input class="input" value="Пароль" type="text">
+          </div>
+        </div>
+                <div class="btn-arrow log-in-button"><a href="#">
+                    <button class="btn-arrow__button" type="button"></button>
+                    <button class="btn-arrow__arrow" type="button">arrow_forward</button></a></div>
+        <div class="log-in__registration"> 
+          <p>Нет аккаунта на Toxin?</p><a class="btn log-in__reg-btn" href="/dist/html/registration.html">Создать</a>
+        </div>
+      </div>
 <div class="datepicker-here" id="here"></div>
       <div class="uikit-room-card">
               <div class="room-card">

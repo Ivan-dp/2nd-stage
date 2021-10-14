@@ -2,17 +2,13 @@
 
 .rate-button {
   display: flex;
-
   justify-content: space-between;
   width: 260px;
-  h3 {
-    color: #1f2041;
-    @include Montserrat(bold, 12px, 15px);
-    text-transform: uppercase;
-    position: absolute;
-    // width: 100%;
+  flex-wrap: wrap;
+  &__head {
+    width: 100%;
   }
-  .rating-area {
-    margin-top: 31px;
+  &__rating-area {
+    margin-top: 16px;
   }
 }
