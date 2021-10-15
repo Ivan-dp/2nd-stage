@@ -8,7 +8,7 @@
     <script src="./form-elements.js"></script>
   <script defer src="../js/form_elements.bundle.js"></script></head>
   <body> <a class="logo-grey" href="/dist/html/index.html"><img src="/src/img/logo_grey.svg" alt="logo"></a>
-    <div class="form-elements__container">
+    <div class="form-elements__container container">
       <div class="form-elements__column">
         <div class="text-fields"> 
 <div class="default"> 
@@ -127,34 +127,45 @@
                     <p>Можно пригласить гостей (до 10 человек)</p>
                   </label>
         </div>
-        <div class="radio-buttons"> 
-          <div class="head">
-            <h3 class="title radio-buttons__title">radio buttons</h3>
+        <div class="uikit-radio-buttons">
+          <div class="head uikit-radio-buttons__head">
+            <h3 class="title uikit-radio-buttons__title">radio buttons </h3>
           </div>
-                  <label class="radio-button radio-buttons__radio-button">
-                    <input type="radio" name="radio"><span class="radio-button__checkmark"></span>
-                    <p>Мужчина</p>
+          <div class="radio-buttons">
+                      <label class="radio-button radio-buttons__radio-button">
+                        <input type="radio" name="radio"><span class="radio-button__checkmark"></span>
+                        <p>Мужчина</p>
+                      </label>
+                      <label class="radio-button radio-buttons__radio-button">
+                        <input type="radio" name="radio"><span class="radio-button__checkmark"></span>
+                        <p>Женщина</p>
+                      </label>
+          </div>
+        </div>
+<div class="toggles">
+  <div class="head toggles__head">
+    <h3 class="title toggles__title">toggle</h3>
+  </div>
+<label class="toggle">
+  <input type="checkbox"><span class="toggle__checkmark"></span>
+  <p>Получать спецпредложения</p>
+</label>
+<label class="toggle">
+  <input type="checkbox"><span class="toggle__checkmark"></span>
+  <p>Получать спецпредложения</p>
+</label>
+</div>
+        <div class="uikit-like-button">
+          <div class="head uikit-like-button__head">
+            <h3 class="title uikit-like-button__title">like button</h3>
+          </div>
+                  <label class="like-button uikit-like-button__like-button">
+                    <input type="checkbox"><span class="like-button__checkmark"></span>
                   </label>
-                  <label class="radio-button radio-buttons__radio-button">
-                    <input type="radio" name="radio"><span class="radio-button__checkmark"></span>
-                    <p>Женщина</p>
+                  <label class="like-button uikit-like-button__like-button">
+                    <input type="checkbox"><span class="like-button__checkmark"></span>
                   </label>
         </div>
-<div class="toggle"> 
-  <h3>toggle</h3>
-<div class="toggle__block">
-  <label class="toggle__container">
-    <input type="checkbox"><span class="toggle__checkmark"></span>
-    <p>Получать спецпредложения</p>
-  </label>
-</div>
-<div class="toggle__block">
-  <label class="toggle__container">
-    <input type="checkbox"><span class="toggle__checkmark"></span>
-    <p>Получать спецпредложения</p>
-  </label>
-</div>
-</div>
         <div class="rate-button">
           <div class="head rate-button__head">
             <h3 class="title rate-button__title">rate button </h3>
@@ -474,6 +485,25 @@
         </div>
       </div>
       <div class="form-elements__column-1"> 
+                <div class="feedback uikit-feedback">
+                  <div class="feedback__title"> 
+                    <div class="feedback__avatar"><img src="/src/blocks/uikit-feedback/img/avatar.png" alt="avatar"></div>
+                    <div class="feedback__user"> 
+                      <p class="feedback__name">Мурад Сарафанов</p>
+                      <p class="feedback__time">5 дней назад</p>
+                    </div>
+                  </div>
+                  <div class="feedback__description"> 
+                    <div class="feedback__like">
+                              <label class="like-button">
+                                <input type="checkbox"><span class="like-button__checkmark"></span>
+                              </label>
+                    </div>
+                    <div class="feedback__desc">
+                      <p>Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
+                    </div>
+                  </div>
+                </div>
       </div>
     </div>
   </body>

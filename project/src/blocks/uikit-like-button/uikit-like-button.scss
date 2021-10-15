@@ -3,15 +3,13 @@
 .uikit-like-button {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 90px;
-  h3 {
-    color: #1f2041;
-    @include Montserrat(bold, 12px, 15px);
-    text-transform: uppercase;
-    position: absolute;
+  &__head {
+    margin-bottom: 16px;
+    width: 100%;
   }
   &__like-button {
-    margin-top: 31px;
     margin-right: 10px;
     &:last-child {
       margin-right: 0;

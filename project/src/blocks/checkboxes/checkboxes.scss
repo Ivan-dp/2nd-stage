@@ -1,12 +1,12 @@
 @import "../checkbox-buttons/checkbox-buttons.scss";
-@import "../radio-buttons/radio-buttons.scss";
-@import "../toggle/toggle.scss";
-@import "../like-button/like-button.scss";
+@import "../uikit-radio-buttons/uikit-radio-buttons.scss";
+@import "../toggles/toggles.scss";
+@import "../uikit-like-button/uikit-like-button.scss";
 @import "../rate-button/rate-button.scss";
 
-.radio-buttons,
-.toggle,
-.like-button,
+.uikit-radio-buttons,
+.toggles,
+.uikit-like-button,
 .rate-button {
   margin-top: 40px;
 }

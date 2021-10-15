@@ -12,12 +12,6 @@
   &__title {
     width: 100%;
     margin-bottom: 20px;
-    h1 {
-      @include Montserrat(bold, 24px, 29px);
-      margin: 0;
-      color: $dark-shade-100;
-      display: block;
-    }
   }
   &__form {
     margin-bottom: 20px;

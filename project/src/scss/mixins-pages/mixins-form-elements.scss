@@ -1,0 +1,18 @@
+// mixins
+
+@import "/src/scss/mixins/variables.scss";
+@import "/src/scss/mixins/fonts.scss";
+@import "/src/scss/mixins/scss-mixins.scss";
+
+// classes
+
+@import "/src/scss/title.scss";
+@import "/src/scss/title_masked.scss";
+@import "/src/scss/head.scss";
+@import "/src/scss/container.scss";
+
+// blocks
+
+@import "/src/blocks/btn/btn.scss";
+@import "/src/blocks/btn/btn_gradient.scss";
+@import "/src/blocks/btn-arrow/btn-arrow.scss";

@@ -1,6 +1,9 @@
-@import "/src/scss/mixins/variables.scss";
-@import "/src/scss/mixins/fonts.scss";
-@import "/src/scss/mixins/scss-mixins.scss";
+//mixins
+
+@import "/src/scss/mixins-pages/mixins-headers-and-footers.scss";
+
+// blocks
+
 @import "/src/blocks/header/header.scss";
 @import "/src/blocks/footer/footer";
 @import "/src/blocks/footer-creative/footer-creative.scss";

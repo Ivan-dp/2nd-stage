@@ -1,6 +1,9 @@
-@import "/src/scss/mixins/variables.scss";
-@import "/src/scss/mixins/fonts.scss";
-@import "/src/scss/mixins/scss-mixins.scss";
+// mixins
+
+@import "/src/scss/mixins-pages/mixins-index.scss";
+
+// blocks
+
 @import "/src/blocks/header/header.scss";
 @import "/src/blocks/findroom/findroom.scss";
 @import "/src/blocks/footer/footer.scss";
@@ -12,10 +15,8 @@ body {
   background-size: cover;
 }
 
-.container {
-  max-width: 1160px;
+.container_index-mode {
   height: 93vh;
-  display: flex;
   justify-content: start;
   margin: auto;
   padding-top: 70px;

@@ -1,7 +1,7 @@
 include ../btn/btn
 .registration 
-  .registration__title 
-    h1 Регистрация аккаунта
+  .registration__title
+    h1.h1-title Регистрация аккаунта
   .registration__person 
     .registration__name
       input.input(type="text" value="Имя")
@@ -21,7 +21,7 @@ include ../btn/btn
     .registration__password 
       input.input.password(type="text" value="Пароль")
     .registration__offers 
-      include ../toggle__block/toggle__block
+      include ../toggle/toggle
     .registration__pay
       include ../btn-arrow/btn-arrow
       +btn-arrow("registration__btn-arrow")

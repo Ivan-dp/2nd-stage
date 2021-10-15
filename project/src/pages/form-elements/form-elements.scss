@@ -1,12 +1,4 @@
-// vars, mixins and fonts
-
-@import "/src/scss/mixins/variables.scss";
-@import "/src/scss/mixins/fonts.scss";
-@import "/src/scss/mixins/scss-mixins.scss";
-
-body {
-  width: 100%;
-}
+@import "/src/scss/mixins-pages/mixins-form-elements.scss";
 
 // blocks
 
@@ -18,17 +10,9 @@ body {
 @import "/src/blocks/rich-checkbox-buttons/rich-checkbox-buttons.scss";
 @import "/src/blocks/bullet/bullet.scss";
 @import "/src/blocks/advantages/advantages.scss";
-@import "/src/blocks/feedback/feedback.scss";
+@import "/src/blocks/uikit-feedback/uikit-feedback.scss";
 
-// classes
-
-@import "/src/scss/title.scss";
-@import "/src/scss/title_masked.scss";
-@import "/src/scss/head.scss";
-@import "/src/blocks/btn/btn.scss";
-@import "/src/blocks/btn/btn_gradient.scss";
-@import "/src/blocks/btn-arrow/btn-arrow.scss";
-@import "/src/scss/container.scss";
+// styles
 
 .logo-grey {
   position: absolute;
@@ -37,10 +21,7 @@ body {
 }
 
 .form-elements__container {
-  display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1158px;
   margin: auto;
   padding-top: 140px;
   padding-bottom: 140px;

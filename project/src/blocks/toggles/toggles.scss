@@ -1,0 +1,14 @@
+@import "/src/blocks/toggle/toggle.scss";
+
+.toggles {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  &__head {
+    margin-bottom: 16px;
+  }
+  .toggle {
+    margin-bottom: 10px;
+  }
+}

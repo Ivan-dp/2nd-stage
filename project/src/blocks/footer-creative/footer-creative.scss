@@ -13,13 +13,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // &__social {
-  //   display: flex;
-  //   & a {
-  //     margin-left: 10px;
-  //     margin-right: 10px;
-  //   }
-  // }
   &__copyright {
     @include Montserrat(normal, 14px, 17px);
     margin-top: 20px;

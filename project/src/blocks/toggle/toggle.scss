@@ -1,14 +1,53 @@
-@import "/src/blocks/toggle__block/toggle__block.scss";
-
 .toggle {
-  flex-direction: column;
-  display: flex;
-  justify-content: space-between;
   width: 260px;
-  h3 {
-    color: #1f2041;
-    @include Montserrat(bold, 12px, 15px);
-    text-transform: uppercase;
-    margin-bottom: 17px;
+  display: flex;
+  user-select: none;
+  cursor: pointer;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    &:checked ~ .toggle__checkmark {
+      border: 1px solid $purple;
+      &::after {
+        background: linear-gradient(180deg, $purple 0%, $purple2 100%);
+        transform: translateX(20px);
+        transition: 0.5s cubic-bezier(0.4, 0, 0, 0.9);
+      }
+    }
+  }
+  p {
+    @include Montserrat(normal, 14px, 18px);
+    color: $dark-shade-50;
+  }
+
+  &__checkmark {
+    width: 40px;
+    height: 20px;
+    display: block;
+    background: $background;
+    border: 1px solid $dark-shade-25;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-right: 10px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      width: 12px;
+      height: 12px;
+      border: none;
+      border-radius: 50%;
+      background: linear-gradient(
+        180deg,
+        $dark-shade-25 0%,
+        $dark-shade-25 100%
+      );
+      transform: translateX(0);
+      transition: 0.5s cubic-bezier(0.4, 0, 0, 0.9);
+    }
   }
 }

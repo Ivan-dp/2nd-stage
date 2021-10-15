@@ -1,0 +1,5 @@
+.h1-title {
+  @include Montserrat(bold, 24px, 29px);
+  color: $dark-shade-100;
+  display: block;
+}

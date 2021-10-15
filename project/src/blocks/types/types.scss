@@ -1,54 +1,55 @@
-.types__item {
-  display: flex;
-}
+.types {
+  &__item {
+    display: flex;
+  }
+  &__name {
+    margin-right: 30px;
+    width: 40px;
+    h1 {
+      @include Montserrat($normal-fw, $h1-fs, $h1-lh);
+      color: $dark-shade-25;
+      text-align: right;
+    }
+    h2 {
+      @include Montserrat($normal-fw, $h2-fs, $h2-lh);
+      color: $dark-shade-25;
+      text-align: right;
+    }
+    h3 {
+      @include Montserrat($normal-fw, $h3-fs, $h3-lh);
+      color: $dark-shade-25;
+      text-align: right;
+    }
+    p {
+      @include Montserrat($normal-fw, $p-fs, $p-lh);
+      color: $dark-shade-25;
+      text-align: right;
+    }
+  }
 
-.name {
-  margin-right: 30px;
-  width: 40px;
-  h1 {
-    @include Montserrat($normal-fw, $h1-fs, $h1-lh);
-    color: $dark-shade-25;
-    text-align: right;
-  }
-  h2 {
-    @include Montserrat($normal-fw, $h2-fs, $h2-lh);
-    color: $dark-shade-25;
-    text-align: right;
-  }
-  h3 {
-    @include Montserrat($normal-fw, $h3-fs, $h3-lh);
-    color: $dark-shade-25;
-    text-align: right;
-  }
-  p {
-    @include Montserrat($normal-fw, $p-fs, $p-lh);
-    color: $dark-shade-25;
-    text-align: right;
-  }
-}
-
-.example {
-  width: 370px;
-  margin-bottom: 50px;
-  h1 {
-    @include Montserrat($bold-fw, $h1-fs, $h1-lh);
-    color: $dark-shade-100;
-    text-align: left;
-  }
-  h2 {
-    @include Montserrat($bold-fw, $h2-fs, $h2-lh);
-    color: $dark-shade-100;
-    text-align: left;
-  }
-  h3 {
-    @include Montserrat($bold-fw, $h3-fs, $h3-lh);
-    color: $dark-shade-100;
-    text-align: left;
-    text-transform: uppercase;
-  }
-  p {
-    @include Montserrat($normal-fw, $p-fs, $p-lh);
-    color: $dark-shade-75;
-    text-align: left;
+  &__example {
+    width: 370px;
+    margin-bottom: 50px;
+    h1 {
+      @include Montserrat($bold-fw, $h1-fs, $h1-lh);
+      color: $dark-shade-100;
+      text-align: left;
+    }
+    h2 {
+      @include Montserrat($bold-fw, $h2-fs, $h2-lh);
+      color: $dark-shade-100;
+      text-align: left;
+    }
+    h3 {
+      @include Montserrat($bold-fw, $h3-fs, $h3-lh);
+      color: $dark-shade-100;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    p {
+      @include Montserrat($normal-fw, $p-fs, $p-lh);
+      color: $dark-shade-75;
+      text-align: left;
+    }
   }
 }
