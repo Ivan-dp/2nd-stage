@@ -1,9 +1,6 @@
-@import "/src/scss/mixins/variables.scss";
-@import "/src/scss/mixins/fonts.scss";
-@import "/src/scss/mixins/scss-mixins.scss";
-@import "/src/blocks/header/header.scss";
-@import "/src/blocks/footer/footer.scss";
-@import "/src/blocks/log-in/log-in.scss";
+@import "/src/scss/mixins-pages/mixins-sign-in.scss";
+
+
 
 .container {
   display: flex;
