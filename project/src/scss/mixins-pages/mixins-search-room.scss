@@ -1,0 +1,22 @@
+// mixins
+
+@import "/src/scss/mixins/variables.scss";
+@import "/src/scss/mixins/fonts.scss";
+@import "/src/scss/mixins/scss-mixins.scss";
+
+// classes
+
+@import "/src/pages/search-room/item-quantity-dropdown.min.css";
+@import "/src/scss/datepicker-style.scss";
+
+// blocks
+
+@import "/src/blocks/header/header.scss";
+@import "/src/blocks/footer/footer.scss";
+@import "/src/blocks/filter-date-dropdown/dist/css/datepicker.min.css";
+@import "/src/blocks/dropdown/dropdown.scss";
+@import "/src/blocks/range-slider/range-slider.scss";
+@import "/src/blocks/checkbox-button/checkbox-button.scss";
+@import "/src/blocks/rich-checkbox-button/rich-checkbox-button.scss";
+@import "/src/blocks/pagination/pagination.scss";
+@import "/src/blocks/room-card/room-card.scss";
