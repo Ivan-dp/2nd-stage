@@ -7,7 +7,6 @@
   display: flex;
   &__container {
     margin: 100px auto;
-    padding: 0px 10px;
     flex-wrap: wrap;
   }
 
@@ -21,6 +20,7 @@
     }
     &:first-child {
       width: 260px;
+      margin-left: 0px;
       p {
         @include Montserrat(normal, 14px, 24px);
         margin-top: 20px;
@@ -29,6 +29,7 @@
     }
     &:last-child {
       width: 260px;
+      margin-right: 0;
       li {
         cursor: auto;
         &:last-child {
