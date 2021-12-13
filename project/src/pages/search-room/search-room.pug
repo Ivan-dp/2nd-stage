@@ -13,9 +13,9 @@ block container
       include ../../blocks/checkbox-button/checkbox-button
       .rules 
         h3 правила дома
-        +checkbox-button("Можно курить")
-        +checkbox-button("Можно с питомцами")
-        +checkbox-button("Можно пригласить гостей (до 10 человек)") 
+        +checkbox-button("","Можно курить")
+        +checkbox-button("","Можно с питомцами")
+        +checkbox-button("","Можно пригласить гостей (до 10 человек)") 
       include ../../blocks/rich-checkbox-button/rich-checkbox-button
       .accessibility
         h3 доступность
@@ -30,14 +30,14 @@ block container
           input#open(type='checkbox')     
           .additional__checkmark
           .additional__checkboxes
-            +checkbox-button('Завтрак')
-            +checkbox-button('Письменный стол')
-            +checkbox-button('Стул для кормления')
-            +checkbox-button('Кроватка')
-            +checkbox-button('Телевизор')
-            +checkbox-button('Шампунь')
-            +checkbox-button('Телевизор')
-            +checkbox-button('Шампунь')
+            +checkbox-button("",'Завтрак')
+            +checkbox-button("",'Письменный стол')
+            +checkbox-button("",'Стул для кормления')
+            +checkbox-button("",'Кроватка')
+            +checkbox-button("",'Телевизор')
+            +checkbox-button("",'Шампунь')
+            +checkbox-button("",'Телевизор')
+            +checkbox-button("",'Шампунь')
     .container
       .container__title
         h1 Номера, которые мы для вас подобрали

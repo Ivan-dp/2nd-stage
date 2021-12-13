@@ -29,7 +29,7 @@ $(el).on('click', function() {
 });
 
 var rangeParent = document.querySelector(".range-slider");
-var rangeTitle = rangeParent.querySelectorAll('.title h3');
+var rangeTitle = rangeParent.querySelectorAll('.title');
 rangeTitle[0].innerHTML = "диапазон цены";
 var p = document.createElement('p');
 p.innerHTML = "<p>Стоимость за сутки пребывания в номере</p>";

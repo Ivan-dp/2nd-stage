@@ -1,8 +1,8 @@
 @import "/src/scss/mixins-pages/mixins-search-room";
 
-body {
-  // background-color: cadetblue;
-}
+// body {
+//   // background-color: cadetblue;
+// }
 
 main {
   max-width: 1160px;
@@ -70,6 +70,7 @@ main {
       margin-bottom: 30px;
       .iqdropdown {
         width: 266px;
+        margin-top: 5px;
       }
       h3 {
         margin: 0;
