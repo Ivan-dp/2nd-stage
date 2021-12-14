@@ -2,7 +2,7 @@
 @import "/src/blocks/filter-date-dropdown/dist/css/datepicker.min.css";
 @import "/src/blocks/dropdown/dropdown.scss";
 @import "/src/blocks/findroom-button/findroom-button.scss";
-@import "../../blocks/filter-date-dropdown/filter-date-dropdown.scss";
+@import "/src/blocks/filter-date-dropdown/filter-date-dropdown.scss";
 
 .form {
   width: 100%;
@@ -15,5 +15,6 @@
 }
 
 .findroom-button {
-  margin-top: 30px;
+  position:absolute;
+  bottom: 30px;
 }

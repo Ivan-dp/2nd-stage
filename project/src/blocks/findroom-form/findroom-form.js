@@ -9,7 +9,7 @@ var toTitle = dateDropdownCards[1].querySelector('h3');
 fromTitle.innerHTML = "прибытие";
 toTitle.innerHTML = "выезд";
 
-var dropdownTitle = document.querySelectorAll('.dropdown .dropdown__title__left');
+var dropdownTitle = document.querySelectorAll('.dropdown .title');
 
 for (let i = 0; i < dropdownTitle.length; i++) {
   dropdownTitle[i].innerHTML = "Гости";
