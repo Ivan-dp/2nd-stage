@@ -7,14 +7,18 @@
 // classes
 
 @import "/src/scss/title.scss";
-// @import "/src/scss/title_masked.scss";
 @import "/src/scss/container.scss";
 @import "/src/scss/head.scss";
 @import "/src/scss/h3_size_big.scss";
 @import "/src/scss/h1-title.scss";
+@import "/src/scss/datepicker-style.scss";
 
 // blocks
 
+@import "/src/blocks/header/header.scss";
+@import "/src/blocks/footer/footer.scss";
 @import "/src/blocks/btn-arrow/btn-arrow.scss";
 @import "/src/blocks/btn/btn.scss";
 @import "/src/blocks/btn/btn_gradient.scss";
+@import "/src/blocks/registration/registration.scss";
+@import "/src/blocks/registration/dist/css/datepicker.min.css";

@@ -4,8 +4,15 @@
 @import "/src/scss/mixins/fonts.scss";
 @import "/src/scss/mixins/scss-mixins.scss";
 
+// classes
+
+@import "/src/scss/h1-title.scss";
+
 // blocks
 
 @import "/src/blocks/header/header.scss";
-@import "/src/blocks/footer/footer.scss";
+@import "/src/blocks/btn-arrow/btn-arrow.scss";
+@import "/src/blocks/btn/btn.scss";
+@import "/src/blocks/btn/btn_gradient.scss";
 @import "/src/blocks/log-in/log-in.scss";
+@import "/src/blocks/footer/footer.scss";

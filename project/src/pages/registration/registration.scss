@@ -1,14 +1,4 @@
-// mixins
-
 @import "/src/scss/mixins-pages/mixins-registration.scss";
-
-// blocks
-
-@import "/src/blocks/header/header.scss";
-@import "/src/blocks/footer/footer.scss";
-@import "/src/blocks/registration/registration.scss";
-@import "/src/blocks/registration/dist/css/datepicker.min.css";
-@import "/src/scss/datepicker-style.scss";
 
 .container_registration-mode {
   display: flex;
