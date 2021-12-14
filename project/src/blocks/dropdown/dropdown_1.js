@@ -9,7 +9,7 @@ function getNameEachId(array) {
   for (var i = 0; i < array.length; i++) {
     var myVar = array[i];
     myVar.setAttribute('id', 'guest_'+[i+1]);
-    console.log(myVar);
+    // console.log(myVar);
   }
 }
 getNameEachId(guest);
@@ -17,8 +17,8 @@ getNameEachId(guest);
 var g1 = document.querySelector('#guest_1');
 var g2 = document.querySelector('#guest_2');
   
-console.log(g1.id);
-console.log(g1);
+// console.log(g1.id);
+// console.log(g1);
 
 $(document).ready(() => {
     $(g1).iqDropdown({ 
@@ -26,7 +26,7 @@ $(document).ready(() => {
       minItems: 0,
       items: {},
       onChange: (id, count, totalItems) => {
-        console.log(totalItems, count, id);
+        // console.log(totalItems, count, id);
         var tp;
         if (totalItems === 0) {
           tp = 'Сколько гостей';
@@ -61,7 +61,7 @@ $(document).ready(() => {
       minItems: 0,
       items: {},
       onChange: (id, count, totalItems) => {
-        console.log(totalItems, count, id);
+        // console.log(totalItems, count, id);
         var tp;
         if (totalItems === 0) {
           tp = 'Сколько гостей';
