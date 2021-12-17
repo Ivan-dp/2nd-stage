@@ -17,12 +17,12 @@
   }
 
   p {
-    @include Montserrat(bold, 14px, 18px);
+    @include Montserrat(bold, $checkbox-item-fs, $checkbox-item-lh);
     color: $dark-shade-75;
     width: auto;
     &.desc {
       color: $dark-shade-50;
-      @include Montserrat(normal, 12px, 14px);
+      @include Montserrat(normal, $checkbox-desc-fs, $checkbox-desc-lh);
       margin-left: 30px;
       margin-top: 5px;
     }

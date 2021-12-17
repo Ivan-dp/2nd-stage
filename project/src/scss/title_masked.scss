@@ -1,5 +1,5 @@
 .title_masked {
-  @include Montserrat(normal, 12px, 15px);
+  @include Montserrat(normal, $h3-fs, $h3-lh);
   color: $dark-shade-50;
   text-transform: uppercase;
 }

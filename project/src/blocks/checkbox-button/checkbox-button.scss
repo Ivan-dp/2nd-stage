@@ -16,7 +16,7 @@
   }
 
   p {
-    @include Montserrat(normal, 14px, 18px);
+    @include Montserrat(normal, $checkbox-item-fs, $checkbox-item-lh);
     color: $dark-shade-50;
     width: 192px;
   }
